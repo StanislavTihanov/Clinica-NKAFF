@@ -1,0 +1,37 @@
+/*---------------------------------classification--------------------------------*/
+@use 'mixins' as *;
+.classification {
+    &__body {
+        font-weight: 500;
+        font-family: var(--font-family-m);
+        line-height: 140%;
+        p {
+            margin-bottom: 16px;
+        }
+        ul {
+            flex-basis: 30%;
+            li {
+                font-weight: 600;
+                font-family: var(--font-family-m);
+                line-height: 140%;
+                position: relative;
+                padding-left: 30px;
+                &:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    top: 10px;
+                    left: 10px;
+                    border-radius: 50%;
+                    background-color: #63D7DF;
+                }
+            }
+        }
+    }
+}
+
+/*---------------------------------classification--------------------------------*/

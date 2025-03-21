@@ -5,7 +5,10 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 32px;
+  overflow: hidden;
   overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .filtermenu__list {
   display: flex;

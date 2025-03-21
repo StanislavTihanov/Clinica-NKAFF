@@ -1,0 +1,42 @@
+/*----------------------------------guide--------------------------------*/
+.disease__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px 10px;
+}
+@media (max-width: 768px) {
+  .disease__body {
+    flex-wrap: wrap;
+  }
+}
+.disease__image {
+  border-radius: 180px 200px 180px 24px;
+  background-color: #CCEFF9;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .disease__image {
+    order: 1;
+  }
+}
+.disease__info {
+  flex-basis: 880px;
+}
+.disease__info p {
+  font-weight: 600;
+  line-height: 141%;
+  font-family: var(--font-family-m);
+  margin-bottom: 24px;
+}
+.disease__info .button {
+  display: inline;
+  padding: 13px 65px;
+}
+@media (max-width: 768px) {
+  .disease__info .button {
+    display: block;
+  }
+}
+
+/*----------------------------------guide--------------------------------*/
