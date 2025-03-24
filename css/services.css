@@ -1,0 +1,34 @@
+/*----------------------------------services--------------------------------*/
+.services__body {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+@media (max-width: 768px) {
+  .services__body {
+    flex-wrap: wrap;
+  }
+}
+.services__block {
+  font-family: var(--font-family-m);
+  font-weight: 600;
+  line-height: 141%;
+  flex-basis: 456px;
+}
+.services__block p {
+  padding-left: 40px;
+}
+.services__block p,
+.services__block .item {
+  margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+  .services__block {
+    flex-basis: 100%;
+  }
+}
+.services__block .item {
+  width: 100%;
+}
+
+/*----------------------------------services--------------------------------*/

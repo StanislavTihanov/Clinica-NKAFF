@@ -82,8 +82,7 @@
         top: 22px;
         right: 10px;
         @include table {
-            position: static;
-            flex-wrap: wrap;
+            display: none;
         }
     }
 }

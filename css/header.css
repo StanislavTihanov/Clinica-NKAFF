@@ -94,8 +94,7 @@
 }
 @media (max-width: 992px) {
   .header__buttons {
-    position: static;
-    flex-wrap: wrap;
+    display: none;
   }
 }
 

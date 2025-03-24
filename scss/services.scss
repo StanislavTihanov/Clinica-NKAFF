@@ -1,0 +1,33 @@
+/*----------------------------------services--------------------------------*/
+@use 'mixins' as *;
+.services {
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        @include mobile {
+            flex-wrap: wrap;
+        }
+    }
+    &__block {
+        font-family: var(--font-family-m);
+        font-weight: 600;
+        line-height: 141%;
+        flex-basis: 456px;
+        p {
+            padding-left: 40px;
+        }
+        p,
+        .item {
+            margin-bottom: 16px;
+        }
+        @include mobile {
+            flex-basis: 100%;
+        }
+        .item {
+            width: 100%;
+        }
+    }
+}
+
+/*----------------------------------services--------------------------------*/

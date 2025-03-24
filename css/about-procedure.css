@@ -1,0 +1,112 @@
+/*----------------------------------about-procedure--------------------------------*/
+.about-procedure__body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .about-procedure__body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+.about-procedure__block {
+  border-radius: var(--border-radius-small);
+  border: 1px solid #96CFD0;
+  padding: 30px;
+  overflow: hidden;
+  position: relative;
+  font-size: clamp(14px, 1.0416666667vw, 15px);
+}
+.about-procedure__block h3 {
+  font-size: 24px;
+  line-height: 133%;
+  color: #00A7AA;
+  margin-bottom: 8px;
+}
+.about-procedure__block p {
+  font-weight: 600;
+  font-family: var(--font-family-m);
+  line-height: 120%;
+  margin-bottom: 12px;
+}
+.about-procedure__block:first-child {
+  background: linear-gradient(132deg, #0ca5b3 0%, #a7e7e2 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  grid-column: 1/3;
+  color: var(--color-white);
+}
+.about-procedure__block:first-child h3 {
+  color: var(--color-white);
+}
+.about-procedure__block:first-child img {
+  margin-right: -30px;
+}
+@media (max-width: 992px) {
+  .about-procedure__block:first-child {
+    grid-column: 1/4;
+  }
+}
+@media (max-width: 768px) {
+  .about-procedure__block:first-child {
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+}
+.about-procedure__block:nth-child(5) {
+  background: linear-gradient(132deg, #0ca5b3 0%, #a7e7e2 100%);
+  color: var(--color-white);
+}
+.about-procedure__block:nth-child(5) h3 {
+  color: var(--color-white);
+  font-size: clamp(18px, 1.3888888889vw, 20px);
+  margin-bottom: 12px;
+}
+.about-procedure__block:nth-child(5) p {
+  margin-bottom: 40px;
+  max-width: 250px;
+}
+.about-procedure__block:nth-child(5) img {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  max-width: 340px;
+}
+.about-procedure__block:nth-child(5) .button {
+  display: inline;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 992px) {
+  .about-procedure__block:nth-child(5) {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .about-procedure__block:nth-child(5) img {
+    position: static;
+    margin-bottom: -30px;
+  }
+}
+@media (max-width: 768px) {
+  .about-procedure__block:nth-child(5) {
+    width: 100%;
+  }
+  .about-procedure__block:nth-child(5) img {
+    max-width: 280px;
+  }
+}
+@media (max-width: 768px) {
+  .about-procedure__block {
+    border-radius: 24px;
+    padding: 20px;
+  }
+}
+
+/*----------------------------------about-procedure--------------------------------*/

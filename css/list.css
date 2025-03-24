@@ -1,17 +1,20 @@
 /*----------------------------------list--------------------------------*/
-ul li {
+.list ul li {
   font-weight: 600;
   font-family: var(--font-family-m);
   line-height: 140%;
   position: relative;
   padding-left: 30px;
 }
-ul li::before {
+.list ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+.list ul li::before {
   position: absolute;
   content: "";
   width: 6px;
   height: 6px;
-  top: 40%;
+  top: 10px;
   left: 10px;
   border-radius: 50%;
   background-color: #63D7DF;

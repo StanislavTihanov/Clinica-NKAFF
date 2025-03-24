@@ -16,6 +16,7 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        margin-left: 10px;
         li {
             padding: 10px 10px 20px 10px;
             cursor: pointer;
@@ -24,6 +25,9 @@
             line-height: 141%;
             position: relative;
             white-space: nowrap;
+            background-color: var(--color-wite);
+            border-radius: 16px;
+            transition: transform 0.3s ease;
             &::after {
                 position: absolute;
                 content: '';
@@ -41,6 +45,8 @@
                 background-color: #EFFAFB;
                 border-radius: 16px;
                 opacity: 1;
+                transform: scaleX(1.10); 
+                transition: transform 0.3s ease;
                 &::after {
                     opacity: 1;
                 }

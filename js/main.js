@@ -54,7 +54,6 @@ window.addEventListener('scroll', () => {
 });
 //------------------------------------------------------------------------появление бекграунда у шапки при прокрутки вниз
 
-
 //------------------------------------------------------------------------search
 const searchButtons = document.querySelectorAll('.search__btn');
 const searchWindows = document.querySelectorAll('.search__window');
@@ -318,65 +317,63 @@ if (searchInput) { // Проверяем, существует ли элемен
 }
 //-----------------------------------------------------------------------поиск врачей по словам
 
-
 //-----------------------------------------------------------------------сортировка по атрибутам
 
 class FilterGallery {
-  constructor() {
-    // Проверяем, существует ли элемент с классом filtermenu
-    if (!document.querySelector('.filtermenu')) {
-      return; // Если нет, прекращаем выполнение
-    }
-
-    // Находим элементы меню и контейнер с постами
-    this.filterMenuList = document.querySelectorAll('.filtermenu__list li');
-    this.container = document.querySelector('.filtermenu__container');
-    this.posts = Array.from(this.container.querySelectorAll('.post'));  // Собираем все посты один раз в массив
+  constructor(container) {
+    this.container = container;
+    this.filterMenuList = this.container.querySelectorAll('.filtermenu__list li');
+    this.postsContainer = this.container.querySelector('.filtermenu__container');
+    this.posts = Array.from(this.postsContainer.querySelectorAll('.post'));
     
-    // По умолчанию показываем блок с классом surgery
-    this.updateMenu('filtermenu__title_1');
-    this.updateGallery('filtermenu__title_1');
+    // Инициализация первой активной вкладки
+    const firstActiveItem = this.container.querySelector('.filtermenu__list li[data-filter]');
+    if (firstActiveItem) {
+      const targetFilter = firstActiveItem.getAttribute('data-filter');
+      this.updateMenu(targetFilter);
+      this.updateGallery(targetFilter);
+    }
     
     this.filterMenuList.forEach(item => item.addEventListener('click', (event) => this.onClickFilterMenu(event)));
   }
 
   onClickFilterMenu(event) {
-    const target = event.target.closest('li');  // Используем closest чтобы найти li
+    const target = event.target.closest('li');
+    if (!target) return;
+    
     const targetFilter = target.getAttribute('data-filter');
-
+    if (!targetFilter) return;
+    
     this.updateMenu(targetFilter);
     this.updateGallery(targetFilter);
   }
 
   updateMenu(targetFilter) {
-    this.filterMenuList.forEach(item => item.classList.remove('active_'));
-    const activeItem = Array.from(this.filterMenuList).find(item => item.getAttribute('data-filter') === targetFilter);
-    if (activeItem) activeItem.classList.add('active_');
+    this.filterMenuList.forEach(item => {
+      item.classList.toggle('active_', item.getAttribute('data-filter') === targetFilter);
+    });
   }
 
   updateGallery(targetFilter) {
-    // Оптимизация через фильтрацию всех постов разом
     const postsToShow = targetFilter === 'all'
       ? this.posts
       : this.posts.filter(post => post.classList.contains(targetFilter));
     
     const postsToHide = this.posts.filter(post => !postsToShow.includes(post));
 
-    // Анимация скрытия и показа
-    this.container.style.opacity = 0;
+    // Анимация перехода
+    this.postsContainer.style.opacity = 0;
     setTimeout(() => {
       postsToHide.forEach(post => post.style.display = 'none');
       postsToShow.forEach(post => post.style.display = '');
-      this.container.style.opacity = 1;
+      this.postsContainer.style.opacity = 1;
     }, 300);
   }
 }
-
-// Создаем экземпляр FilterGallery только если есть элемент с классом filtermenu
-if (document.querySelector('.filtermenu')) {
-  const filterGallery = new FilterGallery();
-}
-
+// Инициализация всех галерей на странице
+document.querySelectorAll('.filtermenu').forEach(menuContainer => {
+  new FilterGallery(menuContainer);
+});
 
 //-----------------------------------------------------------------------сортировка по атрибутам
 
@@ -415,9 +412,6 @@ function updateIconsPosition(e) {
   });
 }
 //-----------------------------------------------------------------------кон для анимации иконак в блоке ваше здоровье
-
-
-
 
 //------------------------------------------------------------------------select выпадающий список
 document.querySelectorAll('.dropdown').forEach(function(dropDownWrapper) {

@@ -14,6 +14,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-left: 10px;
 }
 .filtermenu__list li {
   padding: 10px 10px 20px 10px;
@@ -23,6 +24,9 @@
   line-height: 141%;
   position: relative;
   white-space: nowrap;
+  background-color: var(--color-wite);
+  border-radius: 16px;
+  transition: transform 0.3s ease;
 }
 .filtermenu__list li::after {
   position: absolute;
@@ -41,6 +45,8 @@
   background-color: #EFFAFB;
   border-radius: 16px;
   opacity: 1;
+  transform: scaleX(1.1);
+  transition: transform 0.3s ease;
 }
 .filtermenu__list li.active_::after {
   opacity: 1;

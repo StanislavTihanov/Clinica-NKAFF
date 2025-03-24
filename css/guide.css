@@ -33,33 +33,6 @@
 .guide__lists ul {
   flex-basis: 30%;
 }
-.guide__lists ul li {
-  font-weight: 600;
-  font-family: var(--font-family-m);
-  line-height: 140%;
-  position: relative;
-  padding-left: 30px;
-  transition: all 0.3s;
-}
-.guide__lists ul li:not(:last-child) {
-  margin-bottom: 8px;
-}
-.guide__lists ul li::before {
-  position: absolute;
-  content: "";
-  width: 6px;
-  height: 6px;
-  top: 10px;
-  left: 10px;
-  border-radius: 50%;
-  background-color: #63D7DF;
-}
-@media (hover: hover) {
-  .guide__lists ul li:hover {
-    color: var(--color-primary);
-    transition: all 0.3s;
-  }
-}
 @media (max-width: 768px) {
   .guide__lists {
     display: block;

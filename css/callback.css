@@ -41,6 +41,14 @@
 .callback__content--mod .callback__wrapper {
   overflow: hidden;
 }
+.callback__content .block-row--mod {
+  margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+  .callback__content .block-row--mod {
+    margin-bottom: 20px;
+  }
+}
 .callback__body {
   position: relative;
   z-index: 2;
