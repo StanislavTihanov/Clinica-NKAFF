@@ -1,4 +1,7 @@
 /*----------------------------------list--------------------------------*/
+.list {
+  position: relative;
+}
 .list ul li {
   font-weight: 600;
   font-family: var(--font-family-m);

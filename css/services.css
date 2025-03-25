@@ -7,6 +7,7 @@
 @media (max-width: 768px) {
   .services__body {
     flex-wrap: wrap;
+    gap: 0px;
   }
 }
 .services__block {
@@ -17,6 +18,11 @@
 }
 .services__block p {
   padding-left: 40px;
+}
+@media (max-width: 768px) {
+  .services__block p {
+    display: none;
+  }
 }
 .services__block p,
 .services__block .item {

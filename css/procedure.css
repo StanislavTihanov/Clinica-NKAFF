@@ -41,15 +41,24 @@
   gap: 20px;
 }
 @media (max-width: 992px) {
-  .procedure__inner {
+  .procedure__inner:first-child {
     flex-wrap: wrap;
   }
 }
 .procedure__inner:not(:last-child) {
   margin-bottom: 20px;
 }
-.procedure__inner:last-child {
-  flex-wrap: wrap;
+@media (max-width: 992px) {
+  .procedure__inner:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .procedure__inner:last-child {
+    gap: 10px;
+  }
 }
 .procedure__inner .button {
   flex-wrap: wrap;
@@ -60,7 +69,8 @@
 }
 @media (max-width: 992px) {
   .procedure__inner .button {
-    flex-basis: 100%;
+    flex-basis: 50%;
+    border-radius: 24px;
   }
 }
 .procedure__block {
@@ -68,11 +78,12 @@
   padding: 30px;
 }
 .procedure__block span {
-  font-size: 24px;
+  font-size: clamp(18px, 1.6666666667vw, 24px);
   line-height: 133%;
   color: var(--color-primary);
   margin-top: 5px;
   display: block;
+  white-space: nowrap;
 }
 .procedure__block:first-child p {
   font-family: var(--font-family-m);
@@ -111,6 +122,8 @@
   .procedure__block {
     flex-basis: 100%;
     text-align: center;
+    border-radius: 24px;
+    padding: 30px 15px;
   }
 }
 

@@ -11,21 +11,21 @@
         display: flex;
         justify-content: space-between;
         gap: 10px 60px;
+        position: relative;
         @include mobile {
             padding: 20px;
             border-radius: 24px;
-            flex-wrap: wrap;
         }
     }
     blockquote {
-        img {
+        &>img {
             width: 35px;
             height: 27px;
             position: absolute;
             border-radius: 0;
             @include mobile {
-                width: 20px;
-                height: 15px;
+                position: static;
+                margin-bottom: 10px;
             }
         }
         p {
@@ -34,8 +34,10 @@
             line-height: 140%;
             padding-left: 64px;
             margin-bottom: 24px;
+            padding-right: 300px;
             @include mobile {
-                padding-left: 30px;
+                padding-left: 0px;
+                padding-right: 0px;
             }
         }
         footer {
@@ -43,22 +45,33 @@
             cite {
                 display: block;
                 color: var(--color-primary);
+                @include fluid-text(12, 15);
             }
             span {
                 font-weight: 600;
                 font-family: var(--font-family-m);
                 line-height: 133%;
             }
-            @include mobile {
-                padding-left: 30px;
+            img {
+                border-radius: 50%;
+                position: absolute;
+                right: 64px;
+                top: 24px;
+                @include mobile {
+                    width: 120px;
+                    height: 120px;
+                    position: static;
+                }
             }
+            @include mobile {
+                padding-left: 0px;
+                display: flex;
+                justify-content: space-between;
+                gap: 5px;
+            }
+
         }
     }
-    img {
-        border-radius: 50%;
-        @include mobile {
-            order: -1;
-        }
-    }
+
 }
 /*----------------------------------blockquote--------------------------------*/

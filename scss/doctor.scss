@@ -191,6 +191,20 @@
             justify-content: center;
             gap: 4px;
         }
+        &--mod {
+            @include mobile {
+                gap: 16px;
+                .doctor__link {
+                    width: auto;
+                    &:first-child {
+                        width: auto;
+                    }
+                    &:nth-child(2) {
+                        width: auto;
+                    }
+                }
+            }
+        }
     }
     &__link {
         position: relative;

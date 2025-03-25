@@ -101,5 +101,10 @@
     border-radius: 24px;
   }
 }
+@media (max-width: 768px) {
+  .diagnostics__block {
+    height: 140px;
+  }
+}
 
 /*----------------------------------filtermenu--------------------------------*/

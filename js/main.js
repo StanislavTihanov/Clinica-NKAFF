@@ -317,6 +317,84 @@ if (searchInput) { // Проверяем, существует ли элемен
 }
 //-----------------------------------------------------------------------поиск врачей по словам
 
+
+//-----------------------------------------------------------------------поиск по заболеванием
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.querySelector('.filter__search input');
+  if (!searchInput) return;
+
+  const diseaseItems = document.querySelectorAll('.guide__lists li a');
+  const searchClose = document.querySelector('.filter__search_close');
+  const guideLists = document.querySelectorAll('.guide__lists');
+
+  // Создаем элемент для сообщения "Ничего не найдено" (изначально скрытый)
+  const createNoResultsMessage = () => {
+    const message = document.createElement('div');
+    message.textContent = 'Ничего не найдено';
+    message.className = 'no-results';
+    message.style.display = 'none'; // Сообщение скрыто по умолчанию
+    return message;
+  };
+
+  // Добавляем сообщение в каждый guide__lists
+  guideLists.forEach(list => {
+    list.appendChild(createNoResultsMessage());
+  });
+
+  // Остальной код без изменений...
+  function checkVisibleItems() {
+    let hasVisibleItems = false;
+    diseaseItems.forEach(item => {
+      if (item.parentElement.style.display !== 'none') {
+        hasVisibleItems = true;
+      }
+    });
+    return hasVisibleItems;
+  }
+
+  function filterDiseases() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const noResultsMessages = document.querySelectorAll('.no-results');
+    
+    if (searchTerm === '') {
+      diseaseItems.forEach(item => {
+        item.parentElement.style.display = '';
+      });
+      noResultsMessages.forEach(msg => {
+        msg.style.display = 'none';
+      });
+      return;
+    }
+    
+    diseaseItems.forEach(item => {
+      const diseaseName = item.textContent.toLowerCase();
+      item.parentElement.style.display = diseaseName.includes(searchTerm) ? '' : 'none';
+    });
+
+    const hasVisibleItems = checkVisibleItems();
+    
+    noResultsMessages.forEach(msg => {
+      msg.style.display = hasVisibleItems ? 'none' : 'flex';
+    });
+  }
+
+  function clearSearch() {
+    searchInput.value = '';
+    filterDiseases();
+  }
+
+  searchInput.addEventListener('input', function() {
+    clearTimeout(this.filterTimeout);
+    this.filterTimeout = setTimeout(filterDiseases, 300);
+  });
+  
+  if (searchClose) {
+    searchClose.addEventListener('click', clearSearch);
+  }
+});
+//-----------------------------------------------------------------------поиск по заболеванием
+
+
 //-----------------------------------------------------------------------сортировка по атрибутам
 
 class FilterGallery {

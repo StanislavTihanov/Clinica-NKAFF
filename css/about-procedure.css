@@ -86,7 +86,7 @@
     grid-column: 1/4;
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 0px;
     flex-wrap: wrap;
   }
   .about-procedure__block:nth-child(5) img {
@@ -101,6 +101,9 @@
   .about-procedure__block:nth-child(5) img {
     max-width: 280px;
   }
+}
+.about-procedure__block--mod img {
+  margin-bottom: -30px;
 }
 @media (max-width: 768px) {
   .about-procedure__block {

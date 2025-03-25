@@ -1968,6 +1968,14 @@ section {
   }
 }
 
+.no-results {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #96CFD0;
+}
+
 /*----------------------------------filtermenu--------------------------------*/
 /*----------------------------------experts--------------------------------*/
 .experts__body {
@@ -3401,6 +3409,20 @@ section {
     gap: 4px;
   }
 }
+@media (max-width: 768px) {
+  .doctor__links--mod {
+    gap: 16px;
+  }
+  .doctor__links--mod .doctor__link {
+    width: auto;
+  }
+  .doctor__links--mod .doctor__link:first-child {
+    width: auto;
+  }
+  .doctor__links--mod .doctor__link:nth-child(2) {
+    width: auto;
+  }
+}
 .doctor__link {
   position: relative;
   background-color: var(--color-primary-hover);
@@ -4227,13 +4249,28 @@ input[type=radio] {
     border-radius: 24px;
   }
 }
+@media (max-width: 768px) {
+  .diagnostics__block {
+    height: 140px;
+  }
+}
 
 /*----------------------------------filtermenu--------------------------------*/
 /*----------------------------------check-ups--------------------------------*/
+@media (max-width: 768px) {
+  .check-ups__content .title {
+    text-align: center;
+  }
+}
 .check-ups__body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
+}
+@media (max-width: 768px) {
+  .check-ups__body {
+    padding: 0px 24px;
+  }
 }
 .check-ups__item {
   border-radius: 40px 120px 40px 80px;
@@ -4363,15 +4400,24 @@ input[type=radio] {
   gap: 20px;
 }
 @media (max-width: 992px) {
-  .procedure__inner {
+  .procedure__inner:first-child {
     flex-wrap: wrap;
   }
 }
 .procedure__inner:not(:last-child) {
   margin-bottom: 20px;
 }
-.procedure__inner:last-child {
-  flex-wrap: wrap;
+@media (max-width: 992px) {
+  .procedure__inner:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .procedure__inner:last-child {
+    gap: 10px;
+  }
 }
 .procedure__inner .button {
   flex-wrap: wrap;
@@ -4382,7 +4428,8 @@ input[type=radio] {
 }
 @media (max-width: 992px) {
   .procedure__inner .button {
-    flex-basis: 100%;
+    flex-basis: 50%;
+    border-radius: 24px;
   }
 }
 .procedure__block {
@@ -4390,11 +4437,12 @@ input[type=radio] {
   padding: 30px;
 }
 .procedure__block span {
-  font-size: 24px;
+  font-size: clamp(18px, 1.6666666667vw, 24px);
   line-height: 133%;
   color: var(--color-primary);
   margin-top: 5px;
   display: block;
+  white-space: nowrap;
 }
 .procedure__block:first-child p {
   font-family: var(--font-family-m);
@@ -4433,6 +4481,8 @@ input[type=radio] {
   .procedure__block {
     flex-basis: 100%;
     text-align: center;
+    border-radius: 24px;
+    padding: 30px 15px;
   }
 }
 
@@ -4515,14 +4565,27 @@ input[type=radio] {
   margin-bottom: 32px;
 }
 @media (max-width: 768px) {
-  .prices__content .footnote {
-    margin-bottom: 0px;
+  .prices__content .pagination {
+    display: flex;
   }
 }
 .prices p {
   font-weight: 500;
   line-height: 141%;
   font-family: var(--font-family-m);
+}
+.prices__blocks {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: 20px;
+}
+.prices__blocks::-webkit-scrollbar {
+  display: none;
 }
 .prices__block {
   display: grid;
@@ -4533,19 +4596,10 @@ input[type=radio] {
   background-color: var(--color-white);
   border-radius: 24px;
   margin-bottom: 12px;
+  width: 1300px;
 }
-@media (max-width: 992px) {
-  .prices__block {
-    gap: 10px 20px;
-    grid-template-columns: 1fr 50px 1fr 1fr;
-  }
-}
-@media (max-width: 768px) {
-  .prices__block {
-    grid-template-columns: 1fr 50px;
-    border-radius: 16px;
-    padding: 16px;
-  }
+.prices__block p {
+  white-space: wrap;
 }
 .prices__block_discount {
   border: 2px solid var(--color-secondary);
@@ -4564,11 +4618,6 @@ input[type=radio] {
 .prices__block_cost span:last-child {
   text-decoration: line-through;
   font-weight: 400;
-}
-@media (max-width: 768px) {
-  .prices__block .button {
-    grid-column: 1/3;
-  }
 }
 .prices__block--mod .prices__block_discount {
   opacity: 0;
@@ -4650,11 +4699,6 @@ input[type=radio] {
   background-color: #CCEFF9;
   overflow: hidden;
 }
-@media (max-width: 768px) {
-  .disease__image {
-    order: 1;
-  }
-}
 .disease__info {
   flex-basis: 880px;
 }
@@ -4688,24 +4732,24 @@ input[type=radio] {
   display: flex;
   justify-content: space-between;
   gap: 10px 60px;
+  position: relative;
 }
 @media (max-width: 768px) {
   .blockquote figure {
     padding: 20px;
     border-radius: 24px;
-    flex-wrap: wrap;
   }
 }
-.blockquote blockquote img {
+.blockquote blockquote > img {
   width: 35px;
   height: 27px;
   position: absolute;
   border-radius: 0;
 }
 @media (max-width: 768px) {
-  .blockquote blockquote img {
-    width: 20px;
-    height: 15px;
+  .blockquote blockquote > img {
+    position: static;
+    margin-bottom: 10px;
   }
 }
 .blockquote blockquote p {
@@ -4714,10 +4758,12 @@ input[type=radio] {
   line-height: 140%;
   padding-left: 64px;
   margin-bottom: 24px;
+  padding-right: 300px;
 }
 @media (max-width: 768px) {
   .blockquote blockquote p {
-    padding-left: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 .blockquote blockquote footer {
@@ -4726,23 +4772,32 @@ input[type=radio] {
 .blockquote blockquote footer cite {
   display: block;
   color: var(--color-primary);
+  font-size: clamp(12px, 1.0416666667vw, 15px);
 }
 .blockquote blockquote footer span {
   font-weight: 600;
   font-family: var(--font-family-m);
   line-height: 133%;
 }
+.blockquote blockquote footer img {
+  border-radius: 50%;
+  position: absolute;
+  right: 64px;
+  top: 24px;
+}
 @media (max-width: 768px) {
-  .blockquote blockquote footer {
-    padding-left: 30px;
+  .blockquote blockquote footer img {
+    width: 120px;
+    height: 120px;
+    position: static;
   }
 }
-.blockquote img {
-  border-radius: 50%;
-}
 @media (max-width: 768px) {
-  .blockquote img {
-    order: -1;
+  .blockquote blockquote footer {
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
   }
 }
 
@@ -4835,7 +4890,7 @@ input[type=radio] {
     grid-column: 1/4;
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 0px;
     flex-wrap: wrap;
   }
   .about-procedure__block:nth-child(5) img {
@@ -4851,6 +4906,9 @@ input[type=radio] {
     max-width: 280px;
   }
 }
+.about-procedure__block--mod img {
+  margin-bottom: -30px;
+}
 @media (max-width: 768px) {
   .about-procedure__block {
     border-radius: 24px;
@@ -4860,6 +4918,9 @@ input[type=radio] {
 
 /*----------------------------------about-procedure--------------------------------*/
 /*----------------------------------list--------------------------------*/
+.list {
+  position: relative;
+}
 .list ul li {
   font-weight: 600;
   font-family: var(--font-family-m);
@@ -4935,6 +4996,7 @@ input[type=radio] {
 @media (max-width: 768px) {
   .specialization__photo {
     flex-basis: 100%;
+    height: 280px;
   }
 }
 .specialization__cost {
@@ -4953,6 +5015,9 @@ input[type=radio] {
 @media (max-width: 992px) {
   .specialization__cost {
     flex-wrap: wrap;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
   }
 }
 .specialization__cost_item {
@@ -4972,6 +5037,14 @@ input[type=radio] {
   color: var(--color-secondary);
   white-space: nowrap;
 }
+@media (max-width: 768px) {
+  .specialization__cost_item {
+    flex-basis: 100%;
+  }
+  .specialization__cost_item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 
 /*----------------------------------specialization--------------------------------*/
 /*----------------------------------services--------------------------------*/
@@ -4983,6 +5056,7 @@ input[type=radio] {
 @media (max-width: 768px) {
   .services__body {
     flex-wrap: wrap;
+    gap: 0px;
   }
 }
 .services__block {
@@ -4993,6 +5067,11 @@ input[type=radio] {
 }
 .services__block p {
   padding-left: 40px;
+}
+@media (max-width: 768px) {
+  .services__block p {
+    display: none;
+  }
 }
 .services__block p,
 .services__block .item {

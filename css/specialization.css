@@ -51,6 +51,7 @@
 @media (max-width: 768px) {
   .specialization__photo {
     flex-basis: 100%;
+    height: 280px;
   }
 }
 .specialization__cost {
@@ -69,6 +70,9 @@
 @media (max-width: 992px) {
   .specialization__cost {
     flex-wrap: wrap;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
   }
 }
 .specialization__cost_item {
@@ -87,6 +91,14 @@
 .specialization__cost_item span {
   color: var(--color-secondary);
   white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .specialization__cost_item {
+    flex-basis: 100%;
+  }
+  .specialization__cost_item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 /*----------------------------------specialization--------------------------------*/

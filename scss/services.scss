@@ -7,6 +7,7 @@
         gap: 24px;
         @include mobile {
             flex-wrap: wrap;
+            gap: 0px;
         }
     }
     &__block {
@@ -16,6 +17,9 @@
         flex-basis: 456px;
         p {
             padding-left: 40px;
+            @include mobile {
+                display: none;
+            }
         }
         p,
         .item {

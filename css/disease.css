@@ -15,11 +15,6 @@
   background-color: #CCEFF9;
   overflow: hidden;
 }
-@media (max-width: 768px) {
-  .disease__image {
-    order: 1;
-  }
-}
 .disease__info {
   flex-basis: 880px;
 }

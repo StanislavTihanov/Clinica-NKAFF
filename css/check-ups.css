@@ -1,8 +1,18 @@
 /*----------------------------------check-ups--------------------------------*/
+@media (max-width: 768px) {
+  .check-ups__content .title {
+    text-align: center;
+  }
+}
 .check-ups__body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
+}
+@media (max-width: 768px) {
+  .check-ups__body {
+    padding: 0px 24px;
+  }
 }
 .check-ups__item {
   border-radius: 40px 120px 40px 80px;

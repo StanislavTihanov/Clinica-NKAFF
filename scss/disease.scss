@@ -15,9 +15,6 @@
         border-radius: 180px 200px 180px 24px;
         background-color: #CCEFF9;
         overflow: hidden;
-        @include mobile {
-            order: 1;
-        }
     }
     &__info {
         flex-basis: 880px;
@@ -36,12 +33,5 @@
         }
     }
 }
-.title {
-}
-.button {
-}
-.button-filled-secondary {
-}
-
 
 /*----------------------------------guide--------------------------------*/

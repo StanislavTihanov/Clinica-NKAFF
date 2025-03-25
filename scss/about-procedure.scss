@@ -79,7 +79,7 @@
                 grid-column: 1 / 4;
                 display: flex;
                 justify-content: space-between;
-                gap: 10px;
+                gap: 0px;
                 flex-wrap: wrap;
                 img {
                     position: static;
@@ -91,6 +91,11 @@
                 img {
                     max-width: 280px;
                 }
+            }
+        }
+        &--mod {
+            img {
+                margin-bottom: -30px;
             }
         }
         @include mobile {

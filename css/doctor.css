@@ -212,6 +212,20 @@
     gap: 4px;
   }
 }
+@media (max-width: 768px) {
+  .doctor__links--mod {
+    gap: 16px;
+  }
+  .doctor__links--mod .doctor__link {
+    width: auto;
+  }
+  .doctor__links--mod .doctor__link:first-child {
+    width: auto;
+  }
+  .doctor__links--mod .doctor__link:nth-child(2) {
+    width: auto;
+  }
+}
 .doctor__link {
   position: relative;
   background-color: var(--color-primary-hover);

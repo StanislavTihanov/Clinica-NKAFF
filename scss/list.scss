@@ -1,6 +1,7 @@
 /*----------------------------------list--------------------------------*/
 @use 'mixins' as *;
 .list {
+    position: relative;
     ul {
         li {
             font-weight: 600;

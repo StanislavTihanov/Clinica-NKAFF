@@ -2,10 +2,20 @@
 @use 'mixins' as *;
 
 .check-ups {
+    &__content {
+        .title {
+            @include mobile {
+                text-align: center;
+            }
+        }
+    }
     &__body {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 10px;
+        @include mobile {
+            padding: 0px 24px;
+        }
     }
     &__item {
         border-radius: 40px 120px 40px 80px;
