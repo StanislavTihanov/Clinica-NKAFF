@@ -40,7 +40,7 @@
   justify-content: center;
   align-items: center;
   gap: 5px 60px;
-  font-size: clamp(12px, 1.1111111111vw, 16px);
+  font-size: clamp(12px, 1.2307692308vw, 16px);
 }
 .header__link {
   display: flex;

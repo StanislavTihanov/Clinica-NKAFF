@@ -152,7 +152,7 @@
   font-weight: 600;
   line-height: 133%;
   font-family: var(--font-family-m);
-  font-size: clamp(14px, 1.0416666667vw, 15px);
+  font-size: clamp(14px, 1.1538461538vw, 15px);
 }
 
 /*----------------------------------calendar--------------------------------*/

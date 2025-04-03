@@ -3,7 +3,7 @@ $table: 992px;
 $mobile: 768px;
 
 @mixin fluid-text($min: 14, $max: 24) {
-    font-size: clamp(#{$min}px,#{$max / 1440 * 100}vw,#{$max}px);
+    font-size: clamp(#{$min}px,#{$max / 1300 * 100}vw,#{$max}px);
 }
 
 @mixin desktop {

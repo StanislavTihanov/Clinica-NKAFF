@@ -10,7 +10,7 @@
   font-weight: 700;
   line-height: 138%;
   position: relative;
-  font-size: clamp(12px, 0.9027777778vw, 13px);
+  font-size: clamp(12px, 1vw, 13px);
 }
 @media (hover: hover) {
   .menu > ul li:hover .menu__list_wrapper {
@@ -122,7 +122,7 @@
 .menu__list li {
   font-family: var(--font-family-m);
   font-weight: 600;
-  font-size: clamp(12px, 1.0416666667vw, 15px);
+  font-size: clamp(12px, 1.1538461538vw, 15px);
   line-height: 133%;
   display: flex;
   align-items: center;

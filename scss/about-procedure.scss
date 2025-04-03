@@ -7,8 +7,14 @@
         gap: 20px;
         @include mobile {
             display: flex;
-            flex-wrap: wrap;
             gap: 16px;
+            width: 1300px;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            &::-webkit-scrollbar {
+                display: none; 
+            }
         }
     }
     &__block {

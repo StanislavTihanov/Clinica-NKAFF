@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: var(--font-family-base);
-  font-size: clamp(14px, 1.1805555556vw, 17px);
+  font-size: clamp(14px, 1.3076923077vw, 17px);
   font-weight: 700;
   color: var(--color-black-text);
   background: var(--color-white);
@@ -59,7 +59,7 @@ section {
 }
 
 .title {
-  font-size: clamp(26px, 2.7777777778vw, 40px);
+  font-size: clamp(26px, 3.0769230769vw, 40px);
   line-height: 130%;
   color: var(--color-black);
   margin-bottom: 32px;
@@ -70,13 +70,13 @@ section {
 }
 
 .subtitle {
-  font-size: clamp(18px, 2.2222222222vw, 32px);
+  font-size: clamp(18px, 2.4615384615vw, 32px);
   line-height: 100%;
   color: var(--color-white);
 }
 
 .text {
-  font-size: clamp(14px, 1.25vw, 18px);
+  font-size: clamp(14px, 1.3846153846vw, 18px);
   color: var(--color-black);
   line-height: 100%;
 }
@@ -92,7 +92,7 @@ section {
   transition: all 0.3s;
   width: 100%;
   text-align: center;
-  font-size: clamp(12px, 0.9027777778vw, 13px);
+  font-size: clamp(12px, 1vw, 13px);
   white-space: nowrap;
 }
 
@@ -378,7 +378,7 @@ section {
 .block-row__item_col span {
   margin-bottom: 10px;
   display: block;
-  font-size: clamp(12px, 1.1805555556vw, 17px);
+  font-size: clamp(12px, 1.3076923077vw, 17px);
 }
 .block-row__item_col p {
   font-family: var(--font-family-m);
@@ -486,31 +486,32 @@ section {
   }
 }
 
-.items {
+.links {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
 }
-.items .item {
+.links .link {
   background-color: #EFFAFB;
   padding: 16px 16px 16px 48px;
 }
 @media (max-width: 768px) {
-  .items {
+  .links {
     gap: 10px;
   }
 }
 
-.item {
+.link {
   display: block;
   position: relative;
   background-color: var(--color-white);
   border-radius: 16px;
   padding: 12px 16px 12px 40px;
+  transition: all 0.3s;
 }
-.item::before {
+.link::before {
   position: absolute;
   content: "";
   width: 6px;
@@ -520,6 +521,18 @@ section {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background-color: #63D7DF;
+}
+@media (hover: hover) {
+  .link:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transition: all 0.3s;
+  }
+}
+@media (max-width: 768px) {
+  .link {
+    width: 100%;
+  }
 }
 
 /*----------------------------------global--------------------------------*/

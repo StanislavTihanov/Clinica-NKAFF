@@ -59,7 +59,7 @@
   font-weight: 600;
   line-height: 141%;
   font-family: var(--font-family-m);
-  font-size: clamp(14px, 1.1111111111vw, 16px);
+  font-size: clamp(14px, 1.2307692308vw, 16px);
 }
 @media (max-width: 768px) {
   .advantages__block {

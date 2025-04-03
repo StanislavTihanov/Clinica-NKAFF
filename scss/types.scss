@@ -1,0 +1,150 @@
+/*----------------------------------types--------------------------------*/
+@use 'mixins' as *;
+.types {
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+        gap: 32px 24px;
+        .links {
+            gap: 8px;
+            .link {
+                border-radius: var(--border-radius-small);
+                padding: 10px 16px 10px 28px;
+                font-size: 15px;
+                &::before {
+                    left: 16px;
+                }
+            }
+        } 
+        @include mobile {
+            gap: 8px 24px;
+            grid-template-columns: 1fr;
+        }
+    }
+    &__item {
+        .accordion {
+            height: 100%;
+        }
+        .accordion__summary {
+            cursor: auto;
+            span {
+                display: none;
+                @include mobile {
+                    display: block;
+                    border: none;
+                    &::after,
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        width: 10px;
+                        height: 3px;
+                        top: 50%;
+                        background-color: var(--color-black);
+                        transition: transform 0.2s ease-out;
+                    }
+                    &::after {
+                        left: 0px;
+                        transform: rotate(45deg);
+                    }
+                    &::before {
+                        left: 6px;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+        .accordion__block {
+            margin-bottom: 0px;
+            height: 100%;
+        }
+        .accordion__details[open] .accordion__summary span {
+            border: none;
+        }
+        .accordion__details[open] .accordion__summary span::after {
+            background-color: var(--color-primary);
+            transform: rotate(-45deg);
+        }
+        .accordion__details[open] .accordion__summary span::before {
+            transform: rotate(45deg);
+            background-color: var(--color-primary);
+        }
+        .accordion__title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            transition: all 0.3s;
+            width: 100%;
+            @include fluid-text(16, 24);
+            line-height: 100%;
+            img {
+                border-radius: 50%;
+                border: 1px solid #C3F0F3;
+                @include mobile {
+                    width: 36px;
+                }
+            }
+            svg {
+                opacity: 0;
+                transform: translateX(-20px); 
+                transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, margin-left 0.3s ease-in-out; /* Плавное появление и движение */
+            }
+            @include hover {
+                color: var(--color-primary);
+                svg {
+                    opacity: 1;
+                    transform: translateX(0);
+                    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+                }
+            }
+            @include mobile {
+                gap: 8px;
+            }
+        }
+        .accordion__content  {
+            grid-template-rows: 1fr;
+            opacity: 1;
+            padding-bottom: 20px;
+            @include mobile {
+                opacity: 0;
+                grid-template-rows: 0fr;
+                padding-bottom: 0px;
+            }
+        }
+        @include mobile {
+            .accordion__details[open] + .accordion__content {
+                padding: 0px 12px;
+                padding-bottom: 12px;
+            }
+        }
+    }
+    &__links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+    }
+    &__link {
+        background-color: var(--color-white);
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 24px;
+        font-size: 13px;
+        line-height: 138%;
+        transition: all 0.3s;
+        img {
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            border: 1px solid #C3F0F3;
+        }
+        @include hover {
+            background-color: #63D7DF;
+            transition: all 0.3s;
+        }
+    }
+}
+/*----------------------------------types--------------------------------*/

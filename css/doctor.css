@@ -56,7 +56,7 @@
   line-height: 138%;
 }
 .doctor__block_text p {
-  font-size: clamp(16px, 1.1805555556vw, 17px);
+  font-size: clamp(16px, 1.3076923077vw, 17px);
   font-weight: 600;
   line-height: 141%;
   font-family: var(--font-family-m);
@@ -94,7 +94,7 @@
   padding-left: 0px;
 }
 .doctor__block:first-child .doctor__block_text a {
-  font-size: clamp(16px, 1.1805555556vw, 17px);
+  font-size: clamp(16px, 1.3076923077vw, 17px);
   font-weight: 600;
   line-height: 141%;
   font-family: var(--font-family-m);
@@ -203,7 +203,7 @@
 .doctor__links {
   display: flex;
   align-items: center;
-  gap: 4px 38px;
+  gap: 16px 38px;
   flex-wrap: wrap;
 }
 @media (max-width: 768px) {
@@ -282,7 +282,7 @@
   padding: 32px;
 }
 .about-doctor__block h3 {
-  font-size: clamp(18px, 1.6666666667vw, 24px);
+  font-size: clamp(18px, 1.8461538462vw, 24px);
   margin-bottom: 24px;
 }
 @media (max-width: 768px) {

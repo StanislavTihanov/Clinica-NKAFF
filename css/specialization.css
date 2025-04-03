@@ -85,7 +85,7 @@
   height: 20px;
 }
 .specialization__cost_item p {
-  font-size: clamp(12px, 0.9027777778vw, 13px);
+  font-size: clamp(12px, 1vw, 13px);
   line-height: 138%;
 }
 .specialization__cost_item span {

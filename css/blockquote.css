@@ -51,7 +51,7 @@
 .blockquote blockquote footer cite {
   display: block;
   color: var(--color-primary);
-  font-size: clamp(12px, 1.0416666667vw, 15px);
+  font-size: clamp(12px, 1.1538461538vw, 15px);
 }
 .blockquote blockquote footer span {
   font-weight: 600;

@@ -7,8 +7,14 @@
 @media (max-width: 768px) {
   .about-procedure__body {
     display: flex;
-    flex-wrap: wrap;
     gap: 16px;
+    width: 1300px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .about-procedure__body::-webkit-scrollbar {
+    display: none;
   }
 }
 .about-procedure__block {
@@ -17,7 +23,7 @@
   padding: 30px;
   overflow: hidden;
   position: relative;
-  font-size: clamp(14px, 1.0416666667vw, 15px);
+  font-size: clamp(14px, 1.1538461538vw, 15px);
 }
 .about-procedure__block h3 {
   font-size: 24px;
@@ -63,7 +69,7 @@
 }
 .about-procedure__block:nth-child(5) h3 {
   color: var(--color-white);
-  font-size: clamp(18px, 1.3888888889vw, 20px);
+  font-size: clamp(18px, 1.5384615385vw, 20px);
   margin-bottom: 12px;
 }
 .about-procedure__block:nth-child(5) p {

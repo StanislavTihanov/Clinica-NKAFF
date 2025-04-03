@@ -20,7 +20,7 @@
   padding: 10px 10px 20px 10px;
   cursor: pointer;
   font-weight: 400;
-  font-size: clamp(15px, 1.1805555556vw, 17px);
+  font-size: clamp(15px, 1.3076923077vw, 17px);
   line-height: 141%;
   position: relative;
   white-space: nowrap;
@@ -60,7 +60,7 @@
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  font-size: clamp(15px, 1.1805555556vw, 17px);
+  font-size: clamp(15px, 1.3076923077vw, 17px);
   padding: 10px 10px 20px 10px;
 }
 .filtermenu__links :first-child {

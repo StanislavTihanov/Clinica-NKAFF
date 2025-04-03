@@ -47,7 +47,7 @@
 .dropdown__list_item {
   border-bottom: 0;
   cursor: pointer;
-  font-size: clamp(11px, 0.9027777778vw, 13px);
+  font-size: clamp(11px, 1vw, 13px);
 }
 .dropdown__list_item:not(:last-child) {
   margin-bottom: 10px;

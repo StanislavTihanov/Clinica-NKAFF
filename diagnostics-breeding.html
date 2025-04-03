@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="НАКФФ Медицинская клиника">
+  <meta name="keywords" content="НАКФФ Медицинская клиника">
+  <meta property="og:title" content="НАКФФ Медицинская клиника">
+  <meta property="og:url" content="ссылка на сайт">
+  <meta property="og:image:width" content="1000">
+  <meta property="og:image:height" content="500">
+  <meta property="og:description" content="НАКФФ Медицинская клиника">
+  <meta property="og:image" content="путь к картинке/image.webp">
+  <title>НАКФФ Медицинская клиника</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body id="body">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__content _container">
+        <div class="header__body">
+          <div class="header__links">
+            <a class="header__logo" href="index.html" aria-label="логотип">
+              <img src="images/icons/logo.svg" alt="logo">
+            </a>
+            <a class="header__link" href="tel:+74950998882">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.53174 10.4724C13.5208 14.4604 14.4258 9.84672 16.9656 12.3848C19.4143 14.8328 20.8216 15.3232 17.7192 18.4247C17.3306 18.737 14.8616 22.4943 6.1846 13.8197C-2.49348 5.144 1.26158 2.67244 1.57397 2.28395C4.68387 -0.826154 5.16586 0.589383 7.61449 3.03733C10.1544 5.5765 5.54266 6.48441 9.53174 10.4724Z" fill="#00A7AA" />
+              </svg>
+              <span>+7 (495) 099-88-82</span>
+            </a>
+          </div>
+          <div class="header__block">
+            <div class="search">
+              <div class="search__box">
+                <div class="search__block">
+                  <div class="search__window">
+                    <label class="search__label">
+                      <input class="search__label_input" type="text" placeholder="Поиск">
+                      <img class="search__label_close" src="images/icons/Close.svg" alt="close icon">
+                    </label>
+                  </div>
+                </div>
+                <button class="search__btn">
+                  <img src="images/icons/Search.svg" alt="search icon">
+                </button>
+              </div>
+            </div>
+            <div class="burger" aria-label="кнопка открытия меню">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <nav class="menu" aria-label="Основное меню">
+            <div class="menu__mobile">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.333496 5.87842C0.333496 2.81185 2.89608 0.333252 5.99579 0.333252C9.10424 0.333252 11.6668 2.81185 11.6668 5.87842C11.6668 7.42371 11.1048 8.85834 10.1798 10.0743C9.15937 11.4156 7.9016 12.5842 6.48586 13.5015C6.16184 13.7135 5.86941 13.7295 5.5138 13.5015C4.08999 12.5842 2.83222 11.4156 1.8205 10.0743C0.894818 8.85834 0.333496 7.42371 0.333496 5.87842ZM4.12965 6.05109C4.12965 7.07839 4.96793 7.88637 5.99579 7.88637C7.02432 7.88637 7.87068 7.07839 7.87068 6.05109C7.87068 5.03178 7.02432 4.18447 5.99579 4.18447C4.96793 4.18447 4.12965 5.03178 4.12965 6.05109Z" fill="#00A7AA" />
+              </svg>
+              <span>Москва</span>
+            </div>
+            <a class="menu__mobile" href="#!">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52916 3.86062C9.52916 5.81864 7.95924 7.38866 5.99984 7.38866C4.0411 7.38866 2.47051 5.81864 2.47051 3.86062C2.47051 1.9026 4.0411 0.333252 5.99984 0.333252C7.95924 0.333252 9.52916 1.9026 9.52916 3.86062ZM5.99984 13.6666C3.10809 13.6666 0.666504 13.1966 0.666504 11.3832C0.666504 9.56921 3.12343 9.11587 5.99984 9.11587C8.89225 9.11587 11.3332 9.58588 11.3332 11.3992C11.3332 13.2132 8.87625 13.6666 5.99984 13.6666Z" fill="#00A7AA" />
+              </svg>
+              <span>Личный кабинет</span>
+            </a>
+            <div class="menu__mobile">
+              <a class="button button-filled-primary" href="#!">записаться онлайн</a>
+              <a href="tel:+74950998882">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.53174 10.4724C13.5208 14.4604 14.4258 9.84672 16.9656 12.3848C19.4143 14.8328 20.8216 15.3232 17.7192 18.4247C17.3306 18.737 14.8616 22.4943 6.1846 13.8197C-2.49348 5.144 1.26158 2.67244 1.57397 2.28395C4.68387 -0.826154 5.16586 0.589383 7.61449 3.03733C10.1544 5.5765 5.54266 6.48441 9.53174 10.4724Z" fill="#00A7AA" />
+                </svg>
+              </a>
+            </div>
+            <ul>
+              <li>
+                <a class="menu__link" href="#">Врачи</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#">Услуги</a>
+              </li>
+              <li class="menu__button">
+                <a class="menu__link" href="#!">Центр онкологии</a>
+                <div class="menu__list_wrapper">
+                  <ul class="menu__list">
+                    <li>
+                      <a class="menu__link" href="#!">Онкогинекология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкоурология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкодерматология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Иммунотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Таргетная терапия при онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Химиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Радиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Фотодинамическая терапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Паллиативная помощь</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкологический консилиум</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Второе мнение в онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu__button">
+                <a class="menu__link" href="#">Центр хирургии</a>
+                <div class="menu__list_wrapper">
+                  <ul class="menu__list">
+                    <li>
+                      <a class="menu__link" href="#!">Онкогинекология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкоурология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкодерматология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Иммунотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Таргетная терапия при онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Химиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Радиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Фотодинамическая терапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Паллиативная помощь</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкологический консилиум</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Второе мнение в онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu__button">
+                <a class="menu__link" href="#">Диагностика</a>
+                <div class="menu__list_wrapper">
+                  <ul class="menu__list">
+                    <li>
+                      <a class="menu__link" href="#!">Онкогинекология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкоурология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкодерматология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Иммунотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Таргетная терапия при онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Химиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Радиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Фотодинамическая терапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Паллиативная помощь</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкологический консилиум</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Второе мнение в онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu__button">
+                <a class="menu__link" href="#">Анализы</a>
+                <div class="menu__list_wrapper">
+                  <ul class="menu__list">
+                    <li>
+                      <a class="menu__link" href="#!">Онкогинекология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкоурология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкодерматология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Иммунотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Таргетная терапия при онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Химиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Радиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Фотодинамическая терапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Паллиативная помощь</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкологический консилиум</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Второе мнение в онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="menu__link" href="#">Акции</a></li>
+              <li class="menu__button">
+                <a class="menu__link" href="#">О нас</a>
+                <div class="menu__list_wrapper">
+                  <ul class="menu__list">
+                    <li>
+                      <a class="menu__link" href="#!">Онкогинекология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкоурология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкодерматология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Иммунотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Таргетная терапия при онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Химиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Радиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Фотодинамическая терапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Паллиативная помощь</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкологический консилиум</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Второе мнение в онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="menu__link" href="#">Контакты</a></li>
+              <li><a class="menu__link" href="#">Отзывы</a></li>
+            </ul>
+            <div class="header__buttons">
+              <a class="button button-filled-primary" href="#!">Записаться к врачу</a>
+              <a class="button button-filled-secondary" href="#!">Госпитализация</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+
+      <div class="breadcrumbs _container">
+        <ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="#!" class="breadcrumbs__item_link">
+              <span itemprop="name">Главная</span>
+            </a>
+            <meta itemprop="position" content="1"/>
+          </li>
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="#!" class="breadcrumbs__item_link">
+              <span itemprop="name">Услуги</span>
+            </a>
+            <meta itemprop="position" content="2"/>
+          </li>
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="#!" class="breadcrumbs__item_link">
+              <span itemprop="name">Диагностика</span>
+            </a>
+            <meta itemprop="position" content="3"/>
+          </li>
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <span itemprop="name">МРТ</span>
+            <meta itemprop="position" content="4"/>
+          </li>
+        </ul>
+      </div>
+
+      <section class="procedure">
+        <div class="procedure__content _container">
+          <div class="title">
+            <h1>МРТ</h1>
+          </div>
+          <div class="procedure__body procedure__body--mod">
+            <div class="procedure__photo">
+              <img src="images/diagnostics-breeding-img.webp" alt="photo">
+            </div>
+            <div class="procedure__block procedure__block--bg">
+              <p>
+                МРТ — диагностическое исследование, которое позволяет быстро и эффективно оценить состояние 
+                сустава. Врачи используют его для достоверной диагностики ряда заболеваний, в том числе 
+                новообразований и их метастазов, причем на самом раннем этапе развития. Это позволяет 
+                своевременно начать лечение, что в значительной мере повышает вероятность благоприятного 
+                исхода терапии.
+              </p>
+            </div>
+            <div class="procedure__block procedure__block--mod">
+              <p>стоимость услуги</p>
+              <span>8500₽</span>
+              <a class="button button-filled-primary" href="#!">записаться</a>
+              <p>скидка 25%</p>
+            </div>
+          </div>
+          <div class="doctor__links doctor__links--mod">
+            <a class="doctor__link" href="#advantages">преимущества</a>
+            <a class="doctor__link" href="#photogallery">фотогалерея</a>
+            <a class="doctor__link" href="#equipment">оборудрование</a>
+            <a class="doctor__link" href="#prices">цены</a>
+            <a class="doctor__link" href="#questions">ответы на вопросы</a>
+            <a class="doctor__link" href="#callback">лицензии</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="types section-color">
+        <div class="types__content _container">
+          <div class="title">
+            <h2>Виды МРТ</h2>
+          </div>
+          <div class="types__body">
+            <div class="types__item">
+              <div class="accordion">
+                <div class="accordion__block">
+                <details class="accordion__details accordion__details--mod" open>
+                  <summary class="accordion__summary">
+                    <a class="accordion__title" role="term" aria-details="faq-1" href="#!">
+                      <img src="images/types-img1.webp" alt="icon">
+                      МРТ головы
+                      <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.4585 6.77132L1.9585 6.77132" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9.41699 1.75104L14.4587 6.77104L9.41699 11.7919" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </a>
+                    <span></span>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="faq-1" role="definition">
+                  <div class="accordion__content_body">
+                    <div class="links">
+                      <a class="link" href="#!">МРТ головного мозга</a>
+                      <a class="link" href="#!">МРТ гипофиза</a>
+                      <a class="link" href="#!">МРТ пазух носа</a>
+                      <a class="link" href="#!">МРТ турецкого седла</a>
+                      <a class="link" href="#!">МРТ гиппокампа</a>
+                      <a class="link" href="#!">МРТ внутреннего уха</a>
+                      <a class="link" href="#!">МРТ глазных орбит</a>
+                      <a class="link" href="#!">МРТ слюнных желез</a>
+                      <a class="link" href="#!">МРТ мосто-мозжечковых углов (ММУ) головного мозга</a>
+                      <a class="link" href="#!">МРТ черепно-мозговых нервов (ЧМН)</a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="types__item">
+              <div class="accordion">
+                <div class="accordion__block">
+                <details class="accordion__details accordion__details--mod" open>
+                  <summary class="accordion__summary">
+                    <a class="accordion__title" role="term" aria-details="faq-2" href="#!">
+                      <img src="images/types-img2.webp" alt="icon">
+                      МРТ позвоночника
+                      <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.4585 6.77132L1.9585 6.77132" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9.41699 1.75104L14.4587 6.77104L9.41699 11.7919" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </a>
+                    <span></span>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="faq-2" role="definition">
+                  <div class="accordion__content_body">
+                    <div class="links">
+                      <a class="link" href="#!">МРТ шейного отдела позвоночника</a>
+                      <a class="link" href="#!">МРТ грудного отдела позвоночника</a>
+                      <a class="link" href="#!">МРТ пояснично-крестцового отдела позвоночника</a>
+                      <a class="link" href="#!">МРТ копчика</a>
+                      <a class="link" href="#!">МРТ спинного мозга</a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="types__item">
+              <div class="accordion">
+                <div class="accordion__block">
+                <details class="accordion__details accordion__details--mod" open>
+                  <summary class="accordion__summary">
+                    <a class="accordion__title" role="term" aria-details="faq-3" href="#!">
+                      <img src="images/types-img3.webp" alt="icon">
+                      МРТ шеи
+                      <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.4585 6.77132L1.9585 6.77132" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9.41699 1.75104L14.4587 6.77104L9.41699 11.7919" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </a>
+                    <span></span>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="faq-3" role="definition">
+                  <div class="accordion__content_body">
+                    <div class="links">
+                      <a class="link" href="#!">МРТ щитовидной железы</a>
+                      <a class="link" href="#!">МРТ краниовертебрального перехода</a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="types__item">
+              <div class="accordion">
+                <div class="accordion__block">
+                <details class="accordion__details accordion__details--mod" open>
+                  <summary class="accordion__summary">
+                    <a class="accordion__title" role="term" aria-details="faq-4" href="#!">
+                      <img src="images/types-img4.webp" alt="icon">
+                      МРТ сосудов
+                      <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.4585 6.77132L1.9585 6.77132" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9.41699 1.75104L14.4587 6.77104L9.41699 11.7919" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </a>
+                    <span></span>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="faq-4" role="definition">
+                  <div class="accordion__content_body">
+                    <div class="links">
+                      <a class="link" href="#!">МРТ сосудов головного мозга</a>
+                      <a class="link" href="#!">МРТ шеи</a>
+                      <a class="link" href="#!">МРТ ангиография сосудов головного мозга</a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="types__item">
+              <div class="accordion">
+                <div class="accordion__block">
+                <details class="accordion__details accordion__details--mod" open>
+                  <summary class="accordion__summary">
+                    <a class="accordion__title" role="term" aria-details="faq-5" href="#!">
+                      <img src="images/types-img5.webp" alt="icon">
+                      МРТ суставов
+                      <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.4585 6.77132L1.9585 6.77132" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9.41699 1.75104L14.4587 6.77104L9.41699 11.7919" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </a>
+                    <span></span>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="faq-5" role="definition">
+                  <div class="accordion__content_body">
+                    <div class="links">
+                      <a class="link" href="#!">МРТ височно-нижнечелюстного сустава (ВНЧС)</a>
+                      <a class="link" href="#!">МРТ плечевого сустава</a>
+                      <a class="link" href="#!">МРТ локтевого сустава</a>
+                      <a class="link" href="#!">МРТ кисти руки</a>
+                      <a class="link" href="#!">МРТ лучезапястного сустава</a>
+                      <a class="link" href="#!">МРТ крестцово-подвздошных сочленений (КПС)</a>
+                      <a class="link" href="#!">МРТ тазобедренного сустава</a>
+                      <a class="link" href="#!">МРТ коленного сустава</a>
+                      <a class="link" href="#!">МРТ галеностопного сустава</a>
+                      <a class="link" href="#!">МРТ стопы (пятки)</a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="types__item">
+              <div class="accordion">
+                <div class="accordion__block">
+                <details class="accordion__details accordion__details--mod" open>
+                  <summary class="accordion__summary">
+                    <a class="accordion__title" role="term" aria-details="faq-6" href="#!">
+                      <img src="images/types-img6.webp" alt="icon">
+                      МРТ мягких тканей
+                      <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.4585 6.77132L1.9585 6.77132" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9.41699 1.75104L14.4587 6.77104L9.41699 11.7919" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </a>
+                    <span></span>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="faq-6" role="definition">
+                  <div class="accordion__content_body">
+                    <div class="links">
+                      <a class="link" href="#!">МРТ мягких тканей шеи</a>
+                      <a class="link" href="#!">МРТ мягких тканей плеча</a>
+                      <a class="link" href="#!">МРТ мягких тканей лица</a>
+                      <a class="link" href="#!">МРТ мягких тканей бедра</a>
+                      <a class="link" href="#!">МРТ мягких тканей голени</a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-procedure">
+        <div class="about-procedure__content _container">
+          <div class="title _container">
+            <h2>О процедуре</h2>
+          </div>
+          <div class="filtermenu filtermenu--mod">
+            <div class="filtermenu__wrapper">
+              <ul class="filtermenu__list">
+                <li data-filter="filtermenu__title_1">Что показывает</li>
+                <li data-filter="filtermenu__title_2">Показания</li>
+                <li data-filter="filtermenu__title_3">Противопоказания</li>
+                <li data-filter="filtermenu__title_4">Подготовка</li>
+                <li data-filter="filtermenu__title_5">Как проходит</li>
+                <li data-filter="filtermenu__title_6">Результат</li>
+              </ul>
+            </div>
+            <div class="filtermenu__container">
+              <div class="post filtermenu__title_1">
+                <div class="about-procedure__body">
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Как проходит МРТ ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                        In vitae interdum rhoncus diam iaculis erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum 
+                        venenatis eleifend cum. Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      </p>
+                      <p>
+                        Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a 
+                        elementum tellus aenean quisque imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                        Eget pellentesque sed vestibulum integer et a malesuada.
+                      </p>
+                    </div>
+                    <img src="images/about-procedure-img.webp" alt="image">
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 1</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum 
+                      sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis 
+                      erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum venenatis 
+                      eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus 
+                      consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque 
+                      imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 2</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed 
+                      quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                      Amet ultricies id faucibus porttitor hendrerit ipsum venenatis eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 3</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque imperdiet scelerisque. 
+                    </p>
+                    <p>
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Остались вопросы ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                      </p>
+                      <a class="button button-white" href="#!">Записаться</a>
+                    </div>
+                    <img src="images/about-procedure-img1.webp" alt="photo">
+                  </div>
+                </div>
+              </div>
+              <div class="post filtermenu__title_2">
+                <div class="about-procedure__body">
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Как проходит МРТ ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                        In vitae interdum rhoncus diam iaculis erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum 
+                        venenatis eleifend cum. Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      </p>
+                      <p>
+                        Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a 
+                        elementum tellus aenean quisque imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                        Eget pellentesque sed vestibulum integer et a malesuada.
+                      </p>
+                    </div>
+                    <img src="images/about-procedure-img.webp" alt="image">
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 1</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum 
+                      sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis 
+                      erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum venenatis 
+                      eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus 
+                      consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque 
+                      imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 2</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed 
+                      quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                      Amet ultricies id faucibus porttitor hendrerit ipsum venenatis eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 3</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque imperdiet scelerisque. 
+                    </p>
+                    <p>
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Остались вопросы ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                      </p>
+                      <a class="button button-white" href="#!">Записаться</a>
+                    </div>
+                    <img src="images/about-procedure-img1.webp" alt="photo">
+                  </div>
+                </div>
+              </div>
+              <div class="post filtermenu__title_3">
+                <div class="about-procedure__body">
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Как проходит МРТ ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                        In vitae interdum rhoncus diam iaculis erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum 
+                        venenatis eleifend cum. Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      </p>
+                      <p>
+                        Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a 
+                        elementum tellus aenean quisque imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                        Eget pellentesque sed vestibulum integer et a malesuada.
+                      </p>
+                    </div>
+                    <img src="images/about-procedure-img.webp" alt="image">
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 1</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum 
+                      sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis 
+                      erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum venenatis 
+                      eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus 
+                      consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque 
+                      imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 2</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed 
+                      quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                      Amet ultricies id faucibus porttitor hendrerit ipsum venenatis eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 3</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque imperdiet scelerisque. 
+                    </p>
+                    <p>
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Остались вопросы ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                      </p>
+                      <a class="button button-white" href="#!">Записаться</a>
+                    </div>
+                    <img src="images/about-procedure-img1.webp" alt="photo">
+                  </div>
+                </div>
+              </div>
+              <div class="post filtermenu__title_4">
+                <div class="about-procedure__body">
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Как проходит МРТ ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                        In vitae interdum rhoncus diam iaculis erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum 
+                        venenatis eleifend cum. Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      </p>
+                      <p>
+                        Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a 
+                        elementum tellus aenean quisque imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                        Eget pellentesque sed vestibulum integer et a malesuada.
+                      </p>
+                    </div>
+                    <img src="images/about-procedure-img.webp" alt="image">
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 1</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum 
+                      sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis 
+                      erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum venenatis 
+                      eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus 
+                      consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque 
+                      imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 2</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed 
+                      quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                      Amet ultricies id faucibus porttitor hendrerit ipsum venenatis eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 3</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque imperdiet scelerisque. 
+                    </p>
+                    <p>
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Остались вопросы ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                      </p>
+                      <a class="button button-white" href="#!">Записаться</a>
+                    </div>
+                    <img src="images/about-procedure-img1.webp" alt="photo">
+                  </div>
+                </div>
+              </div>
+              <div class="post filtermenu__title_5">
+                <div class="about-procedure__body">
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Как проходит МРТ ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                        In vitae interdum rhoncus diam iaculis erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum 
+                        venenatis eleifend cum. Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      </p>
+                      <p>
+                        Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a 
+                        elementum tellus aenean quisque imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                        Eget pellentesque sed vestibulum integer et a malesuada.
+                      </p>
+                    </div>
+                    <img src="images/about-procedure-img.webp" alt="image">
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 1</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum 
+                      sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis 
+                      erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum venenatis 
+                      eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus 
+                      consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque 
+                      imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 2</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed 
+                      quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                      Amet ultricies id faucibus porttitor hendrerit ipsum venenatis eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 3</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque imperdiet scelerisque. 
+                    </p>
+                    <p>
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Остались вопросы ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                      </p>
+                      <a class="button button-white" href="#!">Записаться</a>
+                    </div>
+                    <img src="images/about-procedure-img1.webp" alt="photo">
+                  </div>
+                </div>
+              </div>
+              <div class="post filtermenu__title_6">
+                <div class="about-procedure__body">
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Как проходит МРТ ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                        In vitae interdum rhoncus diam iaculis erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum 
+                        venenatis eleifend cum. Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      </p>
+                      <p>
+                        Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a 
+                        elementum tellus aenean quisque imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                        Eget pellentesque sed vestibulum integer et a malesuada.
+                      </p>
+                    </div>
+                    <img src="images/about-procedure-img.webp" alt="image">
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 1</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum 
+                      sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis 
+                      erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum venenatis 
+                      eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus 
+                      consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque 
+                      imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 2</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed 
+                      quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                      Amet ultricies id faucibus porttitor hendrerit ipsum venenatis eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 3</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque imperdiet scelerisque. 
+                    </p>
+                    <p>
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Остались вопросы ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                      </p>
+                      <a class="button button-white" href="#!">Записаться</a>
+                    </div>
+                    <img src="images/about-procedure-img1.webp" alt="photo">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="preparation">
+            <h3>Подготовка к МРТ</h3>
+            <div class="preparation__body">
+              <div class="links">
+                <a class="link" href="#!">Подготовка к МРТ</a>
+                <a class="link" href="#!">Подготовка к МРТ с контрастом</a>
+                <a class="link" href="#!">Подготовка к МРТ органов малого таза</a>
+                <a class="link" href="#!">Подготовка к МРТ брюшной полости</a>
+                <a class="link" href="#!">Подготовка к МРТ головного мозга</a>
+                <a class="link" href="#!">Подготовка к МРТ предстательной железы</a>
+                <a class="link" href="#!">Подготовка к МРТ позвоночника</a>
+                <a class="link" href="#!">Подготовка к МРТ почек</a>
+              </div>
+              <div class="preparation__photo">
+                <img src="images/preparation-photo.webp" alt="photo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="advantages section-color" id="advantages">
+        <div class="advantages__body _container">
+          <div class="advantages__block">
+            <img src="images/icons/Paper.svg" alt="icon">
+            <p>Получите результаты в приложении в течение 1 часа</p>
+          </div>
+          <div class="advantages__block">
+            <img src="images/icons/Time-Circle.svg" alt="icon">
+            <p>Длительность обследования: <br> 20-30 минут</p>
+          </div>
+          <div class="advantages__block">
+            <img src="images/icons/pulse.svg" alt="icon">
+            <p>PHILIPS INTERA 1.5 Tесла</p>
+          </div>
+          <div class="advantages__block">
+            <img src="images/icons/Discount.svg" alt="icon">
+            <p>Скидка 50% на прием профильного специалиста после диагностики</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="photogallery" id="photogallery">
+        <div class="photogallery__content _container">
+          <div class="title">
+            <h2>Фотогалерея</h2>
+          </div>
+          <div class="slider__wrap">
+            <div class="slider__buttons">
+              <div class="swiper-button-prev swiper-button-prev-1">
+                <img src="images/icons/Arrow-Right.svg" alt="arrow">
+              </div>
+              <div class="swiper-button-next swiper-button-next-1">
+                <img src="images/icons/Arrow-Right.svg" alt="arrow">
+              </div>
+            </div>
+            <div class="slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a class="photogallery__photo" href="images/photogallery1.webp" data-fancybox="gallery-photo">
+                    <img src="images/photogallery1.webp" alt="img">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="photogallery__photo" href="images/photogallery2.webp" data-fancybox="gallery-photo">
+                    <img src="images/photogallery2.webp" alt="img">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="photogallery__photo" href="images/photogallery3.webp" data-fancybox="gallery-photo">
+                    <img src="images/photogallery3.webp" alt="img">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="photogallery__photo" href="images/photogallery1.webp" data-fancybox="gallery-photo">
+                    <img src="images/photogallery1.webp" alt="img">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="photogallery__photo" href="images/photogallery2.webp" data-fancybox="gallery-photo">
+                    <img src="images/photogallery2.webp" alt="img">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="photogallery__photo" href="images/photogallery3.webp" data-fancybox="gallery-photo">
+                    <img src="images/photogallery3.webp" alt="img">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="equipment section-color" id="equipment">
+        <div class="equipment__content _container">
+          <div class="title">
+            <h2>Оборудование</h2>
+          </div>
+          <div class="slider__wrap">
+            <div class="slider__buttons">
+              <div class="swiper-button-prev swiper-button-p-1">
+                <img src="images/icons/Arrow-Right.svg" alt="arrow">
+              </div>
+              <div class="swiper-button-next swiper-button-n-1">
+                <img src="images/icons/Arrow-Right.svg" alt="arrow">
+              </div>
+            </div>
+            <div class="two-slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="equipment__block">
+                    <div class="equipment__top">
+                      <h3>Лучевая диагностика</h3>
+                    </div>
+                    <div class="equipment__items">
+                      <div class="equipment__item">
+                        <div class="equipment__item_image equipment__item_image1">
+                          <img src="images/equipment1.webp" alt="МРТ-аппарат SIGNA Explorer">
+                        </div>
+                        <h4>МРТ-аппарат SIGNA Explorer</h4>
+                        <p>
+                          МРТ-аппарат SIGNA Explorer обеспечивает исключительное 
+                          качество изображения, высокую пропускную способность и 
+                          повышенное удобство для пациента.
+                        </p>
+                      </div>
+                      <div class="equipment__item">
+                        <div class="equipment__item_image equipment__item_image2">
+                          <img src="images/equipment2.webp" alt="Томограф GE Revolution EVO">
+                        </div>
+                        <h4>Томограф GE Revolution EVO</h4>
+                        <p>
+                          Система Revolution EVO рассчитана на работу с широчайшим 
+                          спектром клинических ситуаций и прикладных задач.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="equipment__button">
+                      <a class="button button-outline" href="#!">
+                        подробнее
+                        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.75 7.72607L1.75 7.72607" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M10.7002 1.70149L16.7502 7.72549L10.7002 13.7505" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="equipment__block">
+                    <div class="equipment__top">
+                      <h3>Ультразвуковая диагностика</h3>
+                    </div>
+                    <div class="equipment__items">
+                      <div class="equipment__item">
+                        <div class="equipment__item_image equipment__item_image3">
+                          <img src="images/equipment3.webp" alt="МРТ-аппарат SIGNA Explorer">
+                        </div>
+                        <h4>УЗИ-сканер Philips EPIQ 7G</h4>
+                        <p>
+                          Современное оборудование премиум-класса, которое 
+                          обеспечивает максимально 
+                          точную УЗИ-диагностику. 
+                        </p>
+                      </div>
+                      <div class="equipment__item">
+                        <div class="equipment__item_image equipment__item_image4">
+                          <img src="images/equipment4.webp" alt="Томограф GE Revolution EVO">
+                        </div>
+                        <h4>УЗИ-сканер iU22 xMATRIX</h4>
+                        <p>
+                          Оборудование экспертного класса которое позволяет 
+                          проводить широкий спектр исследований. 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="equipment__button">
+                      <a class="button button-outline" href="#!">
+                        подробнее
+                        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.75 7.72607L1.75 7.72607" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M10.7002 1.70149L16.7502 7.72549L10.7002 13.7505" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="equipment__block">
+                    <div class="equipment__top">
+                      <h3>Лучевая диагностика</h3>
+                    </div>
+                    <div class="equipment__items">
+                      <div class="equipment__item">
+                        <div class="equipment__item_image equipment__item_image1">
+                          <img src="images/equipment1.webp" alt="МРТ-аппарат SIGNA Explorer">
+                        </div>
+                        <h4>МРТ-аппарат SIGNA Explorer</h4>
+                        <p>
+                          МРТ-аппарат SIGNA Explorer обеспечивает исключительное 
+                          качество изображения, высокую пропускную способность и 
+                          повышенное удобство для пациента.
+                        </p>
+                      </div>
+                      <div class="equipment__item">
+                        <div class="equipment__item_image equipment__item_image2">
+                          <img src="images/equipment2.webp" alt="Томограф GE Revolution EVO">
+                        </div>
+                        <h4>Томограф GE Revolution EVO</h4>
+                        <p>
+                          Система Revolution EVO рассчитана на работу с широчайшим 
+                          спектром клинических ситуаций и прикладных задач.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="equipment__button">
+                      <a class="button button-outline" href="#!">
+                        подробнее
+                        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.75 7.72607L1.75 7.72607" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M10.7002 1.70149L16.7502 7.72549L10.7002 13.7505" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="equipment__block">
+                    <div class="equipment__top">
+                      <h3>Лучевая диагностика</h3>
+                    </div>
+                    <div class="equipment__items">
+                      <div class="equipment__item">
+                        <div class="equipment__item_image equipment__item_image1">
+                          <img src="images/equipment1.webp" alt="МРТ-аппарат SIGNA Explorer">
+                        </div>
+                        <h4>МРТ-аппарат SIGNA Explorer</h4>
+                        <p>
+                          МРТ-аппарат SIGNA Explorer обеспечивает исключительное 
+                          качество изображения, высокую пропускную способность и 
+                          повышенное удобство для пациента.
+                        </p>
+                      </div>
+                      <div class="equipment__item">
+                        <div class="equipment__item_image equipment__item_image2">
+                          <img src="images/equipment2.webp" alt="Томограф GE Revolution EVO">
+                        </div>
+                        <h4>Томограф GE Revolution EVO</h4>
+                        <p>
+                          Система Revolution EVO рассчитана на работу с широчайшим 
+                          спектром клинических ситуаций и прикладных задач.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="equipment__button">
+                      <a class="button button-outline" href="#!">
+                        подробнее
+                        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.75 7.72607L1.75 7.72607" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M10.7002 1.70149L16.7502 7.72549L10.7002 13.7505" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="callback">
+        <div class="callback__content _container">
+          <div class="callback__wrapper">
+            <div class="callback__body">
+              <div class="callback__info">
+                <div class="title title--mod">
+                  <h2>Остались вопросы?</h2>
+                </div>
+                <p>Закажите обратный звонок, наши специалисты свяжутся с вами в ближайшее время !</p>
+                <a class="button button-white" href="#!">
+                  Обратный звонок
+                  <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.75 7.72607L1.75 7.72607" stroke="#1B1B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10.7002 1.70149L16.7502 7.72549L10.7002 13.7505" stroke="#1B1B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <div class="callback__photo">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="images/callback-photo.webp">
+                  <img src="images/callback-photo@2x.webp" alt="обратный звонок">
+                </picture>
+              </div>
+            </div>
+            <div class="callback__bg _ibg">
+              <picture>
+                <source media="(max-width: 768px)" srcset="images/section-bg-mob.webp">
+                <img src="images/section-bg.webp" alt="bg">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="prices section-color" id="prices">
+        <div class="prices__content _container">
+          <div class="title">
+            <h2>Цены на услуги</h2>
+          </div>
+          <p>Tristique nunc massa iaculis pretium nullam odio dui. Neque morbi eleifend 
+            metus augue. Cursus est egestas pellentesque neque sollicitudin est sapien tellus 
+            volutpat. Nunc est vulputate orci pretium. Nulla vitae tellus eros non nisl sed 
+            dolor nunc vestibulum. Leo adipiscing velit neque mattis a integer non urna.
+          </p>
+          <div class="prices__blocks">
+            <div class="prices__block prices__block--mod">
+              <p>
+                Non ut auctor non cursus eget. In imperdiet egestas sem ut.  
+                Non ut auctor non cursus eget. In imperdiet egestas sem ut.
+              </p>
+              <div class="prices__block_discount">
+                <span>20%</span>
+              </div>
+              <div class="prices__block_cost">
+                <span>20 500 ₽</span>
+                <span></span>
+              </div>
+              <a class="button button-filled-primary" href="#!">
+                запись
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.75 7.72559L1.75 7.72559" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M10.7012 1.70124L16.7512 7.72524L10.7012 13.7502" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="prices__block">
+              <p>
+                Non ut auctor non cursus eget. In imperdiet egestas sem ut.  
+              </p>
+              <div class="prices__block_discount">
+                <span>20%</span>
+              </div>
+              <div class="prices__block_cost">
+                <span>18 500 ₽</span>
+                <span>24 500 ₽</span>
+              </div>
+              <a class="button button-filled-primary" href="#!">
+                запись
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.75 7.72559L1.75 7.72559" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M10.7012 1.70124L16.7512 7.72524L10.7012 13.7502" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="prices__block">
+              <p>
+                Non ut auctor non cursus eget. In imperdiet egestas sem ut.  
+              </p>
+              <div class="prices__block_discount">
+                <span>20%</span>
+              </div>
+              <div class="prices__block_cost">
+                <span>12 000 ₽</span>
+                <span>16 500 ₽</span>
+              </div>
+              <a class="button button-filled-primary" href="#!">
+                запись
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.75 7.72559L1.75 7.72559" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M10.7012 1.70124L16.7512 7.72524L10.7012 13.7502" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="prices__block prices__block--mod">
+              <p>
+                Non ut auctor non cursus eget. In imperdiet egestas sem ut.  
+              </p>
+              <div class="prices__block_discount">
+                <span>20%</span>
+              </div>
+              <div class="prices__block_cost">
+                <span>8 000 ₽</span>
+                <span></span>
+              </div>
+              <a class="button button-filled-primary" href="#!">
+                запись
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.75 7.72559L1.75 7.72559" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M10.7012 1.70124L16.7512 7.72524L10.7012 13.7502" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="prices__block prices__block--mod">
+              <p>
+                Non ut auctor non cursus eget. In imperdiet egestas sem ut.  
+              </p>
+              <div class="prices__block_discount">
+                <span>20%</span>
+              </div>
+              <div class="prices__block_cost">
+                <span>18 000 ₽</span>
+                <span></span>
+              </div>
+              <a class="button button-filled-primary" href="#!">
+                запись
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.75 7.72559L1.75 7.72559" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M10.7012 1.70124L16.7512 7.72524L10.7012 13.7502" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="prices__block prices__block--mod">
+              <p>
+                Non ut auctor non cursus eget. In imperdiet egestas sem ut.  
+              </p>
+              <div class="prices__block_discount">
+                <span>20%</span>
+              </div>
+              <div class="prices__block_cost">
+                <span>18 000 ₽</span>
+                <span></span>
+              </div>
+              <a class="button button-filled-primary" href="#!">
+                запись
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.75 7.72559L1.75 7.72559" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M10.7012 1.70124L16.7512 7.72524L10.7012 13.7502" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="prices__block prices__block--mod">
+              <p>
+                Non ut auctor non cursus eget. In imperdiet egestas sem ut.  
+              </p>
+              <div class="prices__block_discount">
+                <span>20%</span>
+              </div>
+              <div class="prices__block_cost">
+                <span>18 000 ₽</span>
+                <span></span>
+              </div>
+              <a class="button button-filled-primary" href="#!">
+                запись
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.75 7.72559L1.75 7.72559" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M10.7012 1.70124L16.7512 7.72524L10.7012 13.7502" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="prices__block">
+              <p>
+                Non ut auctor non cursus eget. In imperdiet egestas sem ut.  
+              </p>
+              <div class="prices__block_discount">
+                <span>20%</span>
+              </div>
+              <div class="prices__block_cost">
+                <span>18 000 ₽</span>
+                <span>20 500 ₽</span>
+              </div>
+              <a class="button button-filled-primary" href="#!">
+                запись
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.75 7.72559L1.75 7.72559" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M10.7012 1.70124L16.7512 7.72524L10.7012 13.7502" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="prices__button">
+            <a class="button button-filled-primary" href="#!">
+              Записаться к врачу
+            </a>
+          </div>
+          <div class="footnote">
+            <p>*Указанные на сайте цены не являются публичной офертой. Для уточнения стоимости услуг и записи на прием к врачу обращайтесь по телефону</p>
+          </div>
+          <div class="pagination">
+            <span class="pagination__number pagination__active">1</span>
+            <span class="pagination__number">2</span>
+            <span class="pagination__number">3</span>
+            <span class="pagination__number">4</span>
+            <span class="pagination__number">5</span>
+            <div class="pagination__arrow">
+              <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 1.1665L7.33333 6.99984L1.5 12.8332" stroke="#1B1B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="questions section-color" id="questions">
+        <div class="questions__content _container">
+          <div class="title">
+            <h2>Часто задаваемые вопросы</h2>
+          </div>
+          <div class="questions__body">
+            <div class="accordion">
+              <div class="accordion__block">
+              <details class="accordion__details" name="faq" open>
+                <summary class="accordion__summary">
+                  <h3 class="accordion__title" role="term" aria-details="faq-1">
+                    Какие противопоказания есть у процедуры HIPEC?
+                  </h3>
+                  <span></span>
+                </summary>
+              </details>
+              <div class="accordion__content" id="faq-1" role="definition">
+                <div class="accordion__content_body">
+                  <p>
+                    Залог успешного лечения — индивидуальный подход. Не бывает двух одинаковых пациентов даже с одной и той же болезнью. 
+                    Мы рассматриваем каждого пациента отдельно и принимаем решение о необходимости лечения на консилиуме.
+                  </p>
+                </div>
+              </div>
+              </div>
+              <div class="accordion__block">
+              <details class="accordion__details" name="faq">
+                <summary class="accordion__summary">
+                  <h3 class="accordion__title" role="term" aria-details="faq-2">
+                    Какие противопоказания есть у процедуры HIPEC?
+                  </h3>
+                  <span></span>
+                </summary>
+              </details>
+              <div class="accordion__content" id="faq-2" role="definition">
+                <div class="accordion__content_body">
+                  <p>
+                    Залог успешного лечения — индивидуальный подход. Не бывает двух одинаковых пациентов даже с одной и той же болезнью. 
+                    Мы рассматриваем каждого пациента отдельно и принимаем решение о необходимости 
+                    лечения на консилиуме.
+                  </p>
+                </div>
+              </div>
+              </div>
+              <div class="accordion__block">
+              <details class="accordion__details" name="faq">
+                <summary class="accordion__summary">
+                  <h3 class="accordion__title" role="term" aria-details="faq-3">
+                    Почему HIPEC проводят всего в нескольких клиниках в России?
+                  </h3>
+                  <span></span>
+                </summary>
+              </details>
+              <div class="accordion__content" id="faq-3" role="definition">
+                <div class="accordion__content_body">
+                  <p>
+                    Залог успешного лечения — индивидуальный подход. Не бывает двух одинаковых пациентов даже с одной и той же болезнью. 
+                    Мы рассматриваем каждого пациента отдельно и принимаем решение о необходимости 
+                    лечения на консилиуме.
+                  </p>
+                </div>
+              </div>
+              </div>
+              <div class="accordion__block">
+                <details class="accordion__details" name="faq">
+                  <summary class="accordion__summary">
+                    <h3 class="accordion__title" role="term" aria-details="faq-3">
+                      Какие осложнения могут возникнуть во время и после процедуры?
+                    </h3>
+                    <span></span>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="faq-3" role="definition">
+                  <div class="accordion__content_body">
+                    <p>
+                      Залог успешного лечения — индивидуальный подход. Не бывает двух одинаковых пациентов даже с одной и той же болезнью. 
+                      Мы рассматриваем каждого пациента отдельно и принимаем решение о необходимости 
+                      лечения на консилиуме.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tabs section-color" id="section-tabs">
+        <div class="section-tabs__content _container">
+          <div class="tabs">
+            <input type="radio" name="tabs" id="tab-1" checked>
+            <input type="radio" name="tabs" id="tab-2">
+            <div class="tab-labels">
+              <div class="tab-labels__inner">
+                <label class="tab-label" for="tab-1">
+                  <h2>Отзывы</h2>
+                </label>
+                <label class="tab-label" for="tab-2">
+                  <h2>Видеоотзывы</h2>
+                </label>
+              </div>
+              <div class="tab-labels__block">
+                <div class="tab-labels__yandex">
+                  <img src="images/icons/y-icon.svg" alt="icon">
+                  <div class="tab-labels__yandex_info">
+                    <p>Хорошее место</p>
+                    <span>5.0</span>
+                    <img src="images/icons/star1.svg" alt="star">
+                    <img src="images/icons/star1.svg" alt="star">
+                    <img src="images/icons/star1.svg" alt="star">
+                    <img src="images/icons/star1.svg" alt="star">
+                    <img src="images/icons/star1.svg" alt="star">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content content-1">
+              <div class="reviews__blocks">
+                <article class="review">
+                  <header>
+                      <p>Анастасия</p>
+                      <time datetime="2023-02-21">21.02.2025</time>
+                  </header>
+                  <blockquote>
+                      <p>Tincidunt consequat netus posuere leo malesuada odio. Tortor pretium tincidunt id arcu non pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus facilisis nunc tempor. Laoreet cursus lectus et tincidunt. Tincidunt consequat netus posuere leo malesuada odio. Cras purus facilisis nunc tempor. Laoreet cursus lectus et tincidunt. Tortor pretium tincidunt id arcu non pharetra.</p>
+                  </blockquote>
+                </article>
+                <article class="review">
+                  <header>
+                      <p>Максим</p>
+                      <time datetime="2023-02-21">21.02.2025</time>
+                  </header>
+                  <blockquote>
+                      <p>
+                        Tortor pretium tincidunt id arcu non pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Cras purus facilisis nunc tempor. Laoreet cursus lectus et tincidunt. Tincidunt consequat netus posuere 
+                        leo malesuada odio.  
+                      </p>
+                      <p>
+                        Laoreet cursus lectus et tincidunt. Tincidunt consequat netus posuere leo malesuada odio. 
+                      </p>
+                  </blockquote>
+                </article>
+                <article class="review">
+                  <header>
+                      <p>Алексей</p>
+                      <time datetime="2023-02-21">21.02.2025</time>
+                  </header>
+                  <blockquote>
+                      <p>
+                        Tincidunt consequat netus posuere leo malesuada odio. Tortor pretium tincidunt id arcu non 
+                        pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus facilisis
+                        nunc tempor. Laoreet cursus lectus et tincidunt. Tincidunt consequat netus posuere leo
+                        malesuada odio. Cras purus facilisis nunc tempor. Laoreet cursus lectus et tincidunt. 
+                        Tincidunt consequat netus posuere leo malesuada odio. 
+                      </p>
+                  </blockquote>
+                </article>
+              </div>
+            </div>
+            <div class="tab-content content-2">
+              <div class="slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="video">
+                      <a class="video__link" href="images/Premiere.mp4" data-fancybox>
+                        <img src="images/experts-img1.webp" alt="image for video">
+                        <div class="video__link_play">
+                          <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.2661 9.51616C15.258 8.74868 15.258 7.25122 14.2661 6.48374C11.2685 4.16434 7.92133 2.33619 4.34979 1.06771L3.69732 0.835971C2.44904 0.392631 1.13053 1.23719 0.961542 2.52574C0.489382 6.12595 0.489382 9.87394 0.961541 13.4742C1.13053 14.7627 2.44904 15.6073 3.69731 15.1639L4.34979 14.9322C7.92133 13.6637 11.2685 11.8356 14.2661 9.51616Z" fill="white" />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="video">
+                      <a class="video__link" href="images/Premiere.mp4" data-fancybox>
+                        <img src="images/experts-img2.webp" alt="image for video">
+                        <div class="video__link_play">
+                          <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.2661 9.51616C15.258 8.74868 15.258 7.25122 14.2661 6.48374C11.2685 4.16434 7.92133 2.33619 4.34979 1.06771L3.69732 0.835971C2.44904 0.392631 1.13053 1.23719 0.961542 2.52574C0.489382 6.12595 0.489382 9.87394 0.961541 13.4742C1.13053 14.7627 2.44904 15.6073 3.69731 15.1639L4.34979 14.9322C7.92133 13.6637 11.2685 11.8356 14.2661 9.51616Z" fill="white" />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="video">
+                      <a class="video__link" href="images/Premiere.mp4" data-fancybox>
+                        <img src="images/experts-img3.webp" alt="image for video">
+                        <div class="video__link_play">
+                          <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.2661 9.51616C15.258 8.74868 15.258 7.25122 14.2661 6.48374C11.2685 4.16434 7.92133 2.33619 4.34979 1.06771L3.69732 0.835971C2.44904 0.392631 1.13053 1.23719 0.961542 2.52574C0.489382 6.12595 0.489382 9.87394 0.961541 13.4742C1.13053 14.7627 2.44904 15.6073 3.69731 15.1639L4.34979 14.9322C7.92133 13.6637 11.2685 11.8356 14.2661 9.51616Z" fill="white" />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="video">
+                      <a class="video__link" href="images/Premiere.mp4" data-fancybox>
+                        <img src="images/experts-img1.webp" alt="image for video">
+                        <div class="video__link_play">
+                          <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.2661 9.51616C15.258 8.74868 15.258 7.25122 14.2661 6.48374C11.2685 4.16434 7.92133 2.33619 4.34979 1.06771L3.69732 0.835971C2.44904 0.392631 1.13053 1.23719 0.961542 2.52574C0.489382 6.12595 0.489382 9.87394 0.961541 13.4742C1.13053 14.7627 2.44904 15.6073 3.69731 15.1639L4.34979 14.9322C7.92133 13.6637 11.2685 11.8356 14.2661 9.51616Z" fill="white" />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="video">
+                      <a class="video__link" href="images/Premiere.mp4" data-fancybox>
+                        <img src="images/experts-img2.webp" alt="image for video">
+                        <div class="video__link_play">
+                          <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.2661 9.51616C15.258 8.74868 15.258 7.25122 14.2661 6.48374C11.2685 4.16434 7.92133 2.33619 4.34979 1.06771L3.69732 0.835971C2.44904 0.392631 1.13053 1.23719 0.961542 2.52574C0.489382 6.12595 0.489382 9.87394 0.961541 13.4742C1.13053 14.7627 2.44904 15.6073 3.69731 15.1639L4.34979 14.9322C7.92133 13.6637 11.2685 11.8356 14.2661 9.51616Z" fill="white" />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="video">
+                      <a class="video__link" href="images/Premiere.mp4" data-fancybox>
+                        <img src="images/experts-img3.webp" alt="image for video">
+                        <div class="video__link_play">
+                          <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.2661 9.51616C15.258 8.74868 15.258 7.25122 14.2661 6.48374C11.2685 4.16434 7.92133 2.33619 4.34979 1.06771L3.69732 0.835971C2.44904 0.392631 1.13053 1.23719 0.961542 2.52574C0.489382 6.12595 0.489382 9.87394 0.961541 13.4742C1.13053 14.7627 2.44904 15.6073 3.69731 15.1639L4.34979 14.9322C7.92133 13.6637 11.2685 11.8356 14.2661 9.51616Z" fill="white" />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__bottom">
+            <div class="pagination">
+              <span class="pagination__number pagination__active">1</span>
+              <span class="pagination__number">2</span>
+              <span class="pagination__number">3</span>
+              <span class="pagination__number">4</span>
+              <span class="pagination__number">5</span>
+              <div class="pagination__arrow">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 1.1665L7.33333 6.99984L1.5 12.8332" stroke="#1B1B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div class="reviews__buttons">
+              <a class="button button-outline" href="#!">
+                все отзывы
+                <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.167 5.81706L1.16699 5.81706" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M7.13379 1.80083L11.1671 5.81683L7.13379 9.8335" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a class="button button-filled-primary" href="#!">оставить отзыв</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="callback" id="callback">
+        <div class="callback__content _container callback__content--mod">
+          <div class="block-row block-row--mod">
+            <div class="block-row__item">
+              <img src="images/icons/ShieldDone.svg" alt="icon">
+              <p>Информация проверена экспертом </p>
+            </div>
+            <div class="block-row__item">
+              <img src="images/doctor-icon.png" alt="icon">
+              <div class="block-row__item_col">
+                <span>Иванов Иван Иванович</span>
+                <p>Врач КТ, 12 лет</p>
+              </div>
+            </div>
+          </div>
+          <div class="callback__wrapper">
+            <div class="callback__body">
+              <div class="callback__info">
+                <div class="title title--mod">
+                  <h2>Лицензии</h2>
+                </div>
+                <p>Мы осуществляем деятельность на основании медицинских лицензий в соответствии с рекомендациями Минздрава</p>
+                <a class="button button-white" href="#!">
+                  Посмотреть лицензии
+                  <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.75 7.72607L1.75 7.72607" stroke="#1B1B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10.7002 1.70149L16.7502 7.72549L10.7002 13.7505" stroke="#1B1B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <div class="callback__photo">
+                <img src="images/license.webp" alt="обратный звонок">
+              </div>
+            </div>
+            <div class="callback__bg _ibg">
+              <picture>
+                <source media="(max-width: 768px)" srcset="images/section-bg-mob.webp">
+                <img src="images/license-bg.webp" alt="bg">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__wrapper section-color">
+          <a class="footer__logo _container" href="index.html">
+            <img src="images/icons/logo.svg" alt="logo">
+          </a>
+          <div class="footer__body _container">
+            <div class="footer__block">
+              <div class="footer__title">
+                <h3>Услуги</h3>
+              </div>
+              <ul class="footer__list">
+                <li><a href="#!">Онкологический центр</a></li>
+                <li><a href="#!">Центр хирургии</a></li>
+                <li><a href="#!">Центр реабилитации</a></li>
+                <li><a href="#!">Стационар</a></li>
+                <li><a href="#!">Диагностика</a></li>
+                <li><a href="#!">Анализы</a></li>
+                <li><a href="#!">Направления</a></li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <div class="footer__title">
+                <h3>О клинике</h3>
+              </div>
+              <ul class="footer__list">
+                <li><a href="#!">О клинике НАКФФ</a></li>
+                <li><a href="#!">Премии и награды</a></li>
+                <li><a href="#!">Отзывы</a></li>
+                <li><a href="#!">Видеоотзывы</a></li>
+                <li><a href="#!">Новости</a></li>
+                <li><a href="#!">Вакансии</a></li>
+                <li><a href="#!">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <div class="footer__title">
+                <h3>Пациентам</h3>
+              </div>
+              <ul class="footer__list">
+                <li><a href="#!">Справочник заболевания</a></li>
+                <li><a href="#!">Справочник симптомов</a></li>
+                <li><a href="#!">Лицензии клиники</a></li>
+                <li><a href="#!">Правовая информация</a></li>
+                <li><a href="#!">Политика обработки персональных данных</a></li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <div class="footer__tel">
+                <p>Круглосуточная запись по телефону</p>
+                <a href="tel:+74950998882">+7 (495) 099-88-82</a>
+              </div>
+              <div class="footer__row footer__row--mod">
+                <address> 
+                  <img src="images/icons/Location-footer.svg" alt="location"> Москва, г. Москва, ул. Угрешская, д.2, стр.7
+                </address>
+                <a href="mailto:clinic@clinicnacpp.ru">
+                  <img src="images/icons/Message.svg" alt="mail icon">
+                  clinic@clinicnacpp.ru
+                </a>
+              </div>
+              <div class="footer__row">
+                <div class="footer__box">
+                  <p>Мы принимаем к оплате:</p>
+                  <div class="footer__links">
+                    <a href="#!">
+                      <img src="images/icons/visa.svg" alt="visa">
+                    </a>
+                    <a href="#!">
+                      <img src="images/icons/master_card.svg" alt="master-card">
+                    </a>
+                    <a href="#!">
+                      <img src="images/icons/mir.svg" alt="mir">
+                    </a>
+                  </div>
+                </div>
+                <div class="footer__box">
+                  <p>Присоединяйтесь к нам:</p>
+                  <div class="footer__links">
+                    <a href="#!">
+                      <img src="images/icons/youtobe.svg" alt="youtobe">
+                    </a>
+                    <a href="#!">
+                      <img src="images/icons/vk.svg" alt="vk">
+                    </a>
+                    <a href="#!">
+                      <img src="images/icons/telegram.svg" alt="telegram">
+                    </a>
+                    <a href="#!">
+                      <img src="images/icons/dzen.svg" alt="dzen">
+                    </a>
+                    <a href="#!">
+                      <img src="images/icons/ok.svg" alt="ok">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom _container">
+          <div class="footer__requisites">
+            <h3>Данные об организации</h3>
+            <p>Юридический адрес:</p>
+            <address>115088, город Москва, Угрешская ул., д. 2 стр. 8, эт/пом 2/34 </address>
+            <p>ООО "НАКФФ"</p>
+            <p>ИНН: 7723628921</p>
+            <p>ОГРН: 772301001</p>
+            <div class="footer__requisites_info">
+              <img src="images/icons/Emblem_Russia.svg" alt="Emblem">
+              <p>
+                Незавимая оценка качества
+                оказания услуг медицинских организаций 
+              </p>
+            </div>
+          </div>
+          <div class="footer__license">
+            <p>
+              Лицензия № ЛО41-01137-77/00367431 от 30.10.2019 г.  Копирование, тиражирование, а 
+              равно иное использование материалов, размещенных на clinicnacpp.ru возможно 
+              только с письменного разрешения Правообладателя.
+            </p>
+            <p>
+              Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно 
+              информационный характер. Ни при каких условиях информационные материалы и цены, 
+              размещенные на интернет-сайте clinicnacpp.ru, не являются публичной офертой, 
+              определяемой положениями Статьи 437 Гражданского кодекса РФ. Актуальную информацию
+              об акциях, предложениях и ценах уточняйте по телефону. Определение диагноза и 
+              выбора методики остается исключительной прерогативой вашего лечащего врача. 
+              ООО «Медицинская клиника «НАКФФ» не несет ответственности за возможные негативные 
+              последствия, возникшие в результате использования информации, размещенной на 
+              интернет-сайте clinicnacpp.ru. Лицензия ЛО41-01137-77/00367431 от 30.10.2019г. 
+              Имеются противопоказания. Необходима консультация специалиста. Копирование, 
+              тиражирование, а равно иное использование материалов, размещенных на интернет-сайте 
+              clinicnacpp.ru возможно только с письменного разрешения правообладателя.
+            </p>
+          </div>
+        </div>
+        <div class="footer__wrapper section-color">
+          <div class="footer__info _container">
+             <p>ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА</p>
+             <p>© 2008 - 2025 Клиника «НАКФФ», Все права защищены </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="js/main.js"></script>  
+</body>
+</html>

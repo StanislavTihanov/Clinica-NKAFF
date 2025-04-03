@@ -41,13 +41,13 @@
   }
 }
 .about__block h3 {
-  font-size: clamp(16px, 1.3888888889vw, 20px);
+  font-size: clamp(16px, 1.5384615385vw, 20px);
   line-height: 140%;
   margin-bottom: 10px;
 }
 .about__block p {
   font-weight: 500;
-  font-size: clamp(14px, 1.0416666667vw, 15px);
+  font-size: clamp(14px, 1.1538461538vw, 15px);
   line-height: 147%;
   font-family: var(--font-family-m);
 }

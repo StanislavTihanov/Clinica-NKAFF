@@ -7,6 +7,26 @@
         align-items: stretch;
         gap: 16px 20px;
         margin-bottom: 60px;
+        &--mod {
+            .procedure__block--bg {
+                flex-basis: 730px;
+                font-family: var(--font-family-m);
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 133%;
+                padding: 53px 32px;
+                @include table {
+                    flex-basis: 100%;
+                }
+                @include mobile {
+                    padding: 24px;
+                    text-align: start;
+                }
+            }
+            @include table {
+                flex-wrap: wrap;
+            }
+        }
         @include mobile {
             flex-wrap: wrap;
             justify-content: center;
@@ -23,7 +43,7 @@
                 border-radius: 24px;
             }
         }
-        @include mobile {
+        @include table {
             flex-basis: 100%;
         }
     }

@@ -23,7 +23,7 @@
   font-weight: 600;
   font-family: var(--font-family-m);
   line-height: 140%;
-  font-size: clamp(16px, 1.1805555556vw, 17px);
+  font-size: clamp(16px, 1.3076923077vw, 17px);
 }
 .callback__content--mod .callback__photo {
   margin-top: 40px;
@@ -78,7 +78,7 @@
   font-weight: 600;
   font-family: var(--font-family-m);
   line-height: 140%;
-  font-size: clamp(18px, 1.3888888889vw, 20px);
+  font-size: clamp(18px, 1.5384615385vw, 20px);
 }
 .callback__photo {
   flex-basis: 340px;

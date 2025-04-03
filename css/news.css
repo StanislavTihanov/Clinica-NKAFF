@@ -82,7 +82,7 @@
   color: var(--color-primary);
   font-family: var(--font-family-m);
   font-weight: 600;
-  font-size: clamp(12px, 1.0416666667vw, 15px);
+  font-size: clamp(12px, 1.1538461538vw, 15px);
   line-height: 133%;
 }
 @media (max-width: 992px) {

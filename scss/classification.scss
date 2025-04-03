@@ -1,12 +1,55 @@
 /*---------------------------------classification--------------------------------*/
 @use 'mixins' as *;
 .classification {
+    &__content {
+        p {
+            font-weight: 500;
+            @include fluid-text(14, 17);
+            line-height: 141%;
+            margin-bottom: 32px;
+        }
+    }
     &__body {
         font-weight: 500;
         font-family: var(--font-family-m);
         line-height: 140%;
-        p {
-            margin-bottom: 16px;
+        border-radius: 40px 160px 40px 40px;
+        background-color: #F0F5F6;
+        padding: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px 0px;
+        .items {
+            flex-basis: 1000px;
+            gap: 16px;
+            @include mobile {
+                gap: 8px;
+            }
+        }
+        .item {
+            box-shadow: 0 1px 2px 0 rgba(67, 162, 150, 0.15), 0 0 16px 0 rgba(113, 180, 177, 0.16);
+            background-color: var(--color-white);
+            border-radius: var(--border-radius-small);
+            padding: 10px 24px 10px 36px;
+            font-size: 14px;
+            @include mobile {
+                padding: 10px 10px 10px 30px;
+                &::before {
+                    left: 17px;
+                }
+            }
+        }
+        @include mobile {
+            flex-wrap: wrap;
+            border-radius: 24px 24px 24px 180px;
+            padding: 16px;
+        }
+    }
+    &__image {
+        flex-basis: 300px;
+        img {
+            border-radius: 200px 200px 20px 200px;
         }
     }
 }
