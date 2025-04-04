@@ -4,7 +4,7 @@ body.lock {
     overflow: hidden;
 }
 html {
-    scroll-padding-top: 100px;
+    scroll-padding-top: 120px;
 }
 body { 
     font-family: var(--font-family-base); 
@@ -17,10 +17,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    overflow: hidden;
 }
 .main {
     flex: 1 1 auto;
+    &--mod {
+        background-color: var(--color-bg);
+    }
 }
 ._container {
     max-width: var(--container-width);
@@ -80,6 +82,19 @@ section {
     text-align: center;
     @include fluid-text(12, 13);
     white-space: nowrap;
+    svg {
+        transition: all 0.3s;
+    }
+    @include hover {
+        svg {
+            transform: translateX(5px);
+            transition: all 0.3s;
+        }
+        svg path {
+            stroke: var(--color-primary);
+            transition: all 0.3s;
+        }
+    }
 }
 .button-outline {
     border: 1px solid var(--color-primary);
@@ -470,7 +485,23 @@ section {
     }
     @include mobile {
         width: 100%;
+        margin-bottom: 8px;
     }
+}
+.simplebar-scrollbar::before {
+    background-color: var(--color-primary);
+    border-radius: 4px;
+}
+.simplebar-track {
+    background: var(--color-white);
+    border-radius: 4px;
+    margin: 20px 10px;
+    width: 8px;
+    padding: 0px;
+}
+.simplebar-content {
+    display: flex;
+    gap: 10px;
 }
 /*----------------------------------global--------------------------------*/
 

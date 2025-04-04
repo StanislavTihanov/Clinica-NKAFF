@@ -7,14 +7,10 @@
         gap: 20px;
         @include mobile {
             display: flex;
-            gap: 16px;
-            width: 1300px;
-            overflow-x: auto;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            &::-webkit-scrollbar {
-                display: none; 
-            }
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
         }
     }
     &__block {
@@ -40,7 +36,6 @@
             background: linear-gradient(132deg, #0ca5b3 0%, #a7e7e2 100%);
             display: flex;
             justify-content: space-between;
-            align-items: center;
             gap: 10px;
             grid-column: 1 / 3;
             color: var(--color-white);
@@ -56,11 +51,27 @@
             @include mobile {
                 flex-wrap: wrap;
                 justify-content: end;
+                img {
+                    width: 200px;
+                    margin-top: -50px;
+                }
             }
         }
-        &:nth-child(5) {
+        &--mod1 {
+            img {
+                margin-bottom: -30px;
+            }
+        }
+        &:nth-child(5),
+        &--mod2 {
             background: linear-gradient(132deg, #0ca5b3 0%, #a7e7e2 100%);
             color: var(--color-white);
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            flex-direction: column;
+            padding: 30px 10px 0px 30px;
+            width: 100%;
             h3 {
                 color: var(--color-white);
                 @include fluid-text(18, 20);
@@ -69,39 +80,45 @@
             p {
                 margin-bottom: 40px;
                 max-width: 250px;
-            }
-            img {
-                position: absolute;
-                bottom: 0;
-                right: 5px;
-                max-width: 340px;
+                position: relative;
+                z-index: 2;
+                @include mobile {
+                    max-width: 100%;
+                }
             }
             .button {
                 display: inline;
                 position: relative;
                 z-index: 2;
+                @include mobile {
+                    display: block;
+                }
+            }
+            img {
+                margin-top: -150px;
+                margin-right: -100px;
+                padding-left: 40px;
             }
             @include table {
                 grid-column: 1 / 4;
-                display: flex;
                 justify-content: space-between;
-                gap: 0px;
-                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 10px;
                 img {
-                    position: static;
-                    margin-bottom: -30px;
+                    margin-top: 0px;
+                    margin-right: 0px;
+                    padding-left: 0px;
+                    width: 200px;
+                    height: 100%;
                 }
             }
             @include mobile {
-                width: 100%;
+                padding: 20px;
+                flex-direction: column;
                 img {
-                    max-width: 280px;
+                    margin-bottom: -20px;
+                    width: 100%;
                 }
-            }
-        }
-        &--mod {
-            img {
-                margin-bottom: -30px;
             }
         }
         @include mobile {

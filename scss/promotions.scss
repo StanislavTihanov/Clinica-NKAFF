@@ -1,10 +1,74 @@
 /*----------------------------------promotions-------------------------------*/
 @use 'mixins' as *;
 .promotions {
-    margin-top: 100px;
     padding-bottom: 0px;
     @include table {
         margin-top: 50px;
+    }
+    &__content {
+        .about-procedure__body {
+            margin-top: 60px;
+            @include table {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+        }
+        .about-procedure__block {
+            border: none;
+            box-shadow: 0 1px 2px 0 rgba(67, 162, 150, 0.15), 0 0 16px 0 rgba(113, 180, 177, 0.16);
+            h3 {
+                color: var(--color-black-text); 
+            }
+            &:first-child {
+                background: linear-gradient(142deg, #edf4ff 0%, #cee2ff 100%);
+                color: var(--color-black-text);
+                h3 {
+                    color: var(--color-black-text); 
+                }
+                img {
+                    margin-bottom: -45px;
+                }
+            }
+            &:nth-child(3) {
+                grid-column: 1 / 3;
+            }
+        }
+        .about-procedure__block--mod2 {
+            background: linear-gradient(335deg, #cfe2ff 12.39%, #eef4ff 100%);
+            img {
+                margin-top: -120px;
+            }
+            p {
+                color: var(--color-black-text);
+            }
+            .button {
+                padding: 13px 50px;
+            }
+            @include table {
+                grid-column: 1 / 4;
+                justify-content: space-between;
+                flex-direction: row;
+                gap: 10px;
+                img {
+                    margin-top: 0px;
+                    margin-right: 0px;
+                    padding-left: 0px;
+                    width: 200px;
+                    height: 100%;
+                }
+            }
+            @include mobile {
+                padding: 20px;
+                flex-direction: column;
+                img {
+                    margin-bottom: -20px;
+                    width: 100%;
+                }
+            }
+        }
     }
     &__blocks {
         display: grid;
@@ -21,6 +85,7 @@
         border-radius: var(--border-radius-small);
         img {
             width: 100%;
+            height: 100%;
         }
         .arrow__pulse {
             border: 3px solid var(--color-white);
@@ -71,6 +136,16 @@
                 border-bottom-right-radius: var(--border-radius-small);
             }
         }
+        .button {
+            position: absolute;
+            bottom: 42px;
+            left: 80px;
+            width: 230px;
+            @include desktop {
+                bottom: 20px;
+                left: 20px;
+            }
+        }
         @include mobile {
             display: block;
             min-height: 343px;
@@ -87,5 +162,18 @@
             }
         }
     }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        .right__button {
+            flex-basis: 300px;
+            @include mobile {
+                flex-basis: 100%;
+            }
+        }
+    }
+
 }
 /*----------------------------------promotions--------------------------------*/

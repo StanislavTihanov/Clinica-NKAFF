@@ -52,6 +52,12 @@
                 }
             }
         }
+        &--mod {
+            background-color: var(--color-white);
+            border-radius: 20px;
+            padding: 8px 15px;
+            margin-left: 0px;
+        }
         @include mobile {
             margin-right: 30px;
         }

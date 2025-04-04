@@ -5,7 +5,7 @@ body.lock {
 }
 
 html {
-  scroll-padding-top: 100px;
+  scroll-padding-top: 120px;
 }
 
 body {
@@ -20,11 +20,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  overflow: hidden;
 }
 
 .main {
   flex: 1 1 auto;
+}
+.main--mod {
+  background-color: var(--color-bg);
 }
 
 ._container {
@@ -94,6 +96,19 @@ section {
   text-align: center;
   font-size: clamp(12px, 1vw, 13px);
   white-space: nowrap;
+}
+.button svg {
+  transition: all 0.3s;
+}
+@media (hover: hover) {
+  .button:hover svg {
+    transform: translateX(5px);
+    transition: all 0.3s;
+  }
+  .button:hover svg path {
+    stroke: var(--color-primary);
+    transition: all 0.3s;
+  }
 }
 
 .button-outline {
@@ -532,7 +547,26 @@ section {
 @media (max-width: 768px) {
   .link {
     width: 100%;
+    margin-bottom: 8px;
   }
+}
+
+.simplebar-scrollbar::before {
+  background-color: var(--color-primary);
+  border-radius: 4px;
+}
+
+.simplebar-track {
+  background: var(--color-white);
+  border-radius: 4px;
+  margin: 20px 10px;
+  width: 8px;
+  padding: 0px;
+}
+
+.simplebar-content {
+  display: flex;
+  gap: 10px;
 }
 
 /*----------------------------------global--------------------------------*/

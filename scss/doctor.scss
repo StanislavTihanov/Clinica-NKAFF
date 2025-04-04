@@ -193,7 +193,7 @@
         }
         &--mod {
             @include mobile {
-                gap: 16px;
+                gap: 8px;
                 .doctor__link {
                     width: auto;
                     &:first-child {

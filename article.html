@@ -19,6 +19,7 @@
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body id="body">
@@ -385,108 +386,332 @@
         </ul>
       </div>
 
-      <article class="article _container" itemscope itemtype="https://schema.org/Article">
+      <article class="article _container">
         <header class="article__header">
-          <h1 itemprop="headline">Название статьи</h1>
-          <div class="article__photo">
-            <img src="" alt="Фото псориаза" itemprop="image">
+          <div class="title">
+            <h1>Псориаз</h1>
           </div>
-          <div class="article__info">
-            <p itemprop="description">
-              Псориаз — это хроническое заболевание, поражающее кожу, иногда ногти, суставы и внутренние органы. 
-              Проявляется зудом и появлением розово-красных высыпаний — папул, которые могут сливаться в более крупные бляшки.
-            </p>
-            <div class="article__wrap">
-              <div class="article__item" itemprop="datePublished" content="2023-11-12">
-                <img src="images/icons/Calendar.svg" alt="Календарь">
-                <div class="article__item_inner">
-                  <p>Дата публикации</p>
-                  <time datetime="2023-11-12">12.11.2023</time>
-                </div>
-              </div>
-              <div class="article__item" itemprop="dateModified" content="2024-09-21">
-                <img src="images/icons/reset.svg" alt="Обновление">
-                <div class="article__item_inner">
-                  <p>Дата обновления</p>
-                  <time datetime="2024-09-21">21.09.2024</time>
-                </div>
-              </div>
-              <div class="article__item" itemprop="articleSection">
-                <img src="images/icons/Document.svg" alt="Категория">
-                <div class="article__item_inner">
-                  <p>Категория</p>
-                  <p>Кожные болезни</p>
-                </div>
-              </div>
-              <div class="article__item">
-                <img src="images/icons/Bookmark.svg" alt="Классификация">
-                <div class="article__item_inner">
-                  <p>Классификация</p>
-                  <p>L40 Псориаз</p>
-                </div>
-              </div>
+          <div class="article__body">
+            <div class="article__img">
+              <img src="images/article-img1.webp" alt="Фото псориаза">
             </div>
-            <div class="author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-              <img itemprop="image" src="author-avatar.jpg" alt="Фото Соловьевой Ксении Александровны" width="80">
-              <div class="author__info">
-                <p>Автор статьи</p>
-                <span itemprop="name">Соловьева Ксения Александровна</span>
-                <div class="author__info_inner">
-                  <div itemprop="jobTitle">Дерматолог</div>
-                  <div itemprop="disambiguatingDescription">Кандидат наук, стаж - 17 лет</div>
+            <div class="article__info">
+              <p>
+                Псориаз — это хроническое заболевание, поражающее кожу, иногда ногти, суставы и внутренние органы. 
+                Проявляется зудом и появлением розово-красных высыпаний — папул, которые могут сливаться в более крупные бляшки.
+              </p>
+              <div class="article__wrap">
+                <div class="article__item">
+                  <img src="images/icons/Calendar.svg" alt="Календарь">
+                  <div class="article__item_inner">
+                    <p>Дата публикации</p>
+                    <time datetime="2023-11-12">12.11.2023</time>
+                  </div>
+                </div>
+                <div class="article__item">
+                  <img src="images/icons/reset.svg" alt="Обновление">
+                  <div class="article__item_inner">
+                    <p>Дата обновления</p>
+                    <time datetime="2024-09-21">21.09.2024</time>
+                  </div>
+                </div>
+                <div class="article__item">
+                  <img src="images/icons/Document.svg" alt="Категория">
+                  <div class="article__item_inner">
+                    <p>Категория</p>
+                    <p>Кожные болезни</p>
+                  </div>
+                </div>
+                <div class="article__item">
+                  <img src="images/icons/Bookmark.svg" alt="Классификация">
+                  <div class="article__item_inner">
+                    <p>Классификация</p>
+                    <p>L40 Псориаз</p>
+                  </div>
+                </div>
+              </div>
+              <div class="author">
+                <img src="images/author-img.webp" alt="Фото Соловьевой Ксении Александровны">
+                <div class="author__info">
+                  <p>Автор статьи</p>
+                  <span>Соловьева Ксения Александровна</span>
+                  <div class="author__info_inner">
+                    <p>Дерматолог</p>
+                    <p>Кандидат наук стаж - 17 лет</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </header>
-        <div class="article__content" itemprop="articleBody">
+        <div class="article__content">
           <div class="doctor__links doctor__links--mod">
-            <a class="doctor__link" href="#advantages">Вопросы и ответы</a>
-            <a class="doctor__link" href="#photogallery">Врачи</a>
+            <a class="doctor__link" href="#questions">Вопросы и ответы</a>
+            <a class="doctor__link" href="#doctors">Врачи</a>
             <a class="doctor__link" href="#equipment">Причины</a>
             <a class="doctor__link" href="#prices">Виды</a>
-            <a class="doctor__link" href="#questions">Симптомы</a>
+            <a class="doctor__link" href="#symptoms">Симптомы</a>
             <a class="doctor__link" href="#callback">Осложнения</a>
             <a class="doctor__link" href="#equipment">Диагностика</a>
             <a class="doctor__link" href="#prices">Лечение</a>
             <a class="doctor__link" href="#questions">Прогноз</a>
             <a class="doctor__link" href="#callback">Профилактика</a>
           </div>
-      
           <div class="article__body">
-            <div class="article__sections">
-              
-              <section id="symptoms" itemscope itemtype="https://schema.org/WebPageElement">
-                <h2 itemprop="name">Симптомы псориаза</h2>
-                <div itemprop="text">
-                  
+            <section class="article__section list">
+              <h2>Факторы риска</h2>
+              <p>Причины возникновения псориаза пока до конца не выявлены. К факторам риска развития болезни относят:</p>
+              <ul>
+                <li>микробный фактор — различные виды грибка, микоплазмы</li>
+                <li>нервно-психическую травму, стресс</li>
+                <li>эндокринные заболевания — сахарный диабет, болезни щитовидной железы</li>
+                <li>очаги хронической инфекции, особенно стрептококковой</li>
+                <li>иммунодефицитные состояния</li>
+                <li>нарушения липидного и белкового обмена</li>
+                <li>травмы кожи и суставов</li>
+              </ul>
+              <blockquote>
+                <p>
+                  “Lorem ipsum dolor sit lorem amet consectetur. Ligula amet purus elit dictum. Porttitor pulvinar hendrerit risus egestas tristique vitae non. Gravida pellentesque quis enim leo nullam pellentesque pulvinar at dignissim. Nullam quisque ligula cras fermentum augue id mattis ullamcorper.”
+                </p>
+                <img src="images/blockquote-img.webp" alt="Фото автора цитаты" loading="lazy">
+              </blockquote>
+              <h2>Передаётся ли псориаз</h2>
+              <p>Псориаз не заразен. Многие исследователи обращают внимание на семейный характер псориаза и признают его генетическую природу. Причём по наследству передаётся не сама болезнь, а предрасположенность к ней.</p>
+              <div class="article__attention">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6004 10.0004C19.6004 12.5465 18.589 14.9883 16.7886 16.7886C14.9883 18.589 12.5465 19.6004 10.0004 19.6004C7.45431 19.6004 5.01252 18.589 3.21217 16.7886C1.41182 14.9883 0.400391 12.5465 0.400391 10.0004C0.400391 7.45431 1.41182 5.01252 3.21217 3.21217C5.01252 1.41182 7.45431 0.400391 10.0004 0.400391C12.5465 0.400391 14.9883 1.41182 16.7886 3.21217C18.589 5.01252 19.6004 7.45431 19.6004 10.0004ZM11.2004 14.8004C11.2004 15.1187 11.074 15.4239 10.8489 15.6489C10.6239 15.874 10.3187 16.0004 10.0004 16.0004C9.68213 16.0004 9.37691 15.874 9.15186 15.6489C8.92682 15.4239 8.80039 15.1187 8.80039 14.8004C8.80039 14.4821 8.92682 14.1769 9.15186 13.9519C9.37691 13.7268 9.68213 13.6004 10.0004 13.6004C10.3187 13.6004 10.6239 13.7268 10.8489 13.9519C11.074 14.1769 11.2004 14.4821 11.2004 14.8004ZM10.0004 4.00039C9.68213 4.00039 9.37691 4.12682 9.15186 4.35186C8.92682 4.57691 8.80039 4.88213 8.80039 5.20039V10.0004C8.80039 10.3187 8.92682 10.6239 9.15186 10.8489C9.37691 11.074 9.68213 11.2004 10.0004 11.2004C10.3187 11.2004 10.6239 11.074 10.8489 10.8489C11.074 10.6239 11.2004 10.3187 11.2004 10.0004V5.20039C11.2004 4.88213 11.074 4.57691 10.8489 4.35186C10.6239 4.12682 10.3187 4.00039 10.0004 4.00039Z" fill="#FF8947" />
+                </svg>
+                <div class="article__attention_inner">
+                  <h3>Обратите внимание:</h3>
+                  <p>В отсутствии своевременного лечения слизь в пазухах превращается в гной и воспаление становится гнойным.</p>
                 </div>
-              </section>
-              <section id="causes">
-                <h2>Причины</h2>
-                
-              </section>
-            </div>
-            <aside class="sidebar" aria-labelledby="symptoms-heading">
-              <div class="article__symptoms" itemscope itemtype="https://schema.org/ItemList">
-                <h2 id="symptoms-heading">Симптомы</h2>
+              </div>
+              <h2 id="symptoms">Симптомы псориаза</h2>
+              <p>
+                Первые симптомы псориаза: высыпания на коже в виде ярко-розовых бляшек с шелушащейся поверхностью. Бляшки единичные, 
+                возвышаются над уровнем здоровой кожи, располагаются на локтевых сгибах и в подколенных впадинах.
+              </p>
+              <p>
+                Чаще псориатические бляшки возникают на коже колен, локтей, груди, живота, спины и волосистой части головы, но при 
+                прогрессировании заболевания они могут появиться в любых других, самых неожиданных местах покрова.
+              </p>
+              <div class="article__images">
+                <img src="images/article-img2.webp" alt="image" loading="lazy">
+                <img src="images/article-img3.webp" alt="image" loading="lazy">
+              </div>
+              <p>
+                Вначале папулы небольшие — 3-5 мм, цвет ярко-розовый. Постепенно увеличиваясь в размерах, 
+                они покрываются серебристыми 
+                чешуйками и сливаются в более крупные образования, именуемые бляшками
+              </p>
+              <p>
+                Свежие элементы папул, как правило, яркого цвета, вплоть до красного, "старые" — более блёклые. На начальной стадии псориаза края папулы не шелушатся. 
+                Они представляют собой гиперемическую кайму — венчик роста
+              </p>
+              <p>
+                Отличительным признаком псориаза является триада Ауспитца. Эту триаду можно наблюдать 
+                при поскабливании поверхности папулы острым предметом. Она включает в себя три феномена:
+              </p>
+              <ul>
+                <li>феномен стеаринового пятна — наслоение большого количества серебристо-белых чешуек, которые легко отделяются при поскабливании</li>
+                <li>симптом псориатической плёнки — экссудированная поверхность, выполненная шиповатым слоем, которая открывается после отслаивания нижних слоёв роговых пластинок</li>
+                <li>феномен "кровяной росы" — обнажение поверхностных капилляров в виде мелких кровяных точек после отслойки псориатической плёнки</li>
+              </ul>
+              <div class="article__photo">
+                <picture>
+                  <source media="(max-width: 400px)" srcset="images/article-img3-mob.webp">
+                  <img src="images/article-img3.webp" alt="photo" loading="lazy">
+                </picture>
+                <p>Начальная стадия псориаза</p>
+              </div>
+              <h2>Признаки псориаза разных типов</h2>
+              <p>
+                Клинические разновидности псориаза:
+              </p>
+              <ul>
+                <li>Пятнистый псориаз — представлен бледно-розовыми слабо инфильтрированными пятнами. Напоминает токсидермию.</li>
+                <li>Раздражённый псориаз — возникает в связи с воздействием на кожу агрессивных факторов внешней среды (солнечного света, холода, жары) и лекарственных препаратов раздражающего действия. Окрас бляшки становится более интенсивным, она увеличивается в размере, сильнее возвышается над поверхностью кожи, по краям формируется пояс в виде покраснения.</li>
+                <li>Себорейный псориаз — часто развивается у больных себореей. Клиническая картина очень похожа на себорейную экзему.</li>
+                <li>
+                  Экссудативный псориаз — встречается довольно часто. Возникает в связи с избыточным выделением воспалительной жидкости — экссудата. 
+                  Он пропитывает скопления чешуек, превращая их в чешуе-корки.
+                </li>
+                <li>
+                  Псориаз ладоней и подошв — представлен либо обычными бляшками и папулами, либо 
+                  гиперкератозными образованиями, похожими на мозоли и омозолелости.
+                </li>
+              </ul>
+              <div class="article__images article__images--mod">
+                <img src="images/article-img4.webp" alt="image" loading="lazy">
+                <img src="images/article-img5.webp" alt="image" loading="lazy">
+                <img src="images/article-img6.webp" alt="image" loading="lazy">
+              </div>
+              <div class="article__attention article__attention--mod">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5999 9.99844C19.5999 12.5445 18.5885 14.9863 16.7881 16.7867C14.9878 18.587 12.546 19.5984 9.9999 19.5984C7.45382 19.5984 5.01203 18.587 3.21168 16.7867C1.41133 14.9863 0.399902 12.5445 0.399902 9.99844C0.399902 7.45236 1.41133 5.01056 3.21168 3.21021C5.01203 1.40986 7.45382 0.398438 9.9999 0.398438C12.546 0.398438 14.9878 1.40986 16.7881 3.21021C18.5885 5.01056 19.5999 7.45236 19.5999 9.99844ZM11.1999 14.7984C11.1999 15.1167 11.0735 15.4219 10.8484 15.647C10.6234 15.872 10.3182 15.9984 9.9999 15.9984C9.68164 15.9984 9.37642 15.872 9.15137 15.647C8.92633 15.4219 8.7999 15.1167 8.7999 14.7984C8.7999 14.4802 8.92633 14.175 9.15137 13.9499C9.37642 13.7249 9.68164 13.5984 9.9999 13.5984C10.3182 13.5984 10.6234 13.7249 10.8484 13.9499C11.0735 14.175 11.1999 14.4802 11.1999 14.7984ZM9.9999 3.99844C9.68164 3.99844 9.37642 4.12487 9.15137 4.34991C8.92633 4.57495 8.7999 4.88018 8.7999 5.19844V9.99844C8.7999 10.3167 8.92633 10.6219 9.15137 10.847C9.37642 11.072 9.68164 11.1984 9.9999 11.1984C10.3182 11.1984 10.6234 11.072 10.8484 10.847C11.0735 10.6219 11.1999 10.3167 11.1999 9.99844V5.19844C11.1999 4.88018 11.0735 4.57495 10.8484 4.34991C10.6234 4.12487 10.3182 3.99844 9.9999 3.99844Z" fill="#FF475D" />
+                </svg>
+                <div class="article__attention_inner">
+                  <h3>Обратите внимание:</h3>
+                  <p>В отсутствии своевременного лечения слизь в пазухах превращается в гной и воспаление становится гнойным.</p>
+                </div>
+              </div>
+              <div class="article__questions" id="questions">
+                <h2>Часто задаваемые вопросы</h2>
+                <div class="accordion">
+                  <div class="accordion__block">
+                  <details class="accordion__details" name="faq" open>
+                    <summary class="accordion__summary">
+                      <h3 class="accordion__title" role="term" aria-details="faq-1">
+                        Какие противопоказания есть у процедуры HIPEC?
+                      </h3>
+                      <span></span>
+                    </summary>
+                  </details>
+                  <div class="accordion__content" id="faq-1" role="definition">
+                    <div class="accordion__content_body">
+                      <p>
+                        Залог успешного лечения — индивидуальный подход. Не бывает двух одинаковых пациентов даже с одной и той же болезнью. 
+                        Мы рассматриваем каждого пациента отдельно и принимаем решение о необходимости лечения на консилиуме.
+                      </p>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="accordion__block">
+                  <details class="accordion__details" name="faq">
+                    <summary class="accordion__summary">
+                      <h3 class="accordion__title" role="term" aria-details="faq-2">
+                        Какие противопоказания есть у процедуры HIPEC?
+                      </h3>
+                      <span></span>
+                    </summary>
+                  </details>
+                  <div class="accordion__content" id="faq-2" role="definition">
+                    <div class="accordion__content_body">
+                      <p>
+                        Залог успешного лечения — индивидуальный подход. Не бывает двух одинаковых пациентов даже с одной и той же болезнью. 
+                        Мы рассматриваем каждого пациента отдельно и принимаем решение о необходимости 
+                        лечения на консилиуме.
+                      </p>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="accordion__block">
+                  <details class="accordion__details" name="faq">
+                    <summary class="accordion__summary">
+                      <h3 class="accordion__title" role="term" aria-details="faq-3">
+                        Почему HIPEC проводят всего в нескольких клиниках в России?
+                      </h3>
+                      <span></span>
+                    </summary>
+                  </details>
+                  <div class="accordion__content" id="faq-3" role="definition">
+                    <div class="accordion__content_body">
+                      <p>
+                        Залог успешного лечения — индивидуальный подход. Не бывает двух одинаковых пациентов даже с одной и той же болезнью. 
+                        Мы рассматриваем каждого пациента отдельно и принимаем решение о необходимости 
+                        лечения на консилиуме.
+                      </p>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="accordion__block">
+                    <details class="accordion__details" name="faq">
+                      <summary class="accordion__summary">
+                        <h3 class="accordion__title" role="term" aria-details="faq-3">
+                          Какие осложнения могут возникнуть во время и после процедуры?
+                        </h3>
+                        <span></span>
+                      </summary>
+                    </details>
+                    <div class="accordion__content" id="faq-3" role="definition">
+                      <div class="accordion__content_body">
+                        <p>
+                          Залог успешного лечения — индивидуальный подход. Не бывает двух одинаковых пациентов даже с одной и той же болезнью. 
+                          Мы рассматриваем каждого пациента отдельно и принимаем решение о необходимости 
+                          лечения на консилиуме.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2>Источники</h2>
+              <ul>
+                <li>Praesent bibendum massa sed metus id mi pellentesque. Id quis sit tincidunt nisl, vel, etiam. Turpis feugiat neque, mi in. </li>
+                <li>Eu quam sed tortor luctus in vitae. Tristique amet rutrum tincidunt orci in. Magna iaculis at aenean risus quis habitant bibendum ultrices. Sed faucibus varius duis scelerisque aenean sit in neque. Neque, ut facilisi scelerisque neque.</li>
+                <li>Aliquam tincidunt egestas enim dignissim pretium. Arcu in diam tristique gravida egestas ipsum imperdiet non. Massa phasellus adipiscing purus quisque varius sed ut risus feugiat. </li>
+                <li>Et, ligula et massa sed congue nunc. Amet sem dui sollicitudin viverra auctor ante nibh in.</li>
+                <li>Condimentum mauris amet quis et gravida. Amet, volutpat sed sagittis, duis mi. Porttitor vitae gravida nunc odio tristique. Ornare mattis porttitor varius non at ut scelerisque nulla.</li>
+              </ul>
+            </section>
+            <aside class="article__sidebar list">
+              <div class="article__symptoms">
+                <h2>Симптомы</h2>
                 <ul>
-                  <li itemprop="itemListElement">Появление папул</li>
-                  <li itemprop="itemListElement">Зуд</li>
-                  <li itemprop="itemListElement">Шелушение</li>
-                  <li itemprop="itemListElement">Расслаивание ногтей</li>
+                  <li>Появление папул</li>
+                  <li>Зуд</li>
+                  <li>Шелушение</li>
+                  <li>Расслаивание ногтей</li>
                 </ul>
               </div>
               <h2>Популярные статьи</h2>
-              <article class="news-item" itemscope itemtype="https://schema.org/NewsArticle">
-                <h3 itemprop="headline"><a href="#" itemprop="url">Заголовок новости 1</a></h3>
-                <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                  <img src="news1.jpg" alt="Описание фото" loading="lazy" itemprop="url">
-                  <figcaption itemprop="caption">Источник: Название</figcaption>
-                </figure>
-                <p itemprop="description">Краткое описание новости...</p>
-                <time datetime="2024-05-20" itemprop="datePublished">20 мая</time>
+              <article class="article__news">
+                <a href="#!">
+                  <div class="article__news_img">
+                    <img src="images/article-img7.webp" alt="Описание фото" loading="lazy">
+                  </div>
+                  <div class="article__news_inner">
+                    <p >Malesuada ornare dignissim neque convallis arcu id venenatis leo.</p>
+                    <time datetime="2024-04-21">21.04.24</time>
+                  </div>
+                </a>
               </article>
+              <article class="article__news">
+                <a href="#!">
+                  <div class="article__news_img">
+                    <img src="images/article-img8.webp" alt="Описание фото" loading="lazy">
+                  </div>
+                  <div class="article__news_inner">
+                    <p >Malesuada ornare dignissim neque convallis arcu id venenatis leo.</p>
+                    <time datetime="2024-04-21">21.04.24</time>
+                  </div>
+                </a>
+              </article>
+              <article class="article__news">
+                <a href="#!">
+                  <div class="article__news_img">
+                    <img src="images/article-img9.webp" alt="Описание фото" loading="lazy">
+                  </div>
+                  <div class="article__news_inner">
+                    <p >Malesuada ornare dignissim neque convallis arcu id venenatis leo.</p>
+                    <time datetime="2024-04-21">21.04.24</time>
+                  </div>
+                </a>
+              </article>
+              <div class="article__callback">
+                  <div class="callback__wrapper">
+                    <div class="callback__body">
+                      <div class="callback__info">
+                        <h2>Остались вопросы?</h2>
+                        <p>Закажите обратный звонок, наши специалисты свяжутся с вами в ближайшее время !</p>
+                        <a class="button button-white" href="#!">
+                          Обратный звонок
+                          <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.75 7.72607L1.75 7.72607" stroke="#1B1B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.7002 1.70149L16.7502 7.72549L10.7002 13.7505" stroke="#1B1B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="callback__photo">
+                        <img src="images/callback-photo@2x.webp" alt="обратный звонок">
+                      </div>
+                    </div>
+                    <div class="callback__bg _ibg">
+                      <img src="images/article-img10.webp" alt="bg">
+                    </div>
+                  </div>
+              </div>
             </aside>
           </div>
         </div>
@@ -526,90 +751,356 @@
         </div>
       </section>
 
-      <section class="questions section-color" id="questions">
-        <div class="questions__content _container">
+      <section class="doctors" id="doctors">
+        <div class="doctors__content _container">
           <div class="title">
-            <h2>Часто задаваемые вопросы</h2>
+            <h2>Врачи клиники</h2>
           </div>
-          <div class="questions__body">
-            <div class="accordion">
-              <div class="accordion__block">
-              <details class="accordion__details" name="faq" open>
-                <summary class="accordion__summary">
-                  <h3 class="accordion__title" role="term" aria-details="faq-1">
-                    Какие противопоказания есть у процедуры HIPEC?
-                  </h3>
-                  <span></span>
-                </summary>
-              </details>
-              <div class="accordion__content" id="faq-1" role="definition">
-                <div class="accordion__content_body">
-                  <p>
-                    Залог успешного лечения — индивидуальный подход. Не бывает двух одинаковых пациентов даже с одной и той же болезнью. 
-                    Мы рассматриваем каждого пациента отдельно и принимаем решение о необходимости лечения на консилиуме.
-                  </p>
+          <div class="slider__wrap">
+            <div class="slider__buttons">
+              <div class="swiper-button-prev swiper-button-prev-1">
+                <img src="images/icons/Arrow-Right.svg" alt="arrow">
+              </div>
+              <div class="swiper-button-next swiper-button-next-1">
+                <img src="images/icons/Arrow-Right.svg" alt="arrow">
+              </div>
+            </div>
+            <div class="slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card__inner _ibg">
+                      <a class="card__photo" href="doctor.html">
+                        <picture>
+                          <source media="(max-width: 768px)" srcset="images/doctor-photo1.webp">
+                          <img src="images/doctor-photo1@2x.webp" alt="Сергеев Пётр Сергеевич">
+                        </picture>
+                        <div class="arrow__pulse">
+                          <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.75 7.72583L1.75 7.72583" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.7002 1.70149L16.7502 7.72549L10.7002 13.7505" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </a>
+                      <div class="card__link">
+                        <a class="button button-filled-primary" href="#!">
+                          запись
+                          <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.6667 5.81706L1.66675 5.81706" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.63354 1.80083L11.6669 5.81683L7.63354 9.8335" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <a class="card__name" href="doctor.html">Сергеев Пётр Сергеевич</a>
+                    <div class="card__post">
+                      <p>Главный врач, онколог-хирург</p>
+                    </div>
+                    <div class="card__experience">
+                      <img src="images/icons/work.svg" alt="icon experience">
+                      <p>Стаж: <span>18</span> лет</p>
+                    </div>
+                    <div class="card__description">
+                      <p>Кандидат медицинских наук, высшая категория</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              </div>
-              <div class="accordion__block">
-              <details class="accordion__details" name="faq">
-                <summary class="accordion__summary">
-                  <h3 class="accordion__title" role="term" aria-details="faq-2">
-                    Какие противопоказания есть у процедуры HIPEC?
-                  </h3>
-                  <span></span>
-                </summary>
-              </details>
-              <div class="accordion__content" id="faq-2" role="definition">
-                <div class="accordion__content_body">
-                  <p>
-                    Залог успешного лечения — индивидуальный подход. Не бывает двух одинаковых пациентов даже с одной и той же болезнью. 
-                    Мы рассматриваем каждого пациента отдельно и принимаем решение о необходимости 
-                    лечения на консилиуме.
-                  </p>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card__inner _ibg">
+                      <a class="card__photo" href="doctor.html">
+                        <picture>
+                          <source media="(max-width: 768px)" srcset="images/doctor-photo2.webp">
+                          <img src="images/doctor-photo2@2x.webp" alt="Сергеев Пётр Сергеевич">
+                        </picture>
+                        <div class="arrow__pulse">
+                          <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.75 7.72583L1.75 7.72583" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.7002 1.70149L16.7502 7.72549L10.7002 13.7505" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </a>
+                      <div class="card__link">
+                        <a class="button button-filled-primary" href="#!">
+                          запись
+                          <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.6667 5.81706L1.66675 5.81706" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.63354 1.80083L11.6669 5.81683L7.63354 9.8335" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <a class="card__name" href="doctor.html">Труханов Петр Александрович</a>
+                    <div class="card__post">
+                      <p>Заведующий стационаром, невролог</p>
+                    </div>
+                    <div class="card__experience">
+                      <img src="images/icons/work.svg" alt="icon experience">
+                      <p>Стаж: <span>8</span> лет</p>
+                    </div>
+                    <div class="card__description">
+                      <p>Вторая категория</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              </div>
-              <div class="accordion__block">
-              <details class="accordion__details" name="faq">
-                <summary class="accordion__summary">
-                  <h3 class="accordion__title" role="term" aria-details="faq-3">
-                    Почему HIPEC проводят всего в нескольких клиниках в России?
-                  </h3>
-                  <span></span>
-                </summary>
-              </details>
-              <div class="accordion__content" id="faq-3" role="definition">
-                <div class="accordion__content_body">
-                  <p>
-                    Залог успешного лечения — индивидуальный подход. Не бывает двух одинаковых пациентов даже с одной и той же болезнью. 
-                    Мы рассматриваем каждого пациента отдельно и принимаем решение о необходимости 
-                    лечения на консилиуме.
-                  </p>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card__inner _ibg">
+                      <a class="card__photo" href="doctor.html">
+                        <picture>
+                          <source media="(max-width: 768px)" srcset="images/doctor-photo3.webp">
+                          <img src="images/doctor-photo3@2x.webp" alt="Сергеев Пётр Сергеевич">
+                        </picture>
+                        <div class="arrow__pulse">
+                          <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.75 7.72583L1.75 7.72583" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.7002 1.70149L16.7502 7.72549L10.7002 13.7505" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </a>
+                      <div class="card__link">
+                        <a class="button button-filled-primary" href="#!">
+                          запись
+                          <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.6667 5.81706L1.66675 5.81706" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.63354 1.80083L11.6669 5.81683L7.63354 9.8335" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <a class="card__name" href="doctor.html">Джавадова Парвина Аязовна</a>
+                    <div class="card__post">
+                      <p>Онкология, химиотерапия</p>
+                    </div>
+                    <div class="card__experience">
+                      <img src="images/icons/work.svg" alt="icon experience">
+                      <p>Стаж: <span>6</span> лет</p>
+                    </div>
+                    <div class="card__description">
+                      <p>Ведущий специалист</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              </div>
-              <div class="accordion__block">
-                <details class="accordion__details" name="faq">
-                  <summary class="accordion__summary">
-                    <h3 class="accordion__title" role="term" aria-details="faq-3">
-                      Какие осложнения могут возникнуть во время и после процедуры?
-                    </h3>
-                    <span></span>
-                  </summary>
-                </details>
-                <div class="accordion__content" id="faq-3" role="definition">
-                  <div class="accordion__content_body">
-                    <p>
-                      Залог успешного лечения — индивидуальный подход. Не бывает двух одинаковых пациентов даже с одной и той же болезнью. 
-                      Мы рассматриваем каждого пациента отдельно и принимаем решение о необходимости 
-                      лечения на консилиуме.
-                    </p>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card__inner _ibg">
+                      <a class="card__photo" href="doctor.html">
+                        <picture>
+                          <source media="(max-width: 768px)" srcset="images/doctor-photo1.webp">
+                          <img src="images/doctor-photo1@2x.webp" alt="Сергеев Пётр Сергеевич">
+                        </picture>
+                        <div class="arrow__pulse">
+                          <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.75 7.72583L1.75 7.72583" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.7002 1.70149L16.7502 7.72549L10.7002 13.7505" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </a>
+                      <div class="card__link">
+                        <a class="button button-filled-primary" href="#!">
+                          запись
+                          <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.6667 5.81706L1.66675 5.81706" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.63354 1.80083L11.6669 5.81683L7.63354 9.8335" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <a class="card__name" href="doctor.html">Сергеев Пётр Сергеевич</a>
+                    <div class="card__post">
+                      <p>Главный врач, онколог-хирург</p>
+                    </div>
+                    <div class="card__experience">
+                      <img src="images/icons/work.svg" alt="icon experience">
+                      <p>Стаж: <span>18</span> лет</p>
+                    </div>
+                    <div class="card__description">
+                      <p>Кандидат медицинских наук, высшая категория</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card__inner _ibg">
+                      <a class="card__photo" href="doctor.html">
+                        <picture>
+                          <source media="(max-width: 768px)" srcset="images/doctor-photo2.webp">
+                          <img src="images/doctor-photo2@2x.webp" alt="Сергеев Пётр Сергеевич">
+                        </picture>
+                        <div class="arrow__pulse">
+                          <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.75 7.72583L1.75 7.72583" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.7002 1.70149L16.7502 7.72549L10.7002 13.7505" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </a>
+                      <div class="card__link">
+                        <a class="button button-filled-primary" href="#!">
+                          запись
+                          <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.6667 5.81706L1.66675 5.81706" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.63354 1.80083L11.6669 5.81683L7.63354 9.8335" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <a class="card__name" href="doctor.html">Труханов Петр Александрович</a>
+                    <div class="card__post">
+                      <p>Заведующий стационаром, невролог</p>
+                    </div>
+                    <div class="card__experience">
+                      <img src="images/icons/work.svg" alt="icon experience">
+                      <p>Стаж: <span>8</span> лет</p>
+                    </div>
+                    <div class="card__description">
+                      <p>Вторая категория</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card__inner _ibg">
+                      <a class="card__photo" href="doctor.html">
+                        <picture>
+                          <source media="(max-width: 768px)" srcset="images/doctor-photo3.webp">
+                          <img src="images/doctor-photo3@2x.webp" alt="Сергеев Пётр Сергеевич">
+                        </picture>
+                        <div class="arrow__pulse">
+                          <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.75 7.72583L1.75 7.72583" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.7002 1.70149L16.7502 7.72549L10.7002 13.7505" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </a>
+                      <div class="card__link">
+                        <a class="button button-filled-primary" href="#!">
+                          запись
+                          <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.6667 5.81706L1.66675 5.81706" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.63354 1.80083L11.6669 5.81683L7.63354 9.8335" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <a class="card__name" href="doctor.html">Джавадова Парвина Аязовна</a>
+                    <div class="card__post">
+                      <p>Онкология, химиотерапия</p>
+                    </div>
+                    <div class="card__experience">
+                      <img src="images/icons/work.svg" alt="icon experience">
+                      <p>Стаж: <span>6</span> лет</p>
+                    </div>
+                    <div class="card__description">
+                      <p>Ведущий специалист</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="doctors__button">
+            <a class="button button-outline" href="#!">
+              все врачи
+              <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.1665 5.81706L1.1665 5.81706" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7.1333 1.80083L11.1666 5.81683L7.1333 9.8335" stroke="#00A7AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="other">
+        <div class="other__content _container">
+          <div class="title">
+            <h2>Другие кожные болезни</h2>
+          </div>
+           <div class="other__body">
+              <div class="other__block" data-simplebar data-simplebar-auto-hide="false">
+                <span>А</span>
+                <div class="other__links">
+                  <a href="#!">Аденокарцинома матки</a>
+                  <a href="#!">Аденомиоз</a>
+                  <a href="#!">Аменорея</a>
+                  <a href="#!">Анэбреония</a>
+                </div>
+              </div>
+              <div class="other__block" data-simplebar data-simplebar-auto-hide="false">
+                <span>В</span>
+                <div class="other__links">
+                  <a href="#!">Вульводиния</a>
+                  <a href="#!">Выкидыш на ранних сроках</a>
+                </div>
+              </div>
+              <div class="other__block" data-simplebar data-simplebar-auto-hide="false">
+                <span>Г</span>
+                <div class="other__links">
+                  <a href="#!">Гематометра</a>
+                  <a href="#!">Генитальный герпис</a>
+                  <a href="#!">Гестоз</a>
+                  <a href="#!">Гидросальпкинс</a>
+                  <a href="#!">Гематометра</a>
+                  <a href="#!">Генитальный герпис</a>
+                  <a href="#!">Гестоз</a>
+                  <a href="#!">Гидросальпкинс</a>
+                  <a href="#!">Гематометра</a>
+                  <a href="#!">Генитальный герпис</a>
+                  <a href="#!">Гестоз</a>
+                  <a href="#!">Гидросальпкинс</a>
+                </div>
+              </div>
+              <div class="other__block" data-simplebar data-simplebar-auto-hide="false">
+                <span>Д</span>
+                <div class="other__links">
+                  <a href="#!">Двурогая матка</a>
+                  <a href="#!">Дермоидная киста яичника</a>
+                  <a href="#!">Диарея при беремнности</a>
+                  <a href="#!">Дисфункция яичников</a>
+                </div>
+              </div>
+            </div>
+            <button class="button-more">
+              Показать все
+              <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.351344 0.749159C0.576377 0.524193 0.881547 0.397815 1.19974 0.397815C1.51794 0.397815 1.82311 0.524193 2.04814 0.749159L5.99974 4.70076L9.95134 0.749159C10.062 0.634546 10.1945 0.543128 10.3409 0.480237C10.4873 0.417346 10.6447 0.384242 10.8041 0.382858C10.9634 0.381473 11.1214 0.411835 11.2689 0.472172C11.4164 0.532509 11.5503 0.621613 11.663 0.734284C11.7757 0.846955 11.8648 0.980938 11.9251 1.12841C11.9855 1.27589 12.0158 1.4339 12.0144 1.59324C12.0131 1.75258 11.98 1.91004 11.9171 2.05644C11.8542 2.20285 11.7628 2.33526 11.6481 2.44596L6.84814 7.24596C6.62311 7.47092 6.31794 7.5973 5.99974 7.5973C5.68155 7.5973 5.37638 7.47092 5.15134 7.24596L0.351344 2.44596C0.126379 2.22092 0 1.91576 0 1.59756C0 1.27936 0.126379 0.974192 0.351344 0.749159Z" fill="#00A7AA" />
+              </svg>
+            </button>
+            <div class="content-more">
+              <div class="other__block" data-simplebar data-simplebar-auto-hide="false">
+                <span>А</span>
+                <div class="other__links">
+                  <a href="#!">Аденокарцинома матки</a>
+                  <a href="#!">Аденомиоз</a>
+                  <a href="#!">Аменорея</a>
+                  <a href="#!">Анэбреония</a>
+                </div>
+              </div>
+              <div class="other__block" data-simplebar data-simplebar-auto-hide="false">
+                <span>В</span>
+                <div class="other__links">
+                  <a href="#!">Вульводиния</a>
+                  <a href="#!">Выкидыш на ранних сроках</a>
+                </div>
+              </div>
+              <div class="other__block" data-simplebar data-simplebar-auto-hide="false">
+                <span>Г</span>
+                <div class="other__links">
+                  <a href="#!">Гематометра</a>
+                  <a href="#!">Генитальный герпис</a>
+                  <a href="#!">Гестоз</a>
+                  <a href="#!">Гидросальпкинс</a>
+                </div>
+              </div>
+              <div class="other__block" data-simplebar data-simplebar-auto-hide="false">
+                <span>Д</span>
+                <div class="other__links">
+                  <a href="#!">Двурогая матка</a>
+                  <a href="#!">Дермоидная киста яичника</a>
+                  <a href="#!">Диарея при беремнности</a>
+                  <a href="#!">Дисфункция яичников</a>
+                </div>
+              </div>
+            </div>
         </div>
       </section>
 
@@ -793,6 +1284,7 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="js/main.js"></script>  
 </body>
 </html>

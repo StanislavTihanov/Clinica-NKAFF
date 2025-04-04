@@ -104,5 +104,8 @@
     border-radius: 32px;
   }
 }
+.callback--mod {
+  background-color: var(--color-white);
+}
 
 /*----------------------------------callback--------------------------------*/

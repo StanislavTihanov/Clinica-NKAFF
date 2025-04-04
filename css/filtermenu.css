@@ -51,6 +51,12 @@
 .filtermenu__list li.active_::after {
   opacity: 1;
 }
+.filtermenu__list--mod {
+  background-color: var(--color-white);
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-left: 0px;
+}
 @media (max-width: 768px) {
   .filtermenu__list {
     margin-right: 30px;

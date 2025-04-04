@@ -21,6 +21,11 @@
   align-items: center;
   gap: 15px 30px;
 }
+@media (max-width: 768px) {
+  .tab-labels__inner {
+    flex-wrap: wrap;
+  }
+}
 .tab-labels__yandex {
   display: flex;
   justify-content: space-between;

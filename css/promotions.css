@@ -1,11 +1,79 @@
 /*----------------------------------promotions-------------------------------*/
 .promotions {
-  margin-top: 100px;
   padding-bottom: 0px;
 }
 @media (max-width: 992px) {
   .promotions {
     margin-top: 50px;
+  }
+}
+.promotions__content .about-procedure__body {
+  margin-top: 60px;
+}
+@media (max-width: 992px) {
+  .promotions__content .about-procedure__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+.promotions__content .about-procedure__block {
+  border: none;
+  box-shadow: 0 1px 2px 0 rgba(67, 162, 150, 0.15), 0 0 16px 0 rgba(113, 180, 177, 0.16);
+}
+.promotions__content .about-procedure__block h3 {
+  color: var(--color-black-text);
+}
+.promotions__content .about-procedure__block:first-child {
+  background: linear-gradient(142deg, #edf4ff 0%, #cee2ff 100%);
+  color: var(--color-black-text);
+}
+.promotions__content .about-procedure__block:first-child h3 {
+  color: var(--color-black-text);
+}
+.promotions__content .about-procedure__block:first-child img {
+  margin-bottom: -45px;
+}
+.promotions__content .about-procedure__block:nth-child(3) {
+  grid-column: 1/3;
+}
+.promotions__content .about-procedure__block--mod2 {
+  background: linear-gradient(335deg, #cfe2ff 12.39%, #eef4ff 100%);
+}
+.promotions__content .about-procedure__block--mod2 img {
+  margin-top: -120px;
+}
+.promotions__content .about-procedure__block--mod2 p {
+  color: var(--color-black-text);
+}
+.promotions__content .about-procedure__block--mod2 .button {
+  padding: 13px 50px;
+}
+@media (max-width: 992px) {
+  .promotions__content .about-procedure__block--mod2 {
+    grid-column: 1/4;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .promotions__content .about-procedure__block--mod2 img {
+    margin-top: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    width: 200px;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .promotions__content .about-procedure__block--mod2 {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .promotions__content .about-procedure__block--mod2 img {
+    margin-bottom: -20px;
+    width: 100%;
   }
 }
 .promotions__blocks {
@@ -26,6 +94,7 @@
 }
 .promotions__block img {
   width: 100%;
+  height: 100%;
 }
 .promotions__block .arrow__pulse {
   border: 3px solid var(--color-white);
@@ -86,6 +155,18 @@
     border-bottom-right-radius: var(--border-radius-small);
   }
 }
+.promotions__block .button {
+  position: absolute;
+  bottom: 42px;
+  left: 80px;
+  width: 230px;
+}
+@media (max-width: 1200px) {
+  .promotions__block .button {
+    bottom: 20px;
+    left: 20px;
+  }
+}
 @media (max-width: 768px) {
   .promotions__block {
     display: block;
@@ -101,6 +182,20 @@
   }
   .promotions__block:hover .arrow__pulse::after {
     animation: pulse 2s ease-in-out infinite;
+  }
+}
+.promotions__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.promotions__bottom .right__button {
+  flex-basis: 300px;
+}
+@media (max-width: 768px) {
+  .promotions__bottom .right__button {
+    flex-basis: 100%;
   }
 }
 

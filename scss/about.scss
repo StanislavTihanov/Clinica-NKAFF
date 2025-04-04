@@ -123,6 +123,9 @@
                 margin-top: 0px;
             }
         }
+        &:last-child {
+            overflow: hidden;
+        }
         @include table {
             overflow: hidden;
             flex-basis: 100%;

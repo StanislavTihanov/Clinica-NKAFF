@@ -146,6 +146,9 @@
     margin-top: 0px;
   }
 }
+.about__block:last-child {
+  overflow: hidden;
+}
 @media (max-width: 992px) {
   .about__block {
     overflow: hidden;

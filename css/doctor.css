@@ -214,7 +214,7 @@
 }
 @media (max-width: 768px) {
   .doctor__links--mod {
-    gap: 16px;
+    gap: 8px;
   }
   .doctor__links--mod .doctor__link {
     width: auto;
