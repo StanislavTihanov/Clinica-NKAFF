@@ -6,6 +6,7 @@
     background-color: var(--color-white);
     padding-bottom: 10px;
     z-index: 999;
+    box-shadow: 0 2px 6px 0 rgba(122, 157, 164, 0.15);
     @include table {
         padding-bottom: 0px;
     }
@@ -84,9 +85,6 @@
         @include table {
             display: none;
         }
-    }
-    &--mod {
-        box-shadow: 0 2px 6px 0 rgba(122, 157, 164, 0.15);
     }
 }
 /*----------------------------------header--------------------------------*/

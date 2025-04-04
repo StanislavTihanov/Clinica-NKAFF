@@ -1,6 +1,7 @@
 /*----------------------------------promotions-------------------------------*/
 .promotions {
   padding-bottom: 0px;
+  margin-top: 100px;
 }
 @media (max-width: 992px) {
   .promotions {
@@ -197,6 +198,9 @@
   .promotions__bottom .right__button {
     flex-basis: 100%;
   }
+}
+.promotions--mod {
+  margin-top: 0;
 }
 
 /*----------------------------------promotions--------------------------------*/

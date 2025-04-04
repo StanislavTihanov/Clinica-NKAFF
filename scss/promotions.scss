@@ -2,6 +2,7 @@
 @use 'mixins' as *;
 .promotions {
     padding-bottom: 0px;
+    margin-top: 100px;
     @include table {
         margin-top: 50px;
     }
@@ -174,6 +175,8 @@
             }
         }
     }
-
+    &--mod {
+        margin-top: 0;
+    }
 }
 /*----------------------------------promotions--------------------------------*/

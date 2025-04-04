@@ -1,6 +1,6 @@
 /*----------------------------------prices-------------------------------*/
-.prices__content > p {
-  margin-bottom: 32px;
+.prices__content > p:not(:last-child) {
+  margin-bottom: 30px;
 }
 .prices__content .footnote {
   margin-bottom: 32px;

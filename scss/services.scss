@@ -22,14 +22,12 @@
             }
         }
         p,
-        .item {
+        .link {
             margin-bottom: 16px;
+            width: 100%;
         }
         @include mobile {
             flex-basis: 100%;
-        }
-        .item {
-            width: 100%;
         }
     }
 }

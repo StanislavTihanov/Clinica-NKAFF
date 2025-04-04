@@ -5,6 +5,7 @@
   background-color: var(--color-white);
   padding-bottom: 10px;
   z-index: 999;
+  box-shadow: 0 2px 6px 0 rgba(122, 157, 164, 0.15);
 }
 @media (max-width: 992px) {
   .header {
@@ -96,9 +97,6 @@
   .header__buttons {
     display: none;
   }
-}
-.header--mod {
-  box-shadow: 0 2px 6px 0 rgba(122, 157, 164, 0.15);
 }
 
 /*----------------------------------header--------------------------------*/

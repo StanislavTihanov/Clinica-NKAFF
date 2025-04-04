@@ -25,16 +25,14 @@
   }
 }
 .services__block p,
-.services__block .item {
+.services__block .link {
   margin-bottom: 16px;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .services__block {
     flex-basis: 100%;
   }
-}
-.services__block .item {
-  width: 100%;
 }
 
 /*----------------------------------services--------------------------------*/

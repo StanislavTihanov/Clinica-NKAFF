@@ -3,7 +3,9 @@
 .prices {
     &__content {
         &>p {
-            margin-bottom: 32px;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
         }
         .footnote {
             margin-bottom: 32px;
@@ -105,5 +107,6 @@
             display: flex;
         }
     }
+
 }
 /*----------------------------------prices--------------------------------*/
