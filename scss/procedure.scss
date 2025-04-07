@@ -9,32 +9,60 @@
         margin-bottom: 60px;
         &--mod {
             .procedure__block--bg {
-                flex-basis: 730px;
+                flex-basis: 700px;
                 font-family: var(--font-family-m);
                 font-weight: 600;
                 font-size: 15px;
                 line-height: 133%;
-                padding: 53px 32px;
+                padding: 50px 30px;
+                @include table {
+                    padding: 24px;
+                    text-align: start;
+                    flex-basis: 100%;
+                }
+            }
+            .procedure__photo {
+                flex-basis: 450px;
                 @include table {
                     flex-basis: 100%;
                 }
-                @include mobile {
-                    padding: 24px;
-                    text-align: start;
-                }
-            }
-            @include table {
-                flex-wrap: wrap;
             }
         }
-        @include mobile {
+        @include table {
             flex-wrap: wrap;
             justify-content: center;
             margin-bottom: 30px;
         }
+        &--mod2 {
+            margin-bottom: 0px;
+            .procedure__block--bg {
+                flex-basis: 950px;
+                font-family: var(--font-family-m);
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 133%;
+                padding: 30px;
+                p {
+                    &:not(:last-child) {
+                       margin-bottom: 10px;
+                    }
+                }
+                @include table {
+                    padding: 24px;
+                    text-align: start;
+                    flex-basis: 100%;
+                }
+            }
+            .procedure__photo {
+                flex-basis: 470px;
+                @include table {
+                    flex-basis: 100%;
+                }
+            }
+        }
     }
     &__photo {
-        flex-basis: 450px;
+        flex-basis: 500px;
         img {
             border-radius: var(--border-radius-small);
             width: 100%;

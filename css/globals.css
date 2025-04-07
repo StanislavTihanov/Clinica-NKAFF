@@ -70,6 +70,9 @@ section {
   color: var(--color-white);
   margin-bottom: 24px;
 }
+.title h1 {
+  font-size: clamp(26px, 3.3846153846vw, 44px);
+}
 
 .subtitle {
   font-size: clamp(18px, 2.4615384615vw, 32px);

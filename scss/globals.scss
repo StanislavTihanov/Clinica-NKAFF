@@ -58,6 +58,9 @@ section {
         color: var(--color-white);
         margin-bottom: 24px;
     }
+    h1 {
+        @include fluid-text(26, 44);
+    }
 }
 .subtitle {
     @include fluid-text(18, 32);

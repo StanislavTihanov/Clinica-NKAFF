@@ -41,5 +41,12 @@
             color: var(--color-primary);
         }
     }
+    &--mod {
+        margin-top: 100px;
+        margin-bottom: 24px;
+        @include table {
+            margin-top: 50px;
+        }
+    }
 }
 /*----------------------------------breadcrumbs--------------------------------*/

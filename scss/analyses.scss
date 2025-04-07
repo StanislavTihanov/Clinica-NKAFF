@@ -1,0 +1,120 @@
+/*----------------------------------analyses--------------------------------*/
+@use 'mixins' as *;
+.analyses {
+    &__block {
+        box-shadow: 0 1px 2px 0 rgba(67, 162, 150, 0.15), 0 0 16px 0 rgba(113, 180, 177, 0.16);
+        background: var(--color-white);
+        border-radius: var(--border-radius-small);
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px 16px;
+        margin-bottom: 30px;
+        @include mobile {
+            flex-wrap: wrap;
+            padding: 20px;
+            border-radius: 24px;
+        }
+        &--mod {
+            background-color: inherit;
+            box-shadow: none;
+            padding: 0px;
+            .analyses__info,
+            .analyses__cost {
+                box-shadow: 0 1px 2px 0 rgba(67, 162, 150, 0.15), 0 0 16px 0 rgba(113, 180, 177, 0.16);
+                background: var(--color-white);
+                border-radius: var(--border-radius-small);
+                padding: 20px 30px;
+                @include mobile {
+                    padding: 20px;
+                    border-radius: 24px;
+                }
+            }
+            .analyses__info {
+                flex-basis: 100%;
+            }
+            .analyses__cost {
+                padding: 50px 30px;
+                @include mobile {
+                    padding: 20px;
+                    border-radius: 24px;
+                    flex-basis: 100%;
+                }
+                .button {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    &__info {
+        flex-basis: 1000px;
+        &_top {
+            display: flex;
+            margin-bottom: 16px;
+            gap: 16px;
+            flex-wrap: wrap;
+            span {
+                color: var(--color-primary);
+            }
+        }
+        p {
+            font-family: var(--font-family-m);
+            font-weight: 600;
+            line-height: 140%;
+            margin-bottom: 16px;
+        }
+        &_bottom {
+            display: flex;
+            gap: 10px 40px;
+            @include mobile {
+                flex-wrap: wrap;
+            }
+        }
+        @include mobile {
+            flex-basis: 100%;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        max-width: 100%;
+        gap: 7px;
+        img {
+            flex: 0 0 auto; 
+            min-width: 15px;
+            max-width: 15px;
+            height: auto;
+        }
+        &_inner {
+            h3 {
+                margin-bottom: 5px;
+            }
+            span {
+                font-family: var(--font-family-m);
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 133%;
+            }
+        }
+    }
+    &__cost {
+        flex-basis: 160px;
+        span {
+            color: var(--color-secondary);
+            display: block;
+            &:first-child {
+                margin-bottom: 15px;
+                @include fluid-text(18, 24);
+            }
+        }
+        p {
+            font-family: var(--font-family-m);
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 133%;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+/*----------------------------------analyses--------------------------------*/

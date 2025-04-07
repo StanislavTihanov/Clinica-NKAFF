@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="НАКФФ Медицинская клиника">
+  <meta name="keywords" content="НАКФФ Медицинская клиника">
+  <meta property="og:title" content="НАКФФ Медицинская клиника">
+  <meta property="og:url" content="ссылка на сайт">
+  <meta property="og:image:width" content="1000">
+  <meta property="og:image:height" content="500">
+  <meta property="og:description" content="НАКФФ Медицинская клиника">
+  <meta property="og:image" content="путь к картинке/image.webp">
+  <title>НАКФФ Медицинская клиника</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body id="body">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__content _container">
+        <div class="header__body">
+          <div class="header__links">
+            <a class="header__logo" href="index.html" aria-label="логотип">
+              <img src="images/icons/logo.svg" alt="logo">
+            </a>
+            <a class="header__link" href="tel:+74950998882">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.53174 10.4724C13.5208 14.4604 14.4258 9.84672 16.9656 12.3848C19.4143 14.8328 20.8216 15.3232 17.7192 18.4247C17.3306 18.737 14.8616 22.4943 6.1846 13.8197C-2.49348 5.144 1.26158 2.67244 1.57397 2.28395C4.68387 -0.826154 5.16586 0.589383 7.61449 3.03733C10.1544 5.5765 5.54266 6.48441 9.53174 10.4724Z" fill="#00A7AA" />
+              </svg>
+              <span>+7 (495) 099-88-82</span>
+            </a>
+          </div>
+          <div class="header__block">
+            <div class="search">
+              <div class="search__box">
+                <div class="search__block">
+                  <div class="search__window">
+                    <label class="search__label">
+                      <input class="search__label_input" type="text" placeholder="Поиск">
+                      <img class="search__label_close" src="images/icons/Close.svg" alt="close icon">
+                    </label>
+                  </div>
+                </div>
+                <button class="search__btn">
+                  <img src="images/icons/Search.svg" alt="search icon">
+                </button>
+              </div>
+            </div>
+            <div class="burger" aria-label="кнопка открытия меню">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <nav class="menu" aria-label="Основное меню">
+            <div class="menu__mobile">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.333496 5.87842C0.333496 2.81185 2.89608 0.333252 5.99579 0.333252C9.10424 0.333252 11.6668 2.81185 11.6668 5.87842C11.6668 7.42371 11.1048 8.85834 10.1798 10.0743C9.15937 11.4156 7.9016 12.5842 6.48586 13.5015C6.16184 13.7135 5.86941 13.7295 5.5138 13.5015C4.08999 12.5842 2.83222 11.4156 1.8205 10.0743C0.894818 8.85834 0.333496 7.42371 0.333496 5.87842ZM4.12965 6.05109C4.12965 7.07839 4.96793 7.88637 5.99579 7.88637C7.02432 7.88637 7.87068 7.07839 7.87068 6.05109C7.87068 5.03178 7.02432 4.18447 5.99579 4.18447C4.96793 4.18447 4.12965 5.03178 4.12965 6.05109Z" fill="#00A7AA" />
+              </svg>
+              <span>Москва</span>
+            </div>
+            <a class="menu__mobile" href="#!">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52916 3.86062C9.52916 5.81864 7.95924 7.38866 5.99984 7.38866C4.0411 7.38866 2.47051 5.81864 2.47051 3.86062C2.47051 1.9026 4.0411 0.333252 5.99984 0.333252C7.95924 0.333252 9.52916 1.9026 9.52916 3.86062ZM5.99984 13.6666C3.10809 13.6666 0.666504 13.1966 0.666504 11.3832C0.666504 9.56921 3.12343 9.11587 5.99984 9.11587C8.89225 9.11587 11.3332 9.58588 11.3332 11.3992C11.3332 13.2132 8.87625 13.6666 5.99984 13.6666Z" fill="#00A7AA" />
+              </svg>
+              <span>Личный кабинет</span>
+            </a>
+            <div class="menu__mobile">
+              <a class="button button-filled-primary" href="#!">записаться онлайн</a>
+              <a href="tel:+74950998882">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.53174 10.4724C13.5208 14.4604 14.4258 9.84672 16.9656 12.3848C19.4143 14.8328 20.8216 15.3232 17.7192 18.4247C17.3306 18.737 14.8616 22.4943 6.1846 13.8197C-2.49348 5.144 1.26158 2.67244 1.57397 2.28395C4.68387 -0.826154 5.16586 0.589383 7.61449 3.03733C10.1544 5.5765 5.54266 6.48441 9.53174 10.4724Z" fill="#00A7AA" />
+                </svg>
+              </a>
+            </div>
+            <ul>
+              <li>
+                <a class="menu__link" href="#">Врачи</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#">Услуги</a>
+              </li>
+              <li class="menu__button">
+                <a class="menu__link" href="#!">Центр онкологии</a>
+                <div class="menu__list_wrapper">
+                  <ul class="menu__list">
+                    <li>
+                      <a class="menu__link" href="#!">Онкогинекология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкоурология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкодерматология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Иммунотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Таргетная терапия при онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Химиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Радиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Фотодинамическая терапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Паллиативная помощь</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкологический консилиум</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Второе мнение в онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu__button">
+                <a class="menu__link" href="#">Центр хирургии</a>
+                <div class="menu__list_wrapper">
+                  <ul class="menu__list">
+                    <li>
+                      <a class="menu__link" href="#!">Онкогинекология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкоурология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкодерматология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Иммунотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Таргетная терапия при онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Химиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Радиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Фотодинамическая терапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Паллиативная помощь</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкологический консилиум</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Второе мнение в онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu__button">
+                <a class="menu__link" href="#">Диагностика</a>
+                <div class="menu__list_wrapper">
+                  <ul class="menu__list">
+                    <li>
+                      <a class="menu__link" href="#!">Онкогинекология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкоурология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкодерматология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Иммунотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Таргетная терапия при онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Химиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Радиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Фотодинамическая терапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Паллиативная помощь</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкологический консилиум</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Второе мнение в онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu__button">
+                <a class="menu__link" href="#">Анализы</a>
+                <div class="menu__list_wrapper">
+                  <ul class="menu__list">
+                    <li>
+                      <a class="menu__link" href="#!">Онкогинекология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкоурология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкодерматология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Иммунотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Таргетная терапия при онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Химиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Радиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Фотодинамическая терапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Паллиативная помощь</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкологический консилиум</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Второе мнение в онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="menu__link" href="#">Акции</a></li>
+              <li class="menu__button">
+                <a class="menu__link" href="#">О нас</a>
+                <div class="menu__list_wrapper">
+                  <ul class="menu__list">
+                    <li>
+                      <a class="menu__link" href="#!">Онкогинекология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкоурология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкодерматология</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Иммунотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Таргетная терапия при онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Химиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Радиотерапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Фотодинамическая терапия</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Паллиативная помощь</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Онкологический консилиум</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Второе мнение в онкологии</a>
+                      <img src="images/icons/Arrow-Right.svg" alt="arrow">
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="menu__link" href="#">Контакты</a></li>
+              <li><a class="menu__link" href="#">Отзывы</a></li>
+            </ul>
+            <div class="header__buttons">
+              <a class="button button-filled-primary" href="#!">Записаться к врачу</a>
+              <a class="button button-filled-secondary" href="#!">Госпитализация</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+
+      <div class="breadcrumbs _container">
+        <ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="#!" class="breadcrumbs__item_link">
+              <span itemprop="name">Главная</span>
+            </a>
+            <meta itemprop="position" content="1"/>
+          </li>
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="#!" class="breadcrumbs__item_link">
+              <span itemprop="name">Анализы</span>
+            </a>
+            <meta itemprop="position" content="2"/>
+          </li>
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <span itemprop="name">Онкомаркеры</span>
+            <meta itemprop="position" content="3"/>
+          </li>
+        </ul>
+      </div>
+
+      <section class="procedure">
+        <div class="procedure__content _container">
+          <div class="title">
+            <h1>Онкомаркеры</h1>
+          </div>
+          <div class="procedure__body procedure__body--mod2">
+            <div class="procedure__photo">
+              <img src="images/analyses-img.webp" alt="photo">
+            </div>
+            <div class="procedure__block procedure__block--bg procedure__analyses">
+              <p>
+                Turpis interdum vitae augue amet. Euismod non amet lobortis viverra. Fringilla tristique habitant sed faucibus tincidunt. Pretium nunc tortor enim natoque fusce.
+              </p>
+              <p>
+                A egestas lacus elit at diam dui nunc. Massa dignissim fringilla vulputate pulvinar amet bibendum. Dictum imperdiet est hendrerit suspendisse. Pellentesque volutpat commodo consectetur elementum lorem non sollicitudin augue. Integer mattis duis leo sit. 
+              </p>
+              <p>
+                Massa dignissim fringilla vulputate pulvinar amet bibendum. Dictum imperdiet est hendrerit suspendisse. Pellentesque volutpat commodo consectetur elementum lorem non sollicitudin augue. Integer mattis duis leo sit. Pharetra nisi leo mattis non fermentum fermentum feugiat viverra. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="analyses section-color">
+        <div class="analyses__content _container">
+          <label class="filter__search">
+            <input id="searchInput" type="text" placeholder="Поиск">
+            <span class="filter__search_close">
+              <img src="images/icons/Close.svg" alt="close">
+            </span>
+          </label>
+           <a class="analyses__block" href="#!">
+             <div class="analyses__info">
+              <div class="analyses__info_top">
+                <h2>Хромогранин А (Chromogranin A, CgA)</h2>
+                <span>№92</span>
+                <span>код : 070012</span>
+              </div>
+              <p>
+               Хромогранин А является онкологическим маркером опухолей, которые могут развиваться преимущественно из клеток нейроэндокринной системы. Эти новообразования представляют серьезные сложности для ранней диагностики, т.к. подобные структуры могут находиться в различных органах.
+              </p>
+              <div class="analyses__info_bottom">
+                <div class="analyses__item">
+                  <img src="images/icons/Calendar-color.svg" alt="img">
+                  <div class="analyses__item_inner">
+                    <h3>срок выполнения</h3>
+                    <span>7-10 дней</span>
+                  </div>
+                </div>
+                <div class="analyses__item">
+                  <img src="images/icons/Icon-flask.svg" alt="img">
+                  <div class="analyses__item_inner">
+                    <h3>материал</h3>
+                    <span>кровь</span>
+                  </div>
+                </div>
+                <div class="analyses__item">
+                  <img src="images/icons/info.svg" alt="img">
+                  <div class="analyses__item_inner">
+                    <h3>подготовка не треубется</h3>
+                  </div>
+                </div>
+              </div>
+             </div>
+             <div class="analyses__cost">
+                <span>2 605 р</span>
+                <p>срочный анализ</p>
+                <span>+ 525 р</span>
+             </div>
+           </a>
+           <a class="analyses__block" href="#!">
+            <div class="analyses__info">
+              <div class="analyses__info_top">
+                <h2>Хромогранин А (Chromogranin A, CgA)</h2>
+                <span>№92</span>
+                <span>код : 070012</span>
+              </div>
+              <p>
+               Хромогранин А является онкологическим маркером опухолей, которые могут развиваться преимущественно из клеток нейроэндокринной системы. Эти новообразования представляют серьезные сложности для ранней диагностики, т.к. подобные структуры могут находиться в различных органах.
+              </p>
+              <div class="analyses__info_bottom">
+                <div class="analyses__item">
+                  <img src="images/icons/Calendar-color.svg" alt="img">
+                  <div class="analyses__item_inner">
+                    <h3>срок выполнения</h3>
+                    <span>7-10 дней</span>
+                  </div>
+                </div>
+                <div class="analyses__item">
+                  <img src="images/icons/Icon-flask.svg" alt="img">
+                  <div class="analyses__item_inner">
+                    <h3>материал</h3>
+                    <span>кровь</span>
+                  </div>
+                </div>
+                <div class="analyses__item">
+                  <img src="images/icons/info.svg" alt="img">
+                  <div class="analyses__item_inner">
+                    <h3>подготовка не треубется</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="analyses__cost">
+               <span>2 605 р</span>
+               <p>срочный анализ</p>
+               <span>+ 525 р</span>
+            </div>
+           </a>
+           <a class="analyses__block" href="#!">
+            <div class="analyses__info">
+             <div class="analyses__info_top">
+               <h2>Хромогранин А (Chromogranin A, CgA)</h2>
+               <span>№92</span>
+               <span>код : 070012</span>
+             </div>
+             <p>
+              Хромогранин А является онкологическим маркером опухолей, которые могут развиваться преимущественно из клеток нейроэндокринной системы. Эти новообразования представляют серьезные сложности для ранней диагностики, т.к. подобные структуры могут находиться в различных органах.
+             </p>
+             <div class="analyses__info_bottom">
+               <div class="analyses__item">
+                 <img src="images/icons/Calendar-color.svg" alt="img">
+                 <div class="analyses__item_inner">
+                   <h3>срок выполнения</h3>
+                   <span>7-10 дней</span>
+                 </div>
+               </div>
+               <div class="analyses__item">
+                 <img src="images/icons/Icon-flask.svg" alt="img">
+                 <div class="analyses__item_inner">
+                   <h3>материал</h3>
+                   <span>кровь</span>
+                 </div>
+               </div>
+               <div class="analyses__item">
+                 <img src="images/icons/info.svg" alt="img">
+                 <div class="analyses__item_inner">
+                   <h3>подготовка не треубется</h3>
+                 </div>
+               </div>
+             </div>
+            </div>
+            <div class="analyses__cost">
+               <span>2 605 р</span>
+               <p>срочный анализ</p>
+               <span>+ 525 р</span>
+            </div>
+          </a>
+          <div class="pagination">
+            <span class="pagination__number pagination__active">1</span>
+            <span class="pagination__number">2</span>
+            <span class="pagination__number">3</span>
+            <span class="pagination__number">4</span>
+            <span class="pagination__number">5</span>
+            <div class="pagination__arrow">
+              <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 1.1665L7.33333 6.99984L1.5 12.8332" stroke="#1B1B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-procedure">
+        <div class="about-procedure__content _container">
+          <div class="title _container">
+            <h2>Прием у врача-онколога</h2>
+          </div>
+          <div class="filtermenu">
+            <div class="filtermenu__wrapper">
+              <ul class="filtermenu__list">
+                <li data-filter="filtermenu__title_2">Показания</li>
+                <li data-filter="filtermenu__title_3">Противопоказания</li>
+                <li data-filter="filtermenu__title_4">Подготовка</li>
+                <li data-filter="filtermenu__title_5">Как проходит</li>
+                <li data-filter="filtermenu__title_6">Результат</li>
+              </ul>
+            </div>
+            <div class="filtermenu__container">
+              <div class="post filtermenu__title_1">
+                <div class="about-procedure__body">
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Как проходит прием у онколога ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                        In vitae interdum rhoncus diam iaculis erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum 
+                        venenatis eleifend cum. Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      </p>
+                      <p>
+                        Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a 
+                        elementum tellus aenean quisque imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                        Eget pellentesque sed vestibulum integer et a malesuada.
+                      </p>
+                    </div>
+                    <img src="images/about-procedure-img.webp" alt="image">
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 1</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum 
+                      sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis 
+                      erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum venenatis 
+                      eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus 
+                      consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque 
+                      imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 2</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed 
+                      quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                      Amet ultricies id faucibus porttitor hendrerit ipsum venenatis eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 3</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque imperdiet scelerisque. 
+                    </p>
+                    <p>
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Остались вопросы ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                      </p>
+                      <a class="button button-white" href="#!">Записаться</a>
+                    </div>
+                    <img src="images/about-procedure-img1.webp" alt="photo">
+                  </div>
+                </div>
+              </div>
+              <div class="post filtermenu__title_2">
+                <div class="about-procedure__body">
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Как проходит прием у онколога ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                        In vitae interdum rhoncus diam iaculis erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum 
+                        venenatis eleifend cum. Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      </p>
+                      <p>
+                        Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a 
+                        elementum tellus aenean quisque imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                        Eget pellentesque sed vestibulum integer et a malesuada.
+                      </p>
+                    </div>
+                    <img src="images/about-procedure-img.webp" alt="image">
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 1</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum 
+                      sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis 
+                      erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum venenatis 
+                      eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus 
+                      consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque 
+                      imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 2</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed 
+                      quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                      Amet ultricies id faucibus porttitor hendrerit ipsum venenatis eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 3</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque imperdiet scelerisque. 
+                    </p>
+                    <p>
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Остались вопросы ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                      </p>
+                      <a class="button button-white" href="#!">Записаться</a>
+                    </div>
+                    <img src="images/about-procedure-img1.webp" alt="photo">
+                  </div>
+                </div>
+              </div>
+              <div class="post filtermenu__title_3">
+                <div class="about-procedure__body">
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Как проходит прием у онколога ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                        In vitae interdum rhoncus diam iaculis erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum 
+                        venenatis eleifend cum. Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      </p>
+                      <p>
+                        Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a 
+                        elementum tellus aenean quisque imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                        Eget pellentesque sed vestibulum integer et a malesuada.
+                      </p>
+                    </div>
+                    <img src="images/about-procedure-img.webp" alt="image">
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 1</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum 
+                      sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis 
+                      erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum venenatis 
+                      eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus 
+                      consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque 
+                      imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 2</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed 
+                      quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                      Amet ultricies id faucibus porttitor hendrerit ipsum venenatis eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 3</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque imperdiet scelerisque. 
+                    </p>
+                    <p>
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Остались вопросы ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                      </p>
+                      <a class="button button-white" href="#!">Записаться</a>
+                    </div>
+                    <img src="images/about-procedure-img1.webp" alt="photo">
+                  </div>
+                </div>
+              </div>
+              <div class="post filtermenu__title_4">
+                <div class="about-procedure__body">
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Как проходит прием у онколога ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                        In vitae interdum rhoncus diam iaculis erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum 
+                        venenatis eleifend cum. Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      </p>
+                      <p>
+                        Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a 
+                        elementum tellus aenean quisque imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                        Eget pellentesque sed vestibulum integer et a malesuada.
+                      </p>
+                    </div>
+                    <img src="images/about-procedure-img.webp" alt="image">
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 1</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum 
+                      sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis 
+                      erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum venenatis 
+                      eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus 
+                      consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque 
+                      imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 2</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed 
+                      quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                      Amet ultricies id faucibus porttitor hendrerit ipsum venenatis eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 3</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque imperdiet scelerisque. 
+                    </p>
+                    <p>
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Остались вопросы ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                      </p>
+                      <a class="button button-white" href="#!">Записаться</a>
+                    </div>
+                    <img src="images/about-procedure-img1.webp" alt="photo">
+                  </div>
+                </div>
+              </div>
+              <div class="post filtermenu__title_5">
+                <div class="about-procedure__body">
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Как проходит прием у онколога ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                        In vitae interdum rhoncus diam iaculis erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum 
+                        venenatis eleifend cum. Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      </p>
+                      <p>
+                        Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a 
+                        elementum tellus aenean quisque imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                        Eget pellentesque sed vestibulum integer et a malesuada.
+                      </p>
+                    </div>
+                    <img src="images/about-procedure-img.webp" alt="image">
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 1</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum 
+                      sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis 
+                      erat arcu. Amet ultricies id faucibus porttitor hendrerit ipsum venenatis 
+                      eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. 
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus 
+                      consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque 
+                      imperdiet scelerisque. Velit quis sem ante ut nullam donec id nec. 
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 2</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed 
+                      quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                      Amet ultricies id faucibus porttitor hendrerit ipsum venenatis eleifend cum. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <h3>Шаг 3</h3>
+                    <p>
+                      In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. In vitae interdum rhoncus diam iaculis erat arcu. 
+                    </p>
+                    <p>
+                      Aliquam vivamus arcu ullamcorper cras varius felis tincidunt vel elit. Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros. Orci arcu purus a elementum tellus aenean quisque imperdiet scelerisque. 
+                    </p>
+                    <p>
+                      Montes et hac sapien at. Dignissim proin quam volutpat quis. Integer cursus consectetur velit amet eros.
+                    </p>
+                  </div>
+                  <div class="about-procedure__block">
+                    <div class="about-procedure__block_info">
+                      <h3>Остались вопросы ?</h3>
+                      <p>
+                        In felis feugiat risus in faucibus enim. Venenatis eu pellentesque ipsum sagittis in viverra sed quis id. 
+                      </p>
+                      <a class="button button-white" href="#!">Записаться</a>
+                    </div>
+                    <img src="images/about-procedure-img1.webp" alt="photo">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="questions section-color" id="questions">
+        <div class="questions__content _container">
+          <div class="title">
+            <h2>Часто задаваемые вопросы</h2>
+          </div>
+          <div class="questions__body">
+            <div class="accordion">
+              <div class="accordion__block">
+              <details class="accordion__details" name="faq" open>
+                <summary class="accordion__summary">
+                  <h3 class="accordion__title" role="term" aria-details="faq-1">
+                    Какие противопоказания есть у процедуры HIPEC?
+                  </h3>
+                  <span></span>
+                </summary>
+              </details>
+              <div class="accordion__content" id="faq-1" role="definition">
+                <div class="accordion__content_body">
+                  <p>
+                    Залог успешного лечения — индивидуальный подход. Не бывает двух одинаковых пациентов даже с одной и той же болезнью. 
+                    Мы рассматриваем каждого пациента отдельно и принимаем решение о необходимости лечения на консилиуме.
+                  </p>
+                </div>
+              </div>
+              </div>
+              <div class="accordion__block">
+              <details class="accordion__details" name="faq">
+                <summary class="accordion__summary">
+                  <h3 class="accordion__title" role="term" aria-details="faq-2">
+                    Какие противопоказания есть у процедуры HIPEC?
+                  </h3>
+                  <span></span>
+                </summary>
+              </details>
+              <div class="accordion__content" id="faq-2" role="definition">
+                <div class="accordion__content_body">
+                  <p>
+                    Залог успешного лечения — индивидуальный подход. Не бывает двух одинаковых пациентов даже с одной и той же болезнью. 
+                    Мы рассматриваем каждого пациента отдельно и принимаем решение о необходимости 
+                    лечения на консилиуме.
+                  </p>
+                </div>
+              </div>
+              </div>
+              <div class="accordion__block">
+              <details class="accordion__details" name="faq">
+                <summary class="accordion__summary">
+                  <h3 class="accordion__title" role="term" aria-details="faq-3">
+                    Почему HIPEC проводят всего в нескольких клиниках в России?
+                  </h3>
+                  <span></span>
+                </summary>
+              </details>
+              <div class="accordion__content" id="faq-3" role="definition">
+                <div class="accordion__content_body">
+                  <p>
+                    Залог успешного лечения — индивидуальный подход. Не бывает двух одинаковых пациентов даже с одной и той же болезнью. 
+                    Мы рассматриваем каждого пациента отдельно и принимаем решение о необходимости 
+                    лечения на консилиуме.
+                  </p>
+                </div>
+              </div>
+              </div>
+              <div class="accordion__block">
+                <details class="accordion__details" name="faq">
+                  <summary class="accordion__summary">
+                    <h3 class="accordion__title" role="term" aria-details="faq-3">
+                      Какие осложнения могут возникнуть во время и после процедуры?
+                    </h3>
+                    <span></span>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="faq-3" role="definition">
+                  <div class="accordion__content_body">
+                    <p>
+                      Залог успешного лечения — индивидуальный подход. Не бывает двух одинаковых пациентов даже с одной и той же болезнью. 
+                      Мы рассматриваем каждого пациента отдельно и принимаем решение о необходимости 
+                      лечения на консилиуме.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="callback" id="callback">
+        <div class="callback__content _container callback__content--mod">
+          <div class="block-row block-row--mod">
+            <div class="block-row__item">
+              <img src="images/icons/ShieldDone.svg" alt="icon">
+              <p>Информация проверена экспертом </p>
+            </div>
+            <div class="block-row__item">
+              <img src="images/doctor-icon.png" alt="icon">
+              <div class="block-row__item_col">
+                <span>Иванов Иван Иванович</span>
+                <p>Врач КТ, 12 лет</p>
+              </div>
+            </div>
+          </div>
+          <div class="callback__wrapper">
+            <div class="callback__body">
+              <div class="callback__info">
+                <div class="title title--mod">
+                  <h2>Лицензии</h2>
+                </div>
+                <p>Мы осуществляем деятельность на основании медицинских лицензий в соответствии с рекомендациями Минздрава</p>
+                <a class="button button-white" href="#!">
+                  Посмотреть лицензии
+                  <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.75 7.72607L1.75 7.72607" stroke="#1B1B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10.7002 1.70149L16.7502 7.72549L10.7002 13.7505" stroke="#1B1B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <div class="callback__photo">
+                <img src="images/license.webp" alt="обратный звонок">
+              </div>
+            </div>
+            <div class="callback__bg _ibg">
+              <picture>
+                <source media="(max-width: 768px)" srcset="images/section-bg-mob.webp">
+                <img src="images/license-bg.webp" alt="bg">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__wrapper section-color">
+          <a class="footer__logo _container" href="index.html">
+            <img src="images/icons/logo.svg" alt="logo">
+          </a>
+          <div class="footer__body _container">
+            <div class="footer__block">
+              <div class="footer__title">
+                <h3>Услуги</h3>
+              </div>
+              <ul class="footer__list">
+                <li><a href="#!">Онкологический центр</a></li>
+                <li><a href="#!">Центр хирургии</a></li>
+                <li><a href="#!">Центр реабилитации</a></li>
+                <li><a href="#!">Стационар</a></li>
+                <li><a href="#!">Диагностика</a></li>
+                <li><a href="#!">Анализы</a></li>
+                <li><a href="#!">Направления</a></li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <div class="footer__title">
+                <h3>О клинике</h3>
+              </div>
+              <ul class="footer__list">
+                <li><a href="#!">О клинике НАКФФ</a></li>
+                <li><a href="#!">Премии и награды</a></li>
+                <li><a href="#!">Отзывы</a></li>
+                <li><a href="#!">Видеоотзывы</a></li>
+                <li><a href="#!">Новости</a></li>
+                <li><a href="#!">Вакансии</a></li>
+                <li><a href="#!">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <div class="footer__title">
+                <h3>Пациентам</h3>
+              </div>
+              <ul class="footer__list">
+                <li><a href="#!">Справочник заболевания</a></li>
+                <li><a href="#!">Справочник симптомов</a></li>
+                <li><a href="#!">Лицензии клиники</a></li>
+                <li><a href="#!">Правовая информация</a></li>
+                <li><a href="#!">Политика обработки персональных данных</a></li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <div class="footer__tel">
+                <p>Круглосуточная запись по телефону</p>
+                <a href="tel:+74950998882">+7 (495) 099-88-82</a>
+              </div>
+              <div class="footer__row footer__row--mod">
+                <address> 
+                  <img src="images/icons/Location-footer.svg" alt="location"> Москва, г. Москва, ул. Угрешская, д.2, стр.7
+                </address>
+                <a href="mailto:clinic@clinicnacpp.ru">
+                  <img src="images/icons/Message.svg" alt="mail icon">
+                  clinic@clinicnacpp.ru
+                </a>
+              </div>
+              <div class="footer__row">
+                <div class="footer__box">
+                  <p>Мы принимаем к оплате:</p>
+                  <div class="footer__links">
+                    <a href="#!">
+                      <img src="images/icons/visa.svg" alt="visa">
+                    </a>
+                    <a href="#!">
+                      <img src="images/icons/master_card.svg" alt="master-card">
+                    </a>
+                    <a href="#!">
+                      <img src="images/icons/mir.svg" alt="mir">
+                    </a>
+                  </div>
+                </div>
+                <div class="footer__box">
+                  <p>Присоединяйтесь к нам:</p>
+                  <div class="footer__links">
+                    <a href="#!">
+                      <img src="images/icons/youtobe.svg" alt="youtobe">
+                    </a>
+                    <a href="#!">
+                      <img src="images/icons/vk.svg" alt="vk">
+                    </a>
+                    <a href="#!">
+                      <img src="images/icons/telegram.svg" alt="telegram">
+                    </a>
+                    <a href="#!">
+                      <img src="images/icons/dzen.svg" alt="dzen">
+                    </a>
+                    <a href="#!">
+                      <img src="images/icons/ok.svg" alt="ok">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom _container">
+          <div class="footer__requisites">
+            <h3>Данные об организации</h3>
+            <p>Юридический адрес:</p>
+            <address>115088, город Москва, Угрешская ул., д. 2 стр. 8, эт/пом 2/34 </address>
+            <p>ООО "НАКФФ"</p>
+            <p>ИНН: 7723628921</p>
+            <p>ОГРН: 772301001</p>
+            <div class="footer__requisites_info">
+              <img src="images/icons/Emblem_Russia.svg" alt="Emblem">
+              <p>
+                Незавимая оценка качества
+                оказания услуг медицинских организаций 
+              </p>
+            </div>
+          </div>
+          <div class="footer__license">
+            <p>
+              Лицензия № ЛО41-01137-77/00367431 от 30.10.2019 г.  Копирование, тиражирование, а 
+              равно иное использование материалов, размещенных на clinicnacpp.ru возможно 
+              только с письменного разрешения Правообладателя.
+            </p>
+            <p>
+              Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно 
+              информационный характер. Ни при каких условиях информационные материалы и цены, 
+              размещенные на интернет-сайте clinicnacpp.ru, не являются публичной офертой, 
+              определяемой положениями Статьи 437 Гражданского кодекса РФ. Актуальную информацию
+              об акциях, предложениях и ценах уточняйте по телефону. Определение диагноза и 
+              выбора методики остается исключительной прерогативой вашего лечащего врача. 
+              ООО «Медицинская клиника «НАКФФ» не несет ответственности за возможные негативные 
+              последствия, возникшие в результате использования информации, размещенной на 
+              интернет-сайте clinicnacpp.ru. Лицензия ЛО41-01137-77/00367431 от 30.10.2019г. 
+              Имеются противопоказания. Необходима консультация специалиста. Копирование, 
+              тиражирование, а равно иное использование материалов, размещенных на интернет-сайте 
+              clinicnacpp.ru возможно только с письменного разрешения правообладателя.
+            </p>
+          </div>
+        </div>
+        <div class="footer__wrapper section-color">
+          <div class="footer__info _container">
+             <p>ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА</p>
+             <p>© 2008 - 2025 Клиника «НАКФФ», Все права защищены </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="js/main.js"></script>  
+</body>
+</html>
