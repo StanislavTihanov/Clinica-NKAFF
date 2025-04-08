@@ -137,20 +137,6 @@
                 }
             }
         }
-        &:last-child {
-            grid-column: 1 / 4;
-            justify-content: space-between;
-            @include mobile {
-                .news__item_photo {
-                    flex-basis: 100%;
-                    img {
-                        border-top-left-radius: 24px;
-                        border-top-right-radius: 24px;
-                        border-bottom-left-radius: 0px;
-                    }
-                }
-            }
-        }
         @include mobile {
             flex-wrap: wrap;
             border-radius: 24px;

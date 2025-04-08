@@ -3270,20 +3270,6 @@ section {
     max-width: 117px;
   }
 }
-.news__item:last-child {
-  grid-column: 1/4;
-  justify-content: space-between;
-}
-@media (max-width: 768px) {
-  .news__item:last-child .news__item_photo {
-    flex-basis: 100%;
-  }
-  .news__item:last-child .news__item_photo img {
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
-    border-bottom-left-radius: 0px;
-  }
-}
 @media (max-width: 768px) {
   .news__item {
     flex-wrap: wrap;
