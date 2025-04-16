@@ -11,11 +11,10 @@
   position: relative;
   border-radius: var(--border-radius);
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .callback__wrapper {
     border-radius: 32px;
     background: linear-gradient(206deg, #009caa 7.83%, #a9dcde 74.83%, #73becd 96.04%);
-    border-radius: 32px;
   }
 }
 .callback__content--mod .callback__info p {
@@ -99,7 +98,7 @@
 .callback__bg img {
   border-radius: var(--border-radius);
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .callback__bg img {
     border-radius: 32px;
   }

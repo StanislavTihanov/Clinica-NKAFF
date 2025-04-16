@@ -8,10 +8,9 @@
     &__wrapper {
         position: relative;
         border-radius: var(--border-radius);
-        @include mobile {
+        @include table {
             border-radius: 32px;
             background: linear-gradient(206deg, #009caa 7.83%, #a9dcde 74.83%, #73becd 96.04%);
-            border-radius: 32px;
         }
     }
     &__content {
@@ -91,7 +90,7 @@
         left: 0;
         img {
             border-radius: var(--border-radius);
-            @include mobile {
+            @include table {
                 border-radius: 32px;
             }
         }

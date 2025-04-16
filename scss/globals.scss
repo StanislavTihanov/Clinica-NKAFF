@@ -514,6 +514,27 @@ section {
     display: flex;
     gap: 10px;
 }
+.list-points {
+    li {
+        padding-left: 20px;
+        position: relative;
+        margin-bottom: 15px;
+        font-weight: 600;
+        @include fluid-text(15, 17);
+        line-height: 141%;
+        font-family: var(--font-family-m);
+        &::before {
+            position: absolute;
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            top: 7px;
+            left: 0;
+            background-color: var(--color-white);
+        }
+    }
+}
 /*----------------------------------global--------------------------------*/
 
 

@@ -581,6 +581,26 @@ section {
   gap: 10px;
 }
 
+.list-points li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: clamp(15px, 1.3076923077vw, 17px);
+  line-height: 141%;
+  font-family: var(--font-family-m);
+}
+.list-points li::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  top: 7px;
+  left: 0;
+  background-color: var(--color-white);
+}
+
 /*----------------------------------global--------------------------------*/
 .list-links {
   padding-top: 50px;

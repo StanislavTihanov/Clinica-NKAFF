@@ -1,0 +1,46 @@
+/*----------------------------------other--------------------------------*/
+.licenses .callback__body {
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .licenses .callback__body {
+    flex-wrap: wrap;
+    padding: 20px 20px 0px 20px;
+  }
+}
+.licenses .callback__info {
+  flex-basis: 750px;
+}
+.licenses .list-points {
+  margin-bottom: 30px;
+}
+.licenses__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px 30px;
+  max-width: 550px;
+}
+@media (hover: hover) {
+  .licenses__buttons .button-white:hover svg {
+    transform: translateY(5px);
+    transition: all 0.3s;
+  }
+}
+.licenses__buttons .licenses-button {
+  border: 1px solid var(--color-white);
+}
+@media (hover: hover) {
+  .licenses__buttons .licenses-button:hover {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+  }
+}
+@media (max-width: 992px) {
+  .licenses__buttons {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+}
+
+/*----------------------------------other--------------------------------*/

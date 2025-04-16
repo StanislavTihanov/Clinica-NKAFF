@@ -1,0 +1,44 @@
+/*----------------------------------other--------------------------------*/
+@use 'mixins' as *;
+.licenses {
+    .callback__body {
+        gap: 20px;
+        @include table {
+            flex-wrap: wrap;
+            padding: 20px 20px 0px 20px;
+        }
+    }
+    .callback__info {
+        flex-basis: 750px;
+    }
+    .list-points {
+        margin-bottom: 30px;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px 30px;
+        max-width: 550px;
+        .button-white {
+            @include hover {
+                svg {
+                    transform: translateY(5px);
+                    transition: all 0.3s;
+                }
+            }
+        }
+        .licenses-button {
+            border: 1px solid var(--color-white);
+            @include hover {
+                color: var(--color-primary);
+                background-color: var(--color-white);
+            }
+        }
+        @include table {
+            flex-wrap: wrap;
+            max-width: 100%;
+        }
+    }
+}
+/*----------------------------------other--------------------------------*/

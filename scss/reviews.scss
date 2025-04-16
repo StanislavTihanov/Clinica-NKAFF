@@ -67,6 +67,9 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        &-prev {
+            transform: rotate(180deg);
+        }
     }
     &__active {
         border: 1px solid var(--color-black-text);
