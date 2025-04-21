@@ -1,0 +1,112 @@
+/*----------------------------------promotions-------------------------------*/
+@use 'mixins' as *;
+.hospital {
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        @include table {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+.room {
+    box-shadow: 0 1px 2px 0 rgba(67, 162, 150, 0.15), 0 0 16px 0 rgba(113, 180, 177, 0.16);
+    background: var(--color-white);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    &__cost {
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 5px;
+        span {
+            display: block;
+            &:first-child {
+                font-weight: 700;
+                line-height: 133%;
+                @include fluid-text(18, 20);
+                color: var(--color-secondary);
+            }
+            &:last-child {
+                font-weight: 600;
+                line-height: 140%;
+                text-decoration: line-through;
+            }
+        }
+        @include mobile {
+            justify-content: start;
+        }
+    }
+    &__image {
+        flex-basis: 280px;
+        img {
+            border-radius: var(--border-radius-small);
+            width: 100%;
+            @include mobile {
+                height: 250px;
+                border-radius: 24px;
+            }
+        }
+        h3 {
+            margin-bottom: 24px;
+            font-weight: 700;
+            @include fluid-text(18, 20);
+            line-height: 133%;
+        }
+        @include mobile {
+            flex-basis: 100%;
+        }
+    }
+    &__info {
+        flex-basis: 400px;
+        &_inner {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+            span {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                border-radius: var(--border-radius-small);
+                padding: 6px 12px 6px 6px;
+                background-color: #EFFAFB;
+                font-weight: 600;
+                @include fluid-text(12, 14);
+                line-height: 133%;
+            }
+        }
+        .button {
+           max-width: 320px;
+        }
+        @include mobile {
+            flex-basis: 100%;
+        }
+    }
+    &:nth-child(3) {
+        align-items: center;
+        grid-column: 1 / 3;
+        .room__info {
+            flex-basis: 800px;
+        }
+        .room__cost {
+            justify-content: start;
+        }
+    }
+    @include table {
+        grid-column: 1 / 3;
+    }
+    @include mobile {
+        flex-wrap: wrap;
+        padding: 16px;
+        border-radius: 24px;
+    }
+}
+
+/*----------------------------------promotions-------------------------------*/

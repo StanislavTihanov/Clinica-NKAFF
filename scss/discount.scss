@@ -1,0 +1,75 @@
+/*----------------------------------promotions-------------------------------*/
+@use 'mixins' as *;
+.discount {
+    position: relative;
+    background: linear-gradient(138deg, #79c4db 32.21%, #56a7c9 100%);
+    padding: 44px 20px;
+    border-radius: var(--border-radius-small);
+    overflow: hidden;
+    &>img {
+        position: absolute;
+        top: 20px;
+        right: -30px;
+    }
+    &__body {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        color: var(--color-white);
+        @include mobile {
+            justify-content: start;
+        }
+    }
+    &__info {
+        flex-basis: 550px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        position: relative;
+        z-index: 2;
+        span {
+            @include fluid-text(50, 100);
+        }
+        @include mobile {
+            flex-wrap: wrap;
+            flex-basis: 250px;
+        }
+    }
+    &__image {
+        margin: -44px 0px;
+        @include mobile {
+            position: absolute;
+            right: -100px;
+            filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);  
+        }
+    }
+    .arrow__pulse {
+        border: 3px solid var(--color-white);
+        position: absolute;
+        top: 65%;
+        right: 20px;
+        z-index: 2;
+        &::after {
+            border: 1px solid var(--color-white);
+            @include table {
+              opacity: 1;
+           }
+        }
+        @include table {
+            top: 15%;
+        }
+    }
+    @include hover {
+        .arrow__pulse {
+            opacity: 1;
+        }
+        .arrow__pulse::after {
+            animation: pulse 2s ease-in-out infinite;
+        }
+    }
+}
+
+/*----------------------------------promotions-------------------------------*/

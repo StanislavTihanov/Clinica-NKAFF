@@ -1,0 +1,102 @@
+/*----------------------------------promotions-------------------------------*/
+@use 'mixins' as *;
+.comparison {
+    &__body {
+        overflow: hidden;
+        overflow-x: auto;
+        scrollbar-width: none; 
+        -ms-overflow-style: none; 
+        &::-webkit-scrollbar {
+            display: none; 
+        }
+        margin-bottom: 60px;
+    }
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: nowrap; 
+        gap: 0px 20px;
+        & > * {
+            flex: 0 0 auto; 
+        }
+        &:first-child {
+            .comparison__block {
+                @include fluid-text(16, 20);
+                &:first-child {
+                    background-color: var(--color-primary);
+                    color: var(--color-white);
+                    p {
+                        max-width: 100%;
+                        text-align: start;
+                        @include fluid-text(12, 17);
+                    }
+                }
+                &:nth-child(2) {
+                    display: flex;
+                    align-items: center;
+                    color: var(--color-primary);
+                }
+                &:nth-child(3) {
+                    color: var(--color-secondary);
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        @include mobile {
+            gap: 0px 10px;
+        }
+    }
+    &__block {
+        flex-basis: 470px;
+        border-radius: var(--border-radius-small);
+        border: 1px solid var(--color-primary);
+        padding: 20px;
+        font-weight: 600;
+        @include fluid-text(14, 15);
+        line-height: 133%;
+        &:first-child {
+            flex-basis: 320px;
+            text-align: center;
+            display: flex;
+            gap: 16px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            img {
+                width: 56px;
+                height: 56px;
+                margin-bottom: 0px;
+            }
+            p {
+                font-weight: 600;
+                @include fluid-text(12, 20);
+                line-height: 140%;
+                text-align: center;
+            }
+            @include table {
+                flex-basis: 200px;
+            }
+            @include mobile {
+                flex-basis: 170px;
+            }
+        }
+        img {
+            margin-bottom: 14px;
+        }
+        @include table {
+            border-radius: 24px;
+        }
+        @include mobile {
+            flex-basis: 200px;
+            padding: 16px;
+        }
+    }
+}
+
+/*----------------------------------promotions-------------------------------*/

@@ -476,6 +476,22 @@ section {
     border-radius: 16px;
   }
 }
+.block .arrow__pulse {
+  border: 3px solid var(--color-white);
+  top: 45%;
+  right: 25px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.block .arrow__pulse::after {
+  border: 1px solid var(--color-white);
+}
+@media (max-width: 768px) {
+  .block .arrow__pulse::after {
+    opacity: 1;
+  }
+}
 @media (hover: hover) {
   .block:hover {
     color: var(--color-primary);
@@ -488,6 +504,14 @@ section {
     opacity: 1;
     transform: translateX(0);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+}
+@media (hover: hover) and (hover: hover) {
+  .block:hover:hover .arrow__pulse {
+    opacity: 1;
+  }
+  .block:hover:hover .arrow__pulse::after {
+    animation: pulse 2s ease-in-out infinite;
   }
 }
 

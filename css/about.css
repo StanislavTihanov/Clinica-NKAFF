@@ -146,6 +146,9 @@
     margin-top: 0px;
   }
 }
+.about__block:nth-child(2) {
+  overflow: hidden;
+}
 .about__block:last-child {
   overflow: hidden;
 }

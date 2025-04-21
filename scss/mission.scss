@@ -7,6 +7,10 @@
         padding: 56px 56px 48px 64px;
         color: var(--color-white);
         overflow: hidden;
+        border-radius: var(--border-radius);
+        @include table {
+            border-radius: 32px;
+        }
         @include table {
             padding: 24px;
         }
@@ -126,7 +130,6 @@
             flex-wrap: wrap;
         }
     }
-
     &__items {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -139,7 +142,6 @@
             grid-template-columns: 1fr;
         }
     }
-
     &__item {
         display: flex;
         align-items: center;
@@ -211,7 +213,6 @@
             display: block;
         }
     }
-
     &__bg {
         position: absolute;
         width: 100%;
@@ -294,6 +295,110 @@
     &__icon8 {
         top: 70%;
         right: 0;
+        @include mobile {
+            display: none;
+        }
+    }
+    &--mod {
+        .title {
+            color: var(--color-white);
+        }
+        .mission__info {
+            flex-basis: 700px;
+            @include mobile {
+                flex-basis: 100%;
+                border-radius: 32px;
+                background: linear-gradient(180deg, #1975C1 0%, #6BC6F6 100%);
+                padding: 20px;
+            }
+        }
+        .mission__button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            .button-outline {
+                background-color: inherit;
+                color: var(--color-white);
+                border-radius: 16px;
+                border: 1px  solid var(--color-white);
+                @include hover {
+                    background-color: var(--color-white);
+                    color: var(--color-black);
+                }
+            }
+            @include mobile {
+                flex-wrap: wrap;
+            }
+        }
+        .mission__items {
+            @include mobile {
+                background: linear-gradient(180deg, #1975C1 0%, #6BC6F6 100%);
+            }
+        }
+    }
+    &--mod2 {
+        .mission__body {
+            margin-bottom: 0px;
+            justify-content: space-between;
+            @include mobile {
+                justify-content: center;
+            }
+        }
+        .mission__wrapper {
+            border-radius: 0px;
+        }
+        h1 {
+            color: var(--color-white);
+        }
+        .mission__button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            .button-outline {
+                background-color: inherit;
+                color: var(--color-white);
+                border-radius: 16px;
+                border: 1px  solid var(--color-white);
+                @include hover {
+                    background-color: var(--color-white);
+                    color: var(--color-black);
+                }
+            }
+            @include mobile {
+                flex-wrap: wrap;
+            }
+        }
+        .mission__info {
+            @include mobile {
+                background: linear-gradient(141deg, #ec4169 0%, #feb2c6 100%);
+            }
+        }
+    }
+    &__img {
+        position: absolute;
+        z-index: -1;
+        @include mobile {
+            display: none;
+        }
+    }
+    &__img1 {
+        max-width: 600px;
+        top: -30px;
+        right: -100px;
+        @include desktop {
+            filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);   
+        }
+    }
+    &__img2 {
+        bottom: -270px;
+        right: -55px;
+    }
+    &__photo {
+        margin: -50px 0px;
         @include mobile {
             display: none;
         }
