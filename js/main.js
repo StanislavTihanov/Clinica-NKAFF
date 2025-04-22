@@ -262,6 +262,44 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  // Находим все уникальные группы на странице
+  const groups = [...new Set(
+    Array.from(document.querySelectorAll('.four-slide[data-swiper-group]'))
+      .map(el => el.dataset.swiperGroup)
+  )];
+  // Инициализируем каждую группу отдельно
+  groups.forEach(group => {
+    const slidersFour = document.querySelectorAll(
+      `.four-slide[data-swiper-group="${group}"]`
+    );
+    slidersFour.forEach((slider, sliderIndex) => {
+      // Находим ВСЕ кнопки группы и выбираем нужные по индексу
+      const allPrevButtons = document.querySelectorAll(
+        `[data-swiper-prev="${group}"]`
+      );
+      const allNextButtons = document.querySelectorAll(
+        `[data-swiper-next="${group}"]`
+      );
+      new Swiper(slider, {
+        navigation: {
+          prevEl: allPrevButtons[sliderIndex],
+          nextEl: allNextButtons[sliderIndex],
+        },
+        loop: false,
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        speed: 1000,
+        breakpoints: {
+          320: { slidesPerView: 1.2 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 4 }
+        }
+      });
+    });
+  });
+});
+
 //------------------------------------------------------------------------Слайдеры
 
 //-----------------------------------------------------------------------поиск врачей по словам

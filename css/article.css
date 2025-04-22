@@ -474,6 +474,15 @@
 .article--mod .article__item time {
   color: var(--color-primary);
 }
+.article__date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+.article__date time {
+  color: var(--color-primary);
+}
 
 .author {
   display: flex;
