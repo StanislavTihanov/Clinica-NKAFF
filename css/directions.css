@@ -64,4 +64,78 @@
   }
 }
 
+.directions-hospital__body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .directions-hospital__body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .directions-hospital__body {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+.directions-hospital__block {
+  border: 1px solid #96CFD0;
+  border-radius: var(--border-radius-small);
+  overflow: hidden;
+}
+.directions-hospital__block_img {
+  position: relative;
+  margin: -2px;
+}
+.directions-hospital__block_img img {
+  border-radius: var(--border-radius-small);
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .directions-hospital__block_img img {
+    border-radius: 24px;
+  }
+}
+.directions-hospital__block_img .button {
+  border-radius: var(--border-radius-small);
+  width: auto;
+  justify-content: start;
+  display: inline;
+  font-size: clamp(10px, 1vw, 13px);
+}
+.directions-hospital__block_img .button svg {
+  padding-top: 1px;
+}
+@media (hover: hover) {
+  .directions-hospital__block_img .button-white:hover {
+    background-color: var(--color-primary);
+  }
+}
+.directions-hospital__block_inner {
+  padding: 16px;
+}
+.directions-hospital__block_inner p {
+  font-family: var(--font-family-m);
+  font-weight: 600;
+  font-size: clamp(13px, 1.1538461538vw, 15px);
+  line-height: 133%;
+  margin-bottom: 16px;
+}
+.directions-hospital__block_inner .button {
+  max-width: 140px;
+}
+@media (max-width: 768px) {
+  .directions-hospital__block {
+    border-radius: 24px;
+  }
+}
+.directions-hospital__button {
+  position: absolute;
+  bottom: 25px;
+  left: 16px;
+  right: 16px;
+}
+
 /*----------------------------------directions--------------------------------*/

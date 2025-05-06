@@ -1581,7 +1581,7 @@
                   Остались вопросы?
                 </div>
                 <p>Закажите обратный звонок, наши специалисты свяжутся с вами в ближайшее время !</p>
-                <a class="button button-white" href="#!">
+                <a class="button button-white popup-link" href="#popup">
                   Обратный звонок
                   <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16.75 7.72607L1.75 7.72607" stroke="#1B1B26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -2223,6 +2223,31 @@
         </div>
       </section>
     </main>
+    <div class="popup" id="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a class="popup__close close-popup" href="#header">+</a>
+          <h3>Обратный звонок</h3>
+          <form class="form" action="#" id="form">
+            <div class="form__item">
+             <label class="form__label" for="formName">Имя*</label>
+             <input class="form__input _req" id="formName" type="text" name="name">
+            </div>
+            <div class="form__item">
+             <label class="form__label" for="formNumber">Телефон*</label>
+             <input class="form__input _req _number" id="formNumber" type="text" name="number">
+            </div>
+            <div class="checkbox">
+               <input class="checkbox__input _req" id="formAgreement" type="checkbox" name="agreement" checked>
+               <label class="checkbox__label" for="formAgreement">
+                 <p>Согласие на обработку <a href="policy.html">персональных данных</a></p>
+               </label>
+            </div>
+           <input class="button button-filled-primary" value="Отправить" type="submit">
+          </form>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="footer__content">
         <div class="footer__wrapper section-color">

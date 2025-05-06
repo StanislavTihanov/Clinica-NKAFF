@@ -961,14 +961,14 @@
           </div>
           <div class="slider__wrap">
             <div class="slider__buttons">
-              <div class="swiper-button-prev swiper-button-p-1">
+              <div class="swiper-button-prev" data-swiper-prev="two-slide">
                 <img src="images/icons/Arrow-Right.svg" alt="arrow">
               </div>
-              <div class="swiper-button-next swiper-button-n-1">
+              <div class="swiper-button-next" data-swiper-next="two-slide">
                 <img src="images/icons/Arrow-Right.svg" alt="arrow">
               </div>
             </div>
-            <div class="two-slide">
+            <div class="two-slide" data-swiper-group="two-slide">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="equipment__block">
@@ -1615,9 +1615,9 @@
         </div>
       </section>
 
-      <section class="callback" id="callback">
-        <div class="callback__content _container callback__content--mod">
-          <div class="block-row block-row--mod">
+      <section class="block-row block-row--mod">
+        <div class="block-row__content _container">
+          <div class="block-row__body">
             <div class="block-row__item">
               <img src="images/icons/ShieldDone.svg" alt="icon">
               <p>Информация проверена экспертом </p>
@@ -1630,6 +1630,11 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="callback" id="callback">
+        <div class="callback__content _container callback__content--mod">
           <div class="callback__wrapper">
             <div class="callback__body">
               <div class="callback__info">

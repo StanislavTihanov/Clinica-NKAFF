@@ -136,4 +136,56 @@
         }
     }
 }
+.about-us {
+    &__body {
+        display: flex;
+        align-items: center;
+        gap: 10px 40px;
+        @include mobile {
+            flex-wrap: wrap;
+        }
+    }
+    &__image {
+        background: linear-gradient(45deg, #c3f0f3 32.68%, #a9d9e6 100%);
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        flex-basis: 330px;
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 280px;
+        }
+    }
+    &__info {
+        flex-basis: 850px;
+        h3 {
+            font-weight: 700;
+            @include fluid-text(20, 24);
+            line-height: 133%;
+            margin-bottom: 16px;
+        }
+        p {
+            font-weight: 600;
+            @include fluid-text(14, 15);
+            line-height: 133%;
+            margin-bottom: 16px;
+            font-family: var(--font-family-m);
+        }
+        h4 {
+            font-weight: 700;
+            @include fluid-text(16, 17);
+            line-height: 141%;
+            margin-bottom: 5px;
+        }
+        span {
+            display: block;
+            font-family: var(--font-family-m);
+            font-weight: 600;
+            @include fluid-text(14, 15);
+            line-height: 133%;
+            margin-bottom: 5px;
+        }
+    }
+}
+
 /*----------------------------------about--------------------------------*/

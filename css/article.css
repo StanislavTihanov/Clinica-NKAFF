@@ -1,4 +1,4 @@
-/*----------------------------------doctor--------------------------------*/
+/*----------------------------------article--------------------------------*/
 .articles {
   background-color: var(--color-bg);
 }
@@ -159,6 +159,10 @@
 .article__attention--mod h3 {
   color: #FF475D;
   margin-bottom: 5px;
+}
+.article__attention--mod p {
+  line-height: 120%;
+  font-family: var(--font-family-m);
 }
 .article__images {
   display: flex;
@@ -529,4 +533,4 @@
   }
 }
 
-/*----------------------------------doctor--------------------------------*/
+/*----------------------------------article--------------------------------*/

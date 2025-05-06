@@ -43,12 +43,13 @@
     padding: 16px;
   }
 }
-.other__links a {
+.other__list li, .other__list a, .other__list span {
   font-weight: 600;
   line-height: 130%;
   font-family: var(--font-family-m);
   margin-bottom: 8px;
   font-size: 15px;
+  color: var(--color-black);
 }
 
 /*----------------------------------other--------------------------------*/

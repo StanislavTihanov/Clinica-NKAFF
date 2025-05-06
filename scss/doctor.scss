@@ -247,18 +247,24 @@
     }
 }
 .about-doctor {
-     display: flex;
-     justify-content: space-between;
-     gap: 16px 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 16px 24px;
+    h3 {
+        @include fluid-text(18, 24);
+        margin-bottom: 24px;
+        line-height: 100%;
+    }
+    p, ul {
+        font-family: var(--font-family-m);
+        margin-bottom: 20px;
+        line-height: 120%;
+    }
     &__block {
         border: 1px solid #A9D9E6;
         border-radius: var(--border-radius-small);
         background-color: var(--color-white);
         padding: 32px;
-        h3 {
-            @include fluid-text(18, 24);
-            margin-bottom: 24px;
-        }
         @include mobile {
             padding: 16px;
             border-radius: 24px;
@@ -270,15 +276,12 @@
             display: block;
             margin-bottom: 8px;
         }
-        p {
-            font-family: var(--font-family-m);
-        }
         &:not(:last-child) {
             margin-bottom: 24px;
         }
     }
     @include mobile {
-        flex-wrap: wrap;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
 /*----------------------------------doctor--------------------------------*/

@@ -31,67 +31,22 @@
   align-items: center;
   gap: 10px;
 }
+.calendar__specialization p {
+  font-weight: 700;
+}
 @media (max-width: 768px) {
   .calendar__specialization {
     flex-wrap: wrap;
   }
 }
-.calendar__cost {
-  font-weight: 500;
-  line-height: 133%;
-  font-family: var(--font-family-m);
-}
-.calendar__cost span {
-  font-weight: 700;
-  color: var(--color-secondary);
-}
 .calendar__body {
-  display: flex;
-  align-items: center;
   margin-bottom: 24px;
-  position: relative;
 }
-.calendar__blocks {
-  overflow: hidden;
-  overflow-x: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-.calendar__blocks::-webkit-scrollbar {
-  display: none;
-}
-.calendar__block {
-  position: relative;
-}
-.calendar__block_top {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 16px;
-}
-.calendar__block_top span {
-  color: var(--color-primary);
-}
-.calendar__days {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
-  position: relative;
-}
-.calendar__days::after {
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  top: 40%;
-  right: -30px;
-  background-color: var(--color-primary);
+.calendar__body h3 {
+  font-weight: 700;
+  line-height: 141%;
+  font-size: clamp(14px, 1.2307692308vw, 16px);
+  margin-bottom: 15px;
 }
 .calendar__day {
   display: flex;
@@ -99,12 +54,21 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--color-white);
-  width: 56px;
+  width: 80px;
   border-radius: 16px;
   padding: 7px 0px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 .calendar__day--mod p {
   color: #EC5906;
+}
+@media (hover: hover) {
+  .calendar__day:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transition: all 0.3s;
+  }
 }
 .calendar__bottom {
   display: flex;
@@ -129,15 +93,6 @@
   gap: 10px;
   flex-wrap: wrap;
 }
-.calendar__arrow {
-  background-color: var(--color-white);
-  border-radius: 16px;
-  padding: 18px 24px;
-  position: absolute;
-  right: 10px;
-  top: 32px;
-  cursor: pointer;
-}
 .calendar__hour {
   color: #96CFD0;
   border: 1px solid #96CFD0;
@@ -147,12 +102,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
 }
-.calendar p {
-  font-weight: 600;
-  line-height: 133%;
-  font-family: var(--font-family-m);
-  font-size: clamp(14px, 1.1538461538vw, 15px);
+@media (hover: hover) {
+  .calendar__hour:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transition: all 0.3s;
+  }
 }
 
 /*----------------------------------calendar--------------------------------*/

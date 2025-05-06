@@ -43,6 +43,7 @@
 }
 .about-procedure__block:first-child h3 {
   color: var(--color-white);
+  margin-right: -200px;
 }
 .about-procedure__block:first-child img {
   margin-right: -30px;

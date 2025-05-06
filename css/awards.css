@@ -104,5 +104,17 @@
     gap: 8px;
   }
 }
+.awards__link {
+  position: relative;
+}
+.awards__icon {
+  position: absolute;
+  background-color: var(--color-white);
+  padding: 12px;
+  border-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 /*----------------------------------awards--------------------------------*/

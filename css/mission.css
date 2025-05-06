@@ -482,4 +482,73 @@
   }
 }
 
+.values__blocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  margin-bottom: 120px;
+}
+@media (max-width: 768px) {
+  .values__blocks {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-bottom: 60px;
+  }
+}
+.values__block img {
+  border-radius: var(--border-radius-small);
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .values__block img {
+    border-radius: 24px;
+  }
+}
+.values__block h3 {
+  font-weight: 700;
+  font-size: clamp(20px, 1.8461538462vw, 24px);
+  line-height: 133%;
+  color: var(--color-primary);
+  padding: 16px;
+}
+.values__block p {
+  font-family: var(--font-family-m);
+  font-weight: 600;
+  font-size: clamp(14px, 1.1538461538vw, 15px);
+  line-height: 133%;
+  padding: 0px 16px;
+}
+.values__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.values__item {
+  position: relative;
+}
+.values__item img {
+  border-radius: var(--border-radius-small);
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .values__item img {
+    height: 275px;
+  }
+}
+.values__item .button {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  width: auto;
+  border-radius: var(--border-radius-small);
+  font-size: clamp(10px, 0.9230769231vw, 12px);
+  padding: 11px 20px;
+}
+@media (hover: hover) {
+  .values__item .button:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+  }
+}
+
 /*----------------------------------mission--------------------------------*/

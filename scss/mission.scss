@@ -404,4 +404,71 @@
         }
     }
 }
+.values {
+    &__blocks {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 20px;
+        margin-bottom: 120px;
+        @include mobile {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            margin-bottom: 60px;
+        }
+    }
+    &__block {
+        img {
+            border-radius: var(--border-radius-small);
+            width: 100%;
+            @include mobile {
+                border-radius: 24px;
+            }
+        }
+        h3 {
+            font-weight: 700;
+            @include fluid-text(20, 24);
+            line-height: 133%;
+            color: var(--color-primary);
+            padding: 16px;
+        }
+        p {
+            font-family: var(--font-family-m);
+            font-weight: 600;
+            @include fluid-text(14, 15);
+            line-height: 133%;
+            padding: 0px 16px;
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    &__item {
+        position: relative;
+        img {
+            border-radius: var(--border-radius-small);
+            height: 100%;
+            width: 100%;
+            @include mobile {
+                height: 275px;
+            }
+        }
+        .button {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            width: auto;
+            border-radius: var(--border-radius-small);
+            @include fluid-text(10, 12);
+            padding: 11px 20px;
+            @include hover {
+                color: var(--color-white);
+                background-color: var(--color-primary);
+            }
+        }
+    }
+}
+
 /*----------------------------------mission--------------------------------*/

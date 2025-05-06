@@ -56,4 +56,73 @@
        }
     }
 }
+.directions-hospital {
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        @include table {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mobile {
+            grid-template-columns: 1fr; 
+            gap: 16px;
+        }
+    }
+    &__block {
+        border: 1px solid #96CFD0;
+        border-radius: var(--border-radius-small);
+        overflow: hidden;
+        &_img {
+            position: relative;
+            margin: -2px;
+            img {
+                border-radius: var(--border-radius-small);
+                width: 100%;
+                @include mobile {
+                    border-radius: 24px;
+                }
+            }
+            .button {
+                border-radius: var(--border-radius-small);
+                width: auto;
+                justify-content: start;
+                display: inline;
+                @include fluid-text(10, 13);
+                svg {
+                    padding-top: 1px;
+                }
+            }
+            .button-white {
+                @include hover {
+                    background-color: var(--color-primary);
+                }
+            }
+        }
+        &_inner {
+            padding: 16px;
+            p {
+                font-family: var(--font-family-m);
+                font-weight: 600;
+                @include fluid-text(13, 15);
+                line-height: 133%;
+                margin-bottom: 16px;
+            }
+            .button {
+                max-width: 140px;
+            }
+        }
+        @include mobile {
+            border-radius: 24px;
+        }
+    }
+    &__button {
+        position: absolute;
+        bottom: 25px;
+        left: 16px;
+        right: 16px;
+    }
+}
+
+
 /*----------------------------------directions--------------------------------*/
